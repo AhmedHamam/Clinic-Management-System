@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,20 @@ namespace Clinic_Management_System
         public Log_in()
         {
             InitializeComponent();
+            //------------------ Mohamed Moafa Code For Execute Style ----------------
+            skinEngine1.SkinFile = "Skins\\" + Properties.Settings.Default.Style;
+            //------------------------------------------------------------------------
+
+            //------------------ Mohamed Moafa Code For Fill Combobox with names of styles  ----------------
+            try
+            {
+                if (Directory.Exists("Skins"))
+                    foreach (string file in Directory.GetFiles("Skins"))
+                       cmbStyle.Items.Add(Path.GetFileName(file));
+                cmbStyle.Text = Properties.Settings.Default.Style;
+            }
+            catch { }
+            //-----------------------------------------------------------------------------------------------
         }
 
         private void cb_showpassword_CheckedChanged(object sender, EventArgs e)
@@ -41,6 +56,20 @@ namespace Clinic_Management_System
             else
             {
             }
+        }
+
+        private void cmbStyle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //------------------ Mohamed Moafa Code For Change styles  ----------------
+            try
+            {
+                Properties.Settings.Default.Style = cmbStyle.Text;
+                Properties.Settings.Default.Save();
+                skinEngine1.SkinFile = "Skins\\" + cmbStyle.Text;
+            }
+            catch { }
+            //-----------------------------------------------------------------------------------------------
+        
         }
     }
 }

@@ -10,3 +10,16 @@ D:\free lance work\شغل خاص\Clinic Management System\Clinic Management Syst
 D:\free lance work\شغل خاص\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Log_in.resources
 D:\free lance work\شغل خاص\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Main_Form.resources
 D:\free lance work\شغل خاص\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.staff_form.resources
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe.config
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.exe
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.pdb
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.pdb
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\IrisSkin2.dll
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csprojResolveAssemblyReference.cache
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Form1.resources
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Log_in.resources
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Main_Form.resources
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Properties.Resources.resources
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.staff_form.resources
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
