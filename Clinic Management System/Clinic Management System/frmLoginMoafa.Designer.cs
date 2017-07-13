@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_username = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -48,15 +48,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txt_username
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(140, 178);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 19);
-            this.textBox1.TabIndex = 1;
+            this.txt_username.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_username.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
+            this.txt_username.Location = new System.Drawing.Point(140, 178);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(318, 19);
+            this.txt_username.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -116,7 +116,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_username);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLoginMoafa";
@@ -131,7 +131,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button2;

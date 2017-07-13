@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Clinic_Management_System</RootNamespace>
     <AssemblyName>Clinic Management System</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,38 +56,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cls_RoundedPicturebox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Connection.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Data Access Layer\Connection.cs" />
     <Compile Include="frmLoginMoafa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLoginMoafa.Designer.cs">
       <DependentUpon>frmLoginMoafa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin_Mansour.cs">
+    <Compile Include="PL\Log_in.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin_Mansour.Designer.cs">
-      <DependentUpon>frmLogin_Mansour.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_doctor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_doctor.Designer.cs">
-      <DependentUpon>frm_doctor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Log_in.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Log_in.Designer.cs">
+    <Compile Include="PL\Log_in.Designer.cs">
       <DependentUpon>Log_in.cs</DependentUpon>
     </Compile>
     <Compile Include="Main_Form.cs">
@@ -97,22 +77,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="staff_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="staff_form.Designer.cs">
-      <DependentUpon>staff_form.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmLoginMoafa.resx">
       <DependentUpon>frmLoginMoafa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin_Mansour.resx">
-      <DependentUpon>frmLogin_Mansour.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Log_in.resx">
+    <EmbeddedResource Include="PL\Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Form.resx">
@@ -128,9 +96,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="staff_form.resx">
-      <DependentUpon>staff_form.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,7 +110,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data Access Layer\" />
+    <Folder Include="BL\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1ضضض1.JPG" />

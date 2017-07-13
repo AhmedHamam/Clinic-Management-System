@@ -64,3 +64,14 @@ C:\Users\DEVELOPER\Documents\GitHub\Clinic-Management-System\Clinic Management S
 C:\Users\DEVELOPER\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Properties.Resources.resources
 C:\Users\DEVELOPER\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.staff_form.resources
 C:\Users\DEVELOPER\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
+D:\Clinic Management System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe.config
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.exe
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.pdb
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csprojResolveAssemblyReference.cache
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmLoginMoafa.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Log_in.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Main_Form.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Properties.Resources.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
+D:\Clinic Management System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe
+D:\Clinic Management System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.pdb

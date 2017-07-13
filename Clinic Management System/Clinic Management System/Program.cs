@@ -17,9 +17,9 @@ namespace Clinic_Management_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new Form1());
-           // Application.Run(new Log_in());
+            Application.Run(new Main_Form());
             //Application.Run(new frmLoginMoafa());
-            Application.Run(new frmLogin_Mansour());
+            //Application.Run(new frmLogin_Mansour());
         }
     }
 }

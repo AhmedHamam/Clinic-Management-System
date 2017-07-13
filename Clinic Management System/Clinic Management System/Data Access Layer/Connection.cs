@@ -1,5 +1,5 @@
 ﻿using System;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
 
@@ -8,10 +8,10 @@ namespace Clinic_Management_System
     class Connection
     {
         public string connectionString = "SERVER=localhost;DATABASE=Clinic;Uid=root;pwd=root";
-        private MySqlConnection connection;
+        private SqlConnection connection;
         public Connection()
         {
-            connection = new MySqlConnection(connectionString);
+            connection = new SqlConnection(connectionString);
         }
         //open connection to database
         public void OpenConnection()
@@ -24,7 +24,7 @@ namespace Clinic_Management_System
                 {
                     connection.Open();
                 }
-                catch (MySqlException ex)
+                catch (SqlException ex)
                 {
                     MessageBox.Show(ex.ToString());
                 }
@@ -41,7 +41,7 @@ namespace Clinic_Management_System
                     connection.Close();
 
                 }
-                catch (MySqlException ex)
+                catch (SqlException ex)
                 {
                     MessageBox.Show(ex.Message);
 
@@ -49,13 +49,13 @@ namespace Clinic_Management_System
             }
         }
         //method to read data from database
-        public DataTable ReadData(string stored_procdure, MySqlParameter[] parameter)
+        public DataTable ReadData(string stored_procdure, SqlParameter[] parameter)
         {
             DataTable dt = new DataTable();
             try
             {
                 OpenConnection();
-                MySqlCommand cmd = new MySqlCommand();
+                SqlCommand cmd = new SqlCommand();
                 cmd.Connection = connection;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = stored_procdure;
@@ -66,7 +66,7 @@ namespace Clinic_Management_System
                         cmd.Parameters.Add(parameter[i]);
                     }
                 }
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
 
                 da.Fill(dt);
                 CloseConnection();
@@ -78,9 +78,9 @@ namespace Clinic_Management_System
             return dt;
         }
         //method to insert or update or delete data from database 
-        public void Exacute_procdure(string stored_procdure, MySqlParameter[] parameter)
+        public void Exacute_procdure(string stored_procdure, SqlParameter[] parameter)
         {
-            MySqlCommand cmd = new MySqlCommand();
+            SqlCommand cmd = new SqlCommand();
             try
             {
                 OpenConnection();
@@ -106,7 +106,7 @@ namespace Clinic_Management_System
             if (true)
             {
                 this.OpenConnection();
-                MySqlCommand cmd = new MySqlCommand();
+                SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = "select count('*') from " + tabel + " ;";
                 cmd.Connection = connection;
                 try
