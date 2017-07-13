@@ -164,7 +164,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel1.BackgroundImage = global::Clinic_Management_System.Properties.Resources.BrcodPrnt___Copy;
+            //this.panel1.BackgroundImage = global::Clinic_Management_System.Properties.Resources.BrcodPrnt___Copy;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
