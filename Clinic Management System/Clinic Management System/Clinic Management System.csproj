@@ -57,12 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Layer\Connection.cs" />
-    <Compile Include="frmLoginMoafa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLoginMoafa.Designer.cs">
-      <DependentUpon>frmLoginMoafa.cs</DependentUpon>
-    </Compile>
     <Compile Include="PL\Log_in.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,9 +71,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmLoginMoafa.resx">
-      <DependentUpon>frmLoginMoafa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PL\Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,12 +104,6 @@
     <Folder Include="BL\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1ضضض1.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BrcodPrnt - Copy.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Technology_32x32.png" />
   </ItemGroup>
   <ItemGroup>
@@ -132,15 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Show_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BrcodPrnt - Copy - Copy.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BrcodPrnt - Copy - Copy - Copy.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BrcodPrnt - Copy - Copy1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Apply_32x321.png" />
