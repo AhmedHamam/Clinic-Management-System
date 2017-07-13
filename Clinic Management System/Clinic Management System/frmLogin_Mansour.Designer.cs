@@ -33,6 +33,9 @@
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.pic_visible = new System.Windows.Forms.PictureBox();
             this.pic_invisible = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,9 +43,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_visible)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_invisible)).BeginInit();
@@ -103,6 +103,44 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(356, 519);
             this.panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Adobe Arabic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(85, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 32);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "تسجيل الدخـــــــــول";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(34, 362);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnCancel.Size = new System.Drawing.Size(289, 41);
+            this.btnCancel.TabIndex = 8;
+            this.btnCancel.Text = "إلغـــــــــــــــــــــــــــــــــاء";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(34, 315);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnLogin.Size = new System.Drawing.Size(289, 41);
+            this.btnLogin.TabIndex = 7;
+            this.btnLogin.Text = "تسجيل الدخول";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // pic_visible
             // 
@@ -181,44 +219,6 @@
             this.shapeContainer2.Size = new System.Drawing.Size(356, 519);
             this.shapeContainer2.TabIndex = 0;
             this.shapeContainer2.TabStop = false;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(34, 315);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnLogin.Size = new System.Drawing.Size(289, 41);
-            this.btnLogin.TabIndex = 7;
-            this.btnLogin.Text = "تسجيل الدخول";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(34, 362);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnCancel.Size = new System.Drawing.Size(289, 41);
-            this.btnCancel.TabIndex = 8;
-            this.btnCancel.Text = "إلغـــــــــــــــــــــــــــــــــاء";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Adobe Arabic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 145);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 32);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "تسجيل الدخـــــــــول";
             // 
             // frmLogin_Mansour
             // 

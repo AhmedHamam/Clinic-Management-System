@@ -38,3 +38,17 @@ C:\Users\ANONYME\Desktop\Clinic Management System\Clinic Management System\obj\D
 C:\Users\ANONYME\Desktop\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Properties.Resources.resources
 C:\Users\ANONYME\Desktop\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.staff_form.resources
 C:\Users\ANONYME\Desktop\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe.config
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.exe
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.pdb
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.pdb
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csprojResolveAssemblyReference.cache
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Form1.resources
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmLoginMoafa.resources
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmLogin_Mansour.resources
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Log_in.resources
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Main_Form.resources
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Properties.Resources.resources
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.staff_form.resources
+C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
