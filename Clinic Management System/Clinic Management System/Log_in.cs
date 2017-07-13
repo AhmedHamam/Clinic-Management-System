@@ -71,5 +71,10 @@ namespace Clinic_Management_System
             //-----------------------------------------------------------------------------------------------
         
         }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

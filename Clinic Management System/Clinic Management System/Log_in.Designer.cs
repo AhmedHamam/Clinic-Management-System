@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.gr_login = new System.Windows.Forms.GroupBox();
-            this.btn_exit = new System.Windows.Forms.Button();
-            this.btn_login = new System.Windows.Forms.Button();
-            this.cb_showpassword = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmbStyle = new System.Windows.Forms.ComboBox();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.txt_username = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbStyle = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.btn_login = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cb_showpassword = new System.Windows.Forms.CheckBox();
             this.gr_login.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,43 +66,24 @@
             this.gr_login.TabStop = false;
             this.gr_login.Text = "تسجيل الدخول ";
             // 
-            // btn_exit
+            // label3
             // 
-            this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_exit.Image = global::Clinic_Management_System.Properties.Resources.Close_32x32;
-            this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_exit.Location = new System.Drawing.Point(56, 121);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(172, 39);
-            this.btn_exit.TabIndex = 6;
-            this.btn_exit.Text = "إلغاء";
-            this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.UseVisualStyleBackColor = true;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(238, 169);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(131, 23);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "إستايل البرنامج";
             // 
-            // btn_login
+            // cmbStyle
             // 
-            this.btn_login.Image = global::Clinic_Management_System.Properties.Resources.Apply_32x321;
-            this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_login.Location = new System.Drawing.Point(238, 121);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(172, 39);
-            this.btn_login.TabIndex = 5;
-            this.btn_login.Text = "تسجيل الدخول ";
-            this.btn_login.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_login.UseVisualStyleBackColor = true;
-            // 
-            // cb_showpassword
-            // 
-            this.cb_showpassword.AutoSize = true;
-            this.cb_showpassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cb_showpassword.Image = global::Clinic_Management_System.Properties.Resources.Show_32x32;
-            this.cb_showpassword.Location = new System.Drawing.Point(25, 80);
-            this.cb_showpassword.Name = "cb_showpassword";
-            this.cb_showpassword.Size = new System.Drawing.Size(47, 32);
-            this.cb_showpassword.TabIndex = 4;
-            this.cb_showpassword.UseVisualStyleBackColor = true;
-            this.cb_showpassword.CheckedChanged += new System.EventHandler(this.cb_showpassword_CheckedChanged);
+            this.cmbStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStyle.FormattingEnabled = true;
+            this.cmbStyle.Location = new System.Drawing.Point(25, 166);
+            this.cmbStyle.Name = "cmbStyle";
+            this.cmbStyle.Size = new System.Drawing.Size(203, 31);
+            this.cmbStyle.TabIndex = 7;
+            this.cmbStyle.SelectedIndexChanged += new System.EventHandler(this.cmbStyle_SelectedIndexChanged);
             // 
             // txt_password
             // 
@@ -148,6 +129,38 @@
             this.panel2.Size = new System.Drawing.Size(511, 31);
             this.panel2.TabIndex = 2;
             // 
+            // skinEngine1
+            // 
+            this.skinEngine1.SerialNumber = "";
+            this.skinEngine1.SkinFile = null;
+            // 
+            // btn_login
+            // 
+            this.btn_login.Image = global::Clinic_Management_System.Properties.Resources.Apply_32x321;
+            this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_login.Location = new System.Drawing.Point(238, 121);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(172, 39);
+            this.btn_login.TabIndex = 5;
+            this.btn_login.Text = "تسجيل الدخول ";
+            this.btn_login.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_exit.Image = global::Clinic_Management_System.Properties.Resources.Close_32x32;
+            this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_exit.Location = new System.Drawing.Point(56, 121);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(172, 39);
+            this.btn_exit.TabIndex = 6;
+            this.btn_exit.Text = "إلغاء";
+            this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -159,29 +172,17 @@
             this.panel1.Size = new System.Drawing.Size(511, 70);
             this.panel1.TabIndex = 1;
             // 
-            // cmbStyle
+            // cb_showpassword
             // 
-            this.cmbStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStyle.FormattingEnabled = true;
-            this.cmbStyle.Location = new System.Drawing.Point(25, 166);
-            this.cmbStyle.Name = "cmbStyle";
-            this.cmbStyle.Size = new System.Drawing.Size(203, 31);
-            this.cmbStyle.TabIndex = 7;
-            this.cmbStyle.SelectedIndexChanged += new System.EventHandler(this.cmbStyle_SelectedIndexChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(238, 169);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 23);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "إستايل البرنامج";
-            // 
-            // skinEngine1
-            // 
-            this.skinEngine1.SerialNumber = "";
-            this.skinEngine1.SkinFile = null;
+            this.cb_showpassword.AutoSize = true;
+            this.cb_showpassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cb_showpassword.Image = global::Clinic_Management_System.Properties.Resources.Show_32x32;
+            this.cb_showpassword.Location = new System.Drawing.Point(25, 80);
+            this.cb_showpassword.Name = "cb_showpassword";
+            this.cb_showpassword.Size = new System.Drawing.Size(47, 32);
+            this.cb_showpassword.TabIndex = 4;
+            this.cb_showpassword.UseVisualStyleBackColor = true;
+            this.cb_showpassword.CheckedChanged += new System.EventHandler(this.cb_showpassword_CheckedChanged);
             // 
             // Log_in
             // 

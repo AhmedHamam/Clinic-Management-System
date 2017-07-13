@@ -35,6 +35,8 @@
     <Reference Include="IrisSkin2">
       <HintPath>D:\ادواتي البرمجية\ثيمات\IrisSkin2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll</HintPath>
@@ -66,6 +68,12 @@
     <Compile Include="frmLoginMoafa.Designer.cs">
       <DependentUpon>frmLoginMoafa.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin_Mansour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin_Mansour.Designer.cs">
+      <DependentUpon>frmLogin_Mansour.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log_in.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoginMoafa.resx">
       <DependentUpon>frmLoginMoafa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin_Mansour.resx">
+      <DependentUpon>frmLogin_Mansour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
@@ -165,6 +176,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invisible_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visible_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_50px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
