@@ -22,5 +22,11 @@ namespace Clinic_Management_System
             Log_in frm = new Log_in();
             frm.Show();
         }
+
+        private void btnManageStaff_Click(object sender, EventArgs e)
+        {
+            frmStaff frm = new frmStaff();
+            frm.Show();
+        }
     }
 }

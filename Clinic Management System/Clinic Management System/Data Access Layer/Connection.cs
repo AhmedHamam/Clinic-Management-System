@@ -7,7 +7,7 @@ namespace Clinic_Management_System
 {
     class Connection
     {
-        public string connectionString = "SERVER=localhost;DATABASE=Clinic;Uid=root;pwd=root";
+        public string connectionString = @"SERVER=.\MOHAMED4735;DATABASE=Clinic;Uid=root;pwd=root";
         private SqlConnection connection;
         public Connection()
         {
@@ -127,6 +127,21 @@ namespace Clinic_Management_System
 
             return id;
         }
+        // convert image to byte - write image in database
+        public static byte[] ConvertImageToBytes(System.Drawing.Image img)
+        {
+            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+            img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            return ms.ToArray();
+        }
+        // convert image to image - read image from database
+        public static System.Drawing.Image ConvertBytesToImage(byte[] byt)
+        {
+            System.IO.MemoryStream ms = new System.IO.MemoryStream(byt);
+            return System.Drawing.Image.FromStream(ms);
+
+        }
+
     }
 }
 
