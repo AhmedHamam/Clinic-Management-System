@@ -21,5 +21,19 @@ namespace Clinic_Management_System
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            switch (PasswordBox.UseSystemPasswordChar) {
+                case true:
+                    PasswordBox.UseSystemPasswordChar = false;
+                    button1.Image = Properties.Resources.Show_32x32;
+                    break;
+                case false:
+                    PasswordBox.UseSystemPasswordChar = true;
+                    button1.Image = Properties.Resources.Hide_32x32;
+                    break;
+            }
+        }
     }
 }
