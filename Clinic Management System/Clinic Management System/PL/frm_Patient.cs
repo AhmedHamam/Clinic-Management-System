@@ -26,18 +26,18 @@ namespace Clinic_Management_System
             frm.txt_status.Top = -100;
         }
 
-        // evenement de changer de position des enregistrements de la table client
+        
         private void Refresh_Rdbgender()
         {
-            // actualiser les bouton radion quand on se deplace ds les enregistrements
+            //Refresh the radion button when editing in the records
             if (frm.txtgenderHide.Text == "Male")
                 frm.rdb_male.Checked = true;
             else frm.rdb_female.Checked = true;
         }
-        // evenement de changer de position des enregistrements de la table patient
+        //-----------------------------------------
         private void Refresh_Rdbstatus()
         {
-            // actualiser les bouton radion quand on se deplace ds les enregistrements
+           
             if (frm.txt_status.Text == "Single")
                 frm.rdb_Single.Checked = true;
             else frm.rdb_Married.Checked = true;
