@@ -46,6 +46,7 @@
             // dqv_suppliers
             // 
             this.dqv_suppliers.AllowUserToAddRows = false;
+            this.dqv_suppliers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dqv_suppliers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dqv_suppliers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dqv_suppliers.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -55,6 +56,7 @@
             this.dqv_suppliers.Name = "dqv_suppliers";
             this.dqv_suppliers.ReadOnly = true;
             this.dqv_suppliers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dqv_suppliers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dqv_suppliers.Size = new System.Drawing.Size(903, 266);
             this.dqv_suppliers.TabIndex = 0;
             // 
@@ -117,6 +119,7 @@
             this.btn_delete.Tag = "بحث";
             this.toolTip2.SetToolTip(this.btn_delete, "حذف مورد");
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // lb_Supplier
             // 
@@ -131,12 +134,12 @@
             // 
             this.txt_supp_search.Location = new System.Drawing.Point(227, 80);
             this.txt_supp_search.Name = "txt_supp_search";
-            this.txt_supp_search.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_supp_search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_supp_search.Size = new System.Drawing.Size(430, 30);
             this.txt_supp_search.TabIndex = 0;
             this.txt_supp_search.Tag = "";
-            this.txt_supp_search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.txt_supp_search, "ادخل نص البحث ");
+            this.txt_supp_search.TextChanged += new System.EventHandler(this.txt_supp_search_TextChanged);
             // 
             // btn_search
             // 
@@ -151,6 +154,7 @@
             this.btn_search.Tag = "بحث";
             this.toolTip1.SetToolTip(this.btn_search, "بحث ");
             this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // toolTip1
             // 
@@ -181,6 +185,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "شاشة الموردين ";
+            this.Load += new System.EventHandler(this.frm_Supplier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dqv_suppliers)).EndInit();
             this.Pan_Search.ResumeLayout(false);
             this.Pan_Search.PerformLayout();

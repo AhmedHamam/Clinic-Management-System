@@ -29,17 +29,17 @@ namespace Clinic_Management_System
             frm.Show();
         }
 
-<<<<<<< HEAD
+
         private void btn_supplier_Click(object sender, EventArgs e)
         {
             frm_Supplier frm = new frm_Supplier();
             frm.Show();
-=======
+        }
         private void btnPatinet_Click(object sender, EventArgs e)
         {
             frm_Patient frmptn = new frm_Patient();
             frmptn.ShowDialog();
->>>>>>> origin/master
+
         }
     }
 }

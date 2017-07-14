@@ -41,6 +41,8 @@
             this.btn_Save = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_supp_id
@@ -58,10 +60,9 @@
             this.txt_supplier_id.Location = new System.Drawing.Point(182, 27);
             this.txt_supplier_id.Name = "txt_supplier_id";
             this.txt_supplier_id.ReadOnly = true;
-            this.txt_supplier_id.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_supplier_id.Size = new System.Drawing.Size(100, 30);
             this.txt_supplier_id.TabIndex = 1;
-            this.txt_supplier_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_supplier_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txt_supplier_id, "الكود");
             // 
             // txt_supplier_name
@@ -71,7 +72,7 @@
             this.txt_supplier_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_supplier_name.Size = new System.Drawing.Size(261, 30);
             this.txt_supplier_name.TabIndex = 0;
-            this.txt_supplier_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_supplier_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txt_supplier_name, "الاسم");
             // 
             // lb_supp_name
@@ -91,7 +92,7 @@
             this.txt_supplier_address.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_supplier_address.Size = new System.Drawing.Size(261, 30);
             this.txt_supplier_address.TabIndex = 1;
-            this.txt_supplier_address.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_supplier_address.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txt_supplier_address, "العنوان");
             // 
             // lb_supp_address
@@ -108,10 +109,9 @@
             // 
             this.txt_supplier_phone.Location = new System.Drawing.Point(21, 216);
             this.txt_supplier_phone.Name = "txt_supplier_phone";
-            this.txt_supplier_phone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_supplier_phone.Size = new System.Drawing.Size(261, 30);
             this.txt_supplier_phone.TabIndex = 2;
-            this.txt_supplier_phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_supplier_phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txt_supplier_phone, "رقم الهاتف");
             // 
             // lb_supp_phone
@@ -144,6 +144,7 @@
             this.btn_Save.TabIndex = 8;
             this.toolTip1.SetToolTip(this.btn_Save, "حفظ");
             this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // toolTip1
             // 
@@ -162,6 +163,10 @@
             this.toolTip2.IsBalloon = true;
             this.toolTip2.ReshowDelay = 10;
             this.toolTip2.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // frm_add_supplier
             // 
@@ -185,7 +190,9 @@
             this.MinimizeBox = false;
             this.Name = "frm_add_supplier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "إضافة مورد جديد ";
+            this.Text = "إضافة مورد جديد";
+            this.Load += new System.EventHandler(this.frm_add_supplier_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +212,6 @@
         public System.Windows.Forms.TextBox txt_supplier_name;
         public System.Windows.Forms.TextBox txt_supplier_address;
         public System.Windows.Forms.TextBox txt_supplier_phone;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -1,4 +1,4 @@
--- ===============================ِAhmed Hamam ----------=
+﻿-- ===============================ِAhmed Hamam ----------=
 GO
 CREATE PROCEDURE [dbo].[add_supplier]
 (@sup_id int ,
@@ -188,4 +188,14 @@ DELETE FROM Patient WHERE patient_id=@ID
 
 
 >>>>>>> origin/master
+
+--=================== moafa ===========================
+alter procedure SPSelectSupplier(
+@param1 nvarchar(50)
+)
+as
+select [supplier_id] as [كود المورد],[supplier_name] as [إسم المورد],[supplier_address] as [العنوان],[supplier_contact_no] as [الهاتف] 
+from [dbo].[Supplier] 
+where [supplier_id]+[supplier_name]+[supplier_contact_no]+[supplier_address] like '%'+  @param1 +'%'
+--=================================================
 

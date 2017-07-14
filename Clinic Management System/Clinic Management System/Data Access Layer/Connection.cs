@@ -7,8 +7,8 @@ namespace Clinic_Management_System
 {
     class Connection
     {
-        //public string connectionString = @"SERVER=.\MOHAMED4735;DATABASE=Clinic;Uid=root;pwd=root";
-        public string connectionString = "SERVER=localhost;DATABASE=Clinic;Uid=root;pwd=root";
+        public string connectionString = @"SERVER=.\MOHAMED4735;DATABASE=Clinic;Integrated Security=true";
+        //public string connectionString = "SERVER=localhost;DATABASE=Clinic;Uid=root;pwd=root";
         private SqlConnection connection;
         public Connection()
         {
@@ -97,7 +97,7 @@ namespace Clinic_Management_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.Message);
             }
         }
         public string getid(string tabel)
@@ -116,7 +116,7 @@ namespace Clinic_Management_System
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show(e.ToString());
+                    MessageBox.Show(e.Message);
                 }
                 //close connection
                 finally
