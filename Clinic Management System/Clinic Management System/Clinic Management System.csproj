@@ -58,6 +58,18 @@
   <ItemGroup>
     <Compile Include="BL\clsStaff.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
+    <Compile Include="frm_add_supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_add_supplier.Designer.cs">
+      <DependentUpon>frm_add_supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Supplier.Designer.cs">
+      <DependentUpon>frm_Supplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +90,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Supplier.cs" />
     <Compile Include="UC\UCStaff\ucManageStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,6 +103,12 @@
     <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
       <DependentUpon>ucNewStaff.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frm_add_supplier.resx">
+      <DependentUpon>frm_add_supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Supplier.resx">
+      <DependentUpon>frm_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmStaff.resx">
       <DependentUpon>frmStaff.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,7 +147,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\if_system-search_118797.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Technology_32x32.png" />
   </ItemGroup>
@@ -185,6 +206,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cancel_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_system-search_118797 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_1-04_511562.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Add_character_include_more_person_user_1886171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_sign-up_49622.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

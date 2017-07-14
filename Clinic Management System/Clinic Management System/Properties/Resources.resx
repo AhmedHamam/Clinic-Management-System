@@ -118,61 +118,79 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="design1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\design1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_system-search_118797" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_system-search_118797.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Checked_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Checked_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Technology_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Technology_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cancel_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medicine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medicine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Close_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Show_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Show_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Apply_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Apply_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Apply_32x321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Apply_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lock_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lock_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cancel_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancel_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Invisible_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Invisible_40px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medicine1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medicine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Invisible_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Invisible_40px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Technology_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Technology_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="design" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hide_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hide_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Show_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Show_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Checked_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Checked_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="if_system-search_118797 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_system-search_118797 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checked_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checked_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Apply_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apply_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_sign-up_49622" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_sign-up_49622.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hide_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hide_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="design1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\design1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lock_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lock_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Apply_32x321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apply_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Visible_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Visible_40px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_1-04_511562" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_1-04_511562.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_Add_character_include_more_person_user_1886171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Add_character_include_more_person_user_1886171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="design" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cancel_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancel_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

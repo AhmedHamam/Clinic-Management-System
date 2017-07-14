@@ -28,5 +28,11 @@ namespace Clinic_Management_System
             frmStaff frm = new frmStaff();
             frm.Show();
         }
+
+        private void btn_supplier_Click(object sender, EventArgs e)
+        {
+            frm_Supplier frm = new frm_Supplier();
+            frm.Show();
+        }
     }
 }

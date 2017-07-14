@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 -- ===============================ِAhmed Hamam ----------=
 GO
 CREATE PROCEDURE [dbo].[add_supplier]
@@ -40,15 +39,7 @@ BEGIN
 delete from Supplier WHERE [supplier_id]=@sup_id;
 END
 GO
--- ------------------------------
-=======
-
--- ===============================ahmed hamam ----------=
-CREATE PROCEDURE selectpatient
-as
-begin
-select * from Patient; 
-end;
+-- -----------------------------
 --================= moafa =================
 create procedure SP_Insert_Staff
 @staff_id varchar(20),
@@ -64,6 +55,7 @@ create procedure SP_Insert_Staff
 @staff_date_of_employee date,
 @staff_picture varchar(max)
 as
+BEGIN
 INSERT INTO [dbo].[Staff]
            ([staff_id]
            ,[staff_name]
@@ -89,8 +81,8 @@ INSERT INTO [dbo].[Staff]
            ,@staff_status
            ,@staff_email
            ,@staff_date_of_employee
-           ,@staff_picture)
-================================================
+           ,@staff_picture);
+END
+GO
+		   
 
-
->>>>>>> origin/master

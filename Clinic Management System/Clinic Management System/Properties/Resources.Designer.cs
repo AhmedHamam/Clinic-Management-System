@@ -163,6 +163,56 @@ namespace Clinic_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_1_04_511562 {
+            get {
+                object obj = ResourceManager.GetObject("if_1-04_511562", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Add_character_include_more_person_user_1886171 {
+            get {
+                object obj = ResourceManager.GetObject("if_Add_character_include_more_person_user_1886171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_sign_up_49622 {
+            get {
+                object obj = ResourceManager.GetObject("if_sign-up_49622", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_system_search_118797 {
+            get {
+                object obj = ResourceManager.GetObject("if_system-search_118797", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_system_search_118797__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_system-search_118797 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Invisible_40px {
             get {
                 object obj = ResourceManager.GetObject("Invisible_40px", resourceCulture);
@@ -206,6 +256,16 @@ namespace Clinic_Management_System.Properties {
         internal static System.Drawing.Bitmap medicine1 {
             get {
                 object obj = ResourceManager.GetObject("medicine1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_32 {
+            get {
+                object obj = ResourceManager.GetObject("save-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

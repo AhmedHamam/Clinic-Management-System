@@ -30,6 +30,7 @@
         {
             this.btn_login = new System.Windows.Forms.Button();
             this.btnManageStaff = new System.Windows.Forms.Button();
+            this.btn_supplier = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_login
@@ -52,11 +53,22 @@
             this.btnManageStaff.UseVisualStyleBackColor = true;
             this.btnManageStaff.Click += new System.EventHandler(this.btnManageStaff_Click);
             // 
+            // btn_supplier
+            // 
+            this.btn_supplier.Location = new System.Drawing.Point(503, 12);
+            this.btn_supplier.Name = "btn_supplier";
+            this.btn_supplier.Size = new System.Drawing.Size(139, 46);
+            this.btn_supplier.TabIndex = 9;
+            this.btn_supplier.Text = "إدارة الموردين";
+            this.btn_supplier.UseVisualStyleBackColor = true;
+            this.btn_supplier.Click += new System.EventHandler(this.btn_supplier_Click);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 460);
+            this.Controls.Add(this.btn_supplier);
             this.Controls.Add(this.btnManageStaff);
             this.Controls.Add(this.btn_login);
             this.Font = new System.Drawing.Font("Tahoma", 14F);
@@ -76,6 +88,7 @@
 
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Button btnManageStaff;
+        private System.Windows.Forms.Button btn_supplier;
 
 
 
