@@ -56,7 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\clsStaff.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
+    <Compile Include="PL\frmStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmStaff.Designer.cs">
+      <DependentUpon>frmStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Log_in.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +78,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\UCStaff\ucManageStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCStaff\ucManageStaff.Designer.cs">
+      <DependentUpon>ucManageStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCStaff\ucNewStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
+      <DependentUpon>ucNewStaff.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PL\frmStaff.resx">
+      <DependentUpon>frmStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +109,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC\UCStaff\ucManageStaff.resx">
+      <DependentUpon>ucManageStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCStaff\ucNewStaff.resx">
+      <DependentUpon>ucNewStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,9 +128,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Technology_32x32.png" />
   </ItemGroup>
