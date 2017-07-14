@@ -30,11 +30,8 @@
         {
             this.btn_login = new System.Windows.Forms.Button();
             this.btnManageStaff = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.btn_supplier = new System.Windows.Forms.Button();
-=======
             this.btnPatinet = new System.Windows.Forms.Button();
->>>>>>> origin/master
             this.SuspendLayout();
             // 
             // btn_login
@@ -57,7 +54,6 @@
             this.btnManageStaff.UseVisualStyleBackColor = true;
             this.btnManageStaff.Click += new System.EventHandler(this.btnManageStaff_Click);
             // 
-<<<<<<< HEAD
             // btn_supplier
             // 
             this.btn_supplier.Location = new System.Drawing.Point(503, 12);
@@ -67,28 +63,24 @@
             this.btn_supplier.Text = "إدارة الموردين";
             this.btn_supplier.UseVisualStyleBackColor = true;
             this.btn_supplier.Click += new System.EventHandler(this.btn_supplier_Click);
-=======
+            // 
             // btnPatinet
             // 
-            this.btnPatinet.Location = new System.Drawing.Point(503, 12);
+            this.btnPatinet.Location = new System.Drawing.Point(793, 79);
             this.btnPatinet.Name = "btnPatinet";
             this.btnPatinet.Size = new System.Drawing.Size(139, 46);
             this.btnPatinet.TabIndex = 9;
             this.btnPatinet.Text = "إدارة المرضى";
             this.btnPatinet.UseVisualStyleBackColor = true;
             this.btnPatinet.Click += new System.EventHandler(this.btnPatinet_Click);
->>>>>>> origin/master
             // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 460);
-<<<<<<< HEAD
             this.Controls.Add(this.btn_supplier);
-=======
             this.Controls.Add(this.btnPatinet);
->>>>>>> origin/master
             this.Controls.Add(this.btnManageStaff);
             this.Controls.Add(this.btn_login);
             this.Font = new System.Drawing.Font("Tahoma", 14F);
@@ -108,13 +100,8 @@
 
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Button btnManageStaff;
-<<<<<<< HEAD
         private System.Windows.Forms.Button btn_supplier;
-=======
         private System.Windows.Forms.Button btnPatinet;
->>>>>>> origin/master
-
-
 
     }
 }

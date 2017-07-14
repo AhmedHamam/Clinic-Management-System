@@ -97,3 +97,5 @@ C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management Sys
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucManageStaff.resources
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucNewStaff.resources
 >>>>>>> origin/master
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Add_Patient.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Patient.resources
