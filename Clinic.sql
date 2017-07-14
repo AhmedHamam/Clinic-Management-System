@@ -6,8 +6,8 @@ USE	Clinic;
 -- جدول الموظفين 
 create table Staff
 (
-staff_id varchar(20) primary key,-- كود الموظف 
-staff_name varchar(50) null,-- اسم الموظف
+staff_id VARCHAR(20) primary key,-- كود الموظف 
+staff_name VARCHAR(50) null,-- اسم الموظف
 staff_birth_date date,-- تاريخ الميلاد
 staff_address VARCHAR(100) Null,-- العنوان
 staff_contact_no VARCHAR(20) Null,-- رقم الهاتف 
