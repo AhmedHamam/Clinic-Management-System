@@ -92,5 +92,102 @@ INSERT INTO [dbo].[Staff]
            ,@staff_picture)
 ================================================
 
+--================= IBRAHIM MANSOUR =================
+-- INSERT PATIENT
+
+create PROC SP_ADD_PATIENT
+@patient_id VARCHAR(20),
+@patient_name VARCHAR(50),
+@patient_gender VARCHAR(10),
+@patient_birth_date datetime,
+@patient_register_date datetime,
+@patient_status varchar(10),
+@patient_address VARCHAR(100),
+@staff_email VARCHAR(20),
+@patient_contact_no VARCHAR(20),
+@patient_contact_no2 VARCHAR(20)
+
+as
+INSERT INTO [dbo].[Patient]
+([patient_id],
+[patient_name],
+[patient_gender],
+[patient_birth_date],
+[patient_register_date],
+[patient_status],
+[patient_address],
+[staff_email],
+[patient_contact_no],
+[patient_contact_no2]
+)
+VALUES(
+@patient_id,
+@patient_name ,
+@patient_gender,
+@patient_birth_date ,
+@patient_register_date ,
+@patient_status ,
+@patient_address ,
+@staff_email ,
+@patient_contact_no ,
+@patient_contact_no2 
+)
+
+--GET ALL PATIENT
+
+CREATE PROC SP_GET_ALL_PATIENT @ID varchar(20)
+AS
+SELECT 
+[patient_id],
+[patient_name],
+[patient_gender],
+[patient_birth_date],
+[patient_register_date],
+[patient_status],
+[patient_address],
+[staff_email],
+[patient_contact_no],
+[patient_contact_no2]
+
+FROM [dbo].[Patient]
+WHERE [patient_id]+[patient_name]+[staff_email]+[patient_contact_no] LIKE '%' + @ID + '%'
+
+--UPDATE PATIENT
+
+CREATE PROC SP_UPDATE_PATIENT
+@patient_id VARCHAR(20),
+@patient_name VARCHAR(50),
+@patient_gender VARCHAR(10),
+@patient_birth_date datetime,
+@patient_register_date datetime,
+@patient_status varchar(10),
+@patient_address VARCHAR(100),
+@staff_email VARCHAR(20),
+@patient_contact_no VARCHAR(20),
+@patient_contact_no2 VARCHAR(20)
+AS
+UPDATE [dbo].[Patient]
+SET	[patient_id]= @patient_id ,
+	[patient_name]=	@patient_name ,
+	[patient_gender]= @patient_gender ,
+	[patient_birth_date]= @patient_birth_date ,
+	[patient_register_date]	= @patient_register_date ,
+	[patient_status]= @patient_status ,
+	[patient_address]= @patient_address ,
+	[staff_email]= @staff_email ,
+	[patient_contact_no]= @patient_contact_no ,
+	[patient_contact_no2]=	@patient_contact_no2 
+ WHERE [patient_id]= @patient_id
+
+ -- DELETE PATIENT
+
+ CREATE PROC SP_DELETE_PATIENT
+@ID VARCHAR(20)
+AS
+DELETE FROM Patient WHERE patient_id=@ID
+
+================================================
+
+
 
 >>>>>>> origin/master
