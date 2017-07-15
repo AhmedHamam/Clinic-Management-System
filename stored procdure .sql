@@ -191,4 +191,74 @@ AS
 DELETE FROM Patient WHERE patient_id=@ID
 
 -----------------------------------------------------------
+USE [Clinic]
+GO
+create Proc AddStaff
+    @StaffID varchar(20), 
+    @StaffName varchar(50),
+	@StaffBirthdate varchar(50),
+    @StaffAdress varchar(100),
+	@StaffContactNO varchar(20),
+    @StaffContactNO2 varchar(20),
+	@StaffGender varchar(10),
+    @StaffPostion varchar(10),
+	@StaffStatus varchar(10),
+    @StaffEmail varchar(20),
+	@StaffDateofEmployee varchar(50),
+    @StaffPicture varchar(MAX)
+as
+begin
+INSERT INTO [dbo].[Staff]([staff_id] , [staff_name] , [staff_birth_date] , [staff_address] , [staff_contact_no] , [staff_contact_no2] , [staff_gender] , [staff_position] , [staff_status] ,[staff_email] , [staff_date_of_employee] , [staff_picture])
+VALUES (@StaffID,@StaffName , @StaffBirthdate , @StaffAdress , @StaffContactNO , @StaffContactNO2 , @StaffGender , @StaffPostion , @StaffStatus , @StaffEmail , @StaffDateofEmployee , @StaffPicture);
+end
+
+GO
+create Proc UpdateStaff
+	@StaffBirthdate varchar(50),
+    @StaffAdress varchar(100),
+	@StaffContactNO varchar(20),
+    @StaffContactNO2 varchar(20),
+	@StaffGender varchar(10),
+    @StaffPostion varchar(10),
+	@StaffStatus varchar(10),
+    @StaffEmail varchar(20),
+	@StaffDateofEmployee varchar(50),
+    @StaffPicture varchar(MAX)
+as
+begin
+INSERT INTO [dbo].[Staff]([staff_birth_date] , [staff_address] , [staff_contact_no] , [staff_contact_no2] , [staff_gender] , [staff_position] , [staff_status] ,[staff_email] , [staff_date_of_employee] , [staff_picture])
+VALUES (@StaffBirthdate , @StaffAdress , @StaffContactNO , @StaffContactNO2 , @StaffGender , @StaffPostion , @StaffStatus , @StaffEmail , @StaffDateofEmployee , @StaffPicture);
+end
+
+Go
+CREATE PROC SearchStaffByName
+@StaffName varchar(50)
+as
+begin
+Select * FROM Staff WHERE staff_name = @StaffName;
+end
+
+Go
+CREATE PROC SearchStaffById
+@StaffId varchar(20)
+as
+begin
+
+Select * FROM Staff WHERE staff_id = @StaffId;
+end
+
+Go
+CREATE PROC GetStaffTable
+as
+begin
+Select staff_id , staff_name , staff_address , staff_contact_no , staff_contact_no2 , staff_email , staff_birth_date , staff_date_of_employee , staff_position , staff_gender , staff_status FROM Staff ORDER BY staff_id;
+end
+
+Go
+CREATE PROC DeletStaff
+@StaffID varchar(20)
+as
+begin
+DELETE FROM  Staff WHERE staff_id = @StaffID;
+end
 
