@@ -53,13 +53,10 @@ namespace Clinic_Management_System
 
         private void txt_supp_search_TextChanged(object sender, EventArgs e)
         {
-            btn_search.PerformClick();
+          //  btn_search.PerformClick();
         }
 
-        private void btn_search_Click(object sender, EventArgs e)
-        {
-            dqv_suppliers.DataSource = Supplier.SPSelectSupplier(txt_supp_search.Text);
-        }
+       
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
@@ -76,6 +73,64 @@ namespace Clinic_Management_System
                         MessageBox.Show("فشل في حذف المورد المحدد");
                 }
             }
+        }
+
+        private void txt_supp_search_Enter(object sender, EventArgs e)
+        {
+            if (txt_supp_search.Tag == "0")
+                txt_supp_search.Clear();
+
+        }
+
+        private void txt_supp_search_Leave(object sender, EventArgs e)
+        {
+            if (txt_supp_search.Text.Trim() == "")
+            {
+                txt_supp_search.Tag = "0";
+                txt_supp_search.Text = "Search";
+
+            }
+            else
+                txt_supp_search.Tag = "1";
+        }
+
+        private void txt_supp_search_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                dqv_suppliers.DataSource = Supplier.SPSelectSupplier(txt_supp_search.Text);
+            }
+            
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            FunMenu();
+        }
+
+        private void FunMenu()
+        {
+            if (btnMenu.Tag == "0")
+            {
+                pnlMenu.Width = 180;
+                btnMenu.Left = 150;
+                txt_supp_search.Visible = true;
+                btnMenu.Tag = "1";
+            }
+            else
+            {
+                pnlMenu.Width = 30;
+                btnMenu.Left = 6;
+                txt_supp_search.Visible = false;
+                btnMenu.Tag = "0";
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
