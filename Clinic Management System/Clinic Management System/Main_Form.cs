@@ -35,10 +35,7 @@ namespace Clinic_Management_System
             frm_Supplier frm = new frm_Supplier();
             frm.Show();
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
         private void btnPatinet_Click(object sender, EventArgs e)
         {
             frm_Patient frmptn = new frm_Patient();
