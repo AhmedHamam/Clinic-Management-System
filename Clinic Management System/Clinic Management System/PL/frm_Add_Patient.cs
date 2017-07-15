@@ -22,6 +22,8 @@ namespace Clinic_Management_System
         public frm_Add_Patient()
         {
             InitializeComponent();
+            txtgenderHide.Top = -100;
+            txt_status.Top = -100;
         }
 
         // function for download gender 

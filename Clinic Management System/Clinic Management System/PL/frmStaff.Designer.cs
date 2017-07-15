@@ -30,45 +30,42 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStaff));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnNewStaff = new System.Windows.Forms.RadioButton();
-            this.btnManageStaff = new System.Windows.Forms.RadioButton();
-            this.pnlUnderLineTab = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pnlTabContent = new System.Windows.Forms.Panel();
             this.tmrRandomColorTab = new System.Windows.Forms.Timer(this.components);
             this.ucManageStaff1 = new Clinic_Management_System.ucManageStaff();
-            this.panel2.SuspendLayout();
+            this.btnManageStaff = new System.Windows.Forms.RadioButton();
+            this.pnlUnderLineTab = new System.Windows.Forms.Panel();
+            this.btnNewStaff = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlTabContent.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlTabContent
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(711, 158);
-            this.panel1.TabIndex = 0;
+            this.pnlTabContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlTabContent.Controls.Add(this.ucManageStaff1);
+            this.pnlTabContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTabContent.Location = new System.Drawing.Point(0, 219);
+            this.pnlTabContent.Name = "pnlTabContent";
+            this.pnlTabContent.Size = new System.Drawing.Size(711, 276);
+            this.pnlTabContent.TabIndex = 5;
             // 
-            // btnNewStaff
+            // tmrRandomColorTab
             // 
-            this.btnNewStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewStaff.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnNewStaff.FlatAppearance.BorderSize = 0;
-            this.btnNewStaff.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnNewStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewStaff.Font = new System.Drawing.Font("Consolas", 10F);
-            this.btnNewStaff.Location = new System.Drawing.Point(604, 17);
-            this.btnNewStaff.Name = "btnNewStaff";
-            this.btnNewStaff.Size = new System.Drawing.Size(104, 24);
-            this.btnNewStaff.TabIndex = 1;
-            this.btnNewStaff.Text = "موظف جديد";
-            this.btnNewStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnNewStaff.UseVisualStyleBackColor = true;
-            this.btnNewStaff.CheckedChanged += new System.EventHandler(this.btnNewStaff_CheckedChanged);
+            this.tmrRandomColorTab.Enabled = true;
+            this.tmrRandomColorTab.Interval = 1000;
+            this.tmrRandomColorTab.Tick += new System.EventHandler(this.tmrRandomColorTab_Tick);
+            // 
+            // ucManageStaff1
+            // 
+            this.ucManageStaff1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ucManageStaff1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucManageStaff1.Location = new System.Drawing.Point(0, 0);
+            this.ucManageStaff1.Name = "ucManageStaff1";
+            this.ucManageStaff1.Size = new System.Drawing.Size(707, 272);
+            this.ucManageStaff1.TabIndex = 0;
             // 
             // btnManageStaff
             // 
@@ -98,6 +95,23 @@
             this.pnlUnderLineTab.Size = new System.Drawing.Size(117, 3);
             this.pnlUnderLineTab.TabIndex = 3;
             // 
+            // btnNewStaff
+            // 
+            this.btnNewStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewStaff.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnNewStaff.FlatAppearance.BorderSize = 0;
+            this.btnNewStaff.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnNewStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewStaff.Font = new System.Drawing.Font("Consolas", 10F);
+            this.btnNewStaff.Location = new System.Drawing.Point(604, 17);
+            this.btnNewStaff.Name = "btnNewStaff";
+            this.btnNewStaff.Size = new System.Drawing.Size(104, 24);
+            this.btnNewStaff.TabIndex = 1;
+            this.btnNewStaff.Text = "موظف جديد";
+            this.btnNewStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNewStaff.UseVisualStyleBackColor = true;
+            this.btnNewStaff.CheckedChanged += new System.EventHandler(this.btnNewStaff_CheckedChanged);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnNewStaff);
@@ -109,30 +123,16 @@
             this.panel2.Size = new System.Drawing.Size(711, 61);
             this.panel2.TabIndex = 4;
             // 
-            // pnlTabContent
+            // panel1
             // 
-            this.pnlTabContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlTabContent.Controls.Add(this.ucManageStaff1);
-            this.pnlTabContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTabContent.Location = new System.Drawing.Point(0, 219);
-            this.pnlTabContent.Name = "pnlTabContent";
-            this.pnlTabContent.Size = new System.Drawing.Size(711, 276);
-            this.pnlTabContent.TabIndex = 5;
-            // 
-            // tmrRandomColorTab
-            // 
-            this.tmrRandomColorTab.Enabled = true;
-            this.tmrRandomColorTab.Interval = 1000;
-            this.tmrRandomColorTab.Tick += new System.EventHandler(this.tmrRandomColorTab_Tick);
-            // 
-            // ucManageStaff1
-            // 
-            this.ucManageStaff1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ucManageStaff1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucManageStaff1.Location = new System.Drawing.Point(0, 0);
-            this.ucManageStaff1.Name = "ucManageStaff1";
-            this.ucManageStaff1.Size = new System.Drawing.Size(707, 272);
-            this.ucManageStaff1.TabIndex = 0;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(711, 158);
+            this.panel1.TabIndex = 0;
             // 
             // frmStaff
             // 
@@ -149,21 +149,21 @@
             this.Name = "frmStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "شاشة الموظفين";
-            this.panel2.ResumeLayout(false);
             this.pnlTabContent.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton btnNewStaff;
-        private System.Windows.Forms.RadioButton btnManageStaff;
-        private System.Windows.Forms.Panel pnlUnderLineTab;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnlTabContent;
         private System.Windows.Forms.Timer tmrRandomColorTab;
         private ucManageStaff ucManageStaff1;
+        private System.Windows.Forms.RadioButton btnManageStaff;
+        private System.Windows.Forms.Panel pnlUnderLineTab;
+        private System.Windows.Forms.RadioButton btnNewStaff;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -24,9 +24,26 @@ namespace Clinic_Management_System
 
             frm.txtgenderHide.Top = -100;
             frm.txt_status.Top = -100;
+
+            txt_search.GotFocus += new EventHandler(txt_search_GotFocus);
+            txt_search.Leave += new EventHandler(txt_search_leave);
         }
 
-        
+        public void txt_search_GotFocus(object sender, EventArgs e)
+        {
+            txt_search.Text = "";
+            txt_search.GotFocus -= txt_search_GotFocus;
+        }
+        public void txt_search_leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txt_search.Text))
+            {
+                txt_search.Text = "بحث";
+                txt_search.GotFocus += new EventHandler(txt_search_GotFocus);
+            }
+        }
+
+
         private void Refresh_Rdbgender()
         {
             //Refresh the radion button when editing in the records
@@ -70,7 +87,8 @@ namespace Clinic_Management_System
         }
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            frm.ShowDialog();
+            frm_Add_Patient new_ptn =new frm_Add_Patient();
+            new_ptn.ShowDialog();
         }
 
         private void btn_Modify_Click(object sender, EventArgs e)
@@ -123,6 +141,15 @@ namespace Clinic_Management_System
             {
                 ex.ToString();
             }
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            if(txt_search.Text!="")
+            {
+                grid_All_Patient.DataSource = ptn.GET_ALL_PATIENT(txt_search.Text);
+            }
+            
         }
     }
 }
