@@ -7,7 +7,7 @@ namespace Clinic_Management_System
 {
     class Connection
     {
-        public string connectionString = @"SERVER=.\MOHAMED4735;DATABASE=Clinic;Integrated Security=true";
+        public string connectionString = @"SERVER=.;DATABASE=Clinic;Integrated Security=true";
        //public string connectionString = "SERVER=localhost;DATABASE=Clinic;Uid=root;pwd=root";
         private SqlConnection connection;
         public Connection()

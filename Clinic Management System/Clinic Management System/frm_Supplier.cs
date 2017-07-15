@@ -33,17 +33,21 @@ namespace Clinic_Management_System
         {
             frm_add_supplier frm = new frm_add_supplier();
             frm.Text = "تعديل بيانات مورد";
-            frm.txt_supplier_id.Text = dqv_suppliers.CurrentRow.Cells[0].Value.ToString();
-            frm.txt_supplier_name.Text = dqv_suppliers.CurrentRow.Cells[1].Value.ToString();
-            frm.txt_supplier_address.Text = dqv_suppliers.CurrentRow.Cells[2].Value.ToString();
-            frm.txt_supplier_phone.Text = dqv_suppliers.CurrentRow.Cells[3].Value.ToString();
-            if (frm.ShowDialog() == DialogResult.OK)
+            if (dqv_suppliers.Rows.Count > 0)
             {
-                if (Supplier.update_supplier(int.Parse(frm.txt_supplier_id.Text), frm.txt_supplier_name.Text, frm.txt_supplier_address.Text, frm.txt_supplier_phone.Text) == true)
-                    dqv_suppliers.DataSource = Supplier.SPSelectSupplier("");
-                else
-                    MessageBox.Show("فشل في تحديث المورد");
+                frm.txt_supplier_id.Text = dqv_suppliers.CurrentRow.Cells[0].Value.ToString();
+                frm.txt_supplier_name.Text = dqv_suppliers.CurrentRow.Cells[1].Value.ToString();
+                frm.txt_supplier_address.Text = dqv_suppliers.CurrentRow.Cells[2].Value.ToString();
+                frm.txt_supplier_phone.Text = dqv_suppliers.CurrentRow.Cells[3].Value.ToString();
+                if (frm.ShowDialog() == DialogResult.OK)
+                {
+                    if (Supplier.update_supplier(int.Parse(frm.txt_supplier_id.Text), frm.txt_supplier_name.Text, frm.txt_supplier_address.Text, frm.txt_supplier_phone.Text) == true)
+                        dqv_suppliers.DataSource = Supplier.SPSelectSupplier("");
+                    else
+                        MessageBox.Show("فشل في تحديث المورد");
+                }
             }
+            
         }
 
         private void frm_Supplier_Load(object sender, EventArgs e)

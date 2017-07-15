@@ -16,3 +16,20 @@ C:\Users\Mohamed\Desktop\Clinic-Management-System\Clinic Management System\Clini
 C:\Users\Mohamed\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.exe
 C:\Users\Mohamed\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.pdb
 C:\Users\Mohamed\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csprojResolveAssemblyReference.cache
+D:\Clinic Management System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe.config
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.exe
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.pdb
+D:\Clinic Management System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe
+D:\Clinic Management System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.pdb
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csprojResolveAssemblyReference.cache
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_add_supplier.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Supplier.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmStaff.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Add_Patient.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Patient.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Log_in.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Main_Form.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Properties.Resources.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucManageStaff.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucNewStaff.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
