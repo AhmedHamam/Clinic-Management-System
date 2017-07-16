@@ -78,3 +78,4 @@ D:\Clinic Management System\Clinic Management System\Clinic Management System\ob
 D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Clinic_information.resources
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Restore.resources
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Clinic_information.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Restore.resources

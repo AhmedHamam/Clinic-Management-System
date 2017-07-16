@@ -239,6 +239,7 @@
             // rdb_female
             // 
             this.rdb_female.AutoSize = true;
+            this.rdb_female.Checked = true;
             this.rdb_female.Location = new System.Drawing.Point(87, 2);
             this.rdb_female.Name = "rdb_female";
             this.rdb_female.Size = new System.Drawing.Size(64, 27);
@@ -286,6 +287,7 @@
             // rdb_Married
             // 
             this.rdb_Married.AutoSize = true;
+            this.rdb_Married.Checked = true;
             this.rdb_Married.Location = new System.Drawing.Point(20, 2);
             this.rdb_Married.Name = "rdb_Married";
             this.rdb_Married.Size = new System.Drawing.Size(96, 27);

@@ -59,10 +59,10 @@
     <Compile Include="BL\clsStaff.cs" />
     <Compile Include="BL\CLS_Patient.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
-    <Compile Include="frm_Restore.cs">
+    <Compile Include="PL\frm_Restore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Restore.designer.cs">
+    <Compile Include="PL\frm_Restore.designer.cs">
       <DependentUpon>frm_Restore.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frmServerSetting.cs">
@@ -71,10 +71,10 @@
     <Compile Include="PL\frmServerSetting.Designer.cs">
       <DependentUpon>frmServerSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\frm_add_supplier.cs">
+    <Compile Include="PL\suppliers\frm_add_supplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\frm_add_supplier.Designer.cs">
+    <Compile Include="PL\suppliers\frm_add_supplier.Designer.cs">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frm_Backup.cs">
@@ -89,10 +89,10 @@
     <Compile Include="PL\frm_Clinic_information.designer.cs">
       <DependentUpon>frm_Clinic_information.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\frm_Supplier.cs">
+    <Compile Include="PL\suppliers\frm_Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\frm_Supplier.Designer.cs">
+    <Compile Include="PL\suppliers\frm_Supplier.Designer.cs">
       <DependentUpon>frm_Supplier.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frmStaff.cs">
@@ -101,16 +101,16 @@
     <Compile Include="PL\frmStaff.Designer.cs">
       <DependentUpon>frmStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\frm_Add_Patient.cs">
+    <Compile Include="PL\Patient\frm_Add_Patient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\frm_Add_Patient.designer.cs">
+    <Compile Include="PL\Patient\frm_Add_Patient.designer.cs">
       <DependentUpon>frm_Add_Patient.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\frm_Patient.cs">
+    <Compile Include="PL\Patient\frm_Patient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\frm_Patient.designer.cs">
+    <Compile Include="PL\Patient\frm_Patient.designer.cs">
       <DependentUpon>frm_Patient.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Log_in.cs">
@@ -140,13 +140,13 @@
     <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
       <DependentUpon>ucNewStaff.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frm_Restore.resx">
+    <EmbeddedResource Include="PL\frm_Restore.resx">
       <DependentUpon>frm_Restore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmServerSetting.resx">
       <DependentUpon>frmServerSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\frm_add_supplier.resx">
+    <EmbeddedResource Include="PL\suppliers\frm_add_supplier.resx">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_Backup.resx">
@@ -155,16 +155,16 @@
     <EmbeddedResource Include="PL\frm_Clinic_information.resx">
       <DependentUpon>frm_Clinic_information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\frm_Supplier.resx">
+    <EmbeddedResource Include="PL\suppliers\frm_Supplier.resx">
       <DependentUpon>frm_Supplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmStaff.resx">
       <DependentUpon>frmStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\frm_Add_Patient.resx">
+    <EmbeddedResource Include="PL\Patient\frm_Add_Patient.resx">
       <DependentUpon>frm_Add_Patient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\frm_Patient.resx">
+    <EmbeddedResource Include="PL\Patient\frm_Patient.resx">
       <DependentUpon>frm_Patient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Log_in.resx">
@@ -301,6 +301,7 @@
   <ItemGroup>
     <None Include="Resources\accessories-text-editor-32.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
