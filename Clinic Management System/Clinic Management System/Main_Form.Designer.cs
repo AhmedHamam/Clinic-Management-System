@@ -33,6 +33,7 @@
             this.btn_supplier = new System.Windows.Forms.Button();
             this.btnPatinet = new System.Windows.Forms.Button();
             this.btnServerSeting = new System.Windows.Forms.Button();
+            this.btn_clinic_info = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_login
@@ -85,11 +86,22 @@
             this.btnServerSeting.UseVisualStyleBackColor = true;
             this.btnServerSeting.Click += new System.EventHandler(this.btnServerSeting_Click);
             // 
+            // btn_clinic_info
+            // 
+            this.btn_clinic_info.Location = new System.Drawing.Point(759, 146);
+            this.btn_clinic_info.Name = "btn_clinic_info";
+            this.btn_clinic_info.Size = new System.Drawing.Size(139, 46);
+            this.btn_clinic_info.TabIndex = 13;
+            this.btn_clinic_info.Text = "بيانات العيادة ";
+            this.btn_clinic_info.UseVisualStyleBackColor = true;
+            this.btn_clinic_info.Click += new System.EventHandler(this.btn_clinic_info_Click);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 460);
+            this.Controls.Add(this.btn_clinic_info);
             this.Controls.Add(this.btnServerSeting);
             this.Controls.Add(this.btn_supplier);
             this.Controls.Add(this.btnPatinet);
@@ -115,6 +127,7 @@
         private System.Windows.Forms.Button btn_supplier;
         private System.Windows.Forms.Button btnPatinet;
         private System.Windows.Forms.Button btnServerSeting;
+        private System.Windows.Forms.Button btn_clinic_info;
         //private System.Windows.Forms.Button btnPatinet;
 
     }

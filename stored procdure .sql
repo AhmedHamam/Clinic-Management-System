@@ -1,4 +1,6 @@
-﻿-- ===============================ِAhmed Hamam =================
+﻿USE [Clinic]
+GO
+-- ===============================ِAhmed Hamam =================
 CREATE PROCEDURE [dbo].[add_supplier]
 (@sup_id int ,
 @sup_name varchar(50),
@@ -14,6 +16,7 @@ INSERT INTO [dbo].[Supplier]
      VALUES
            (@sup_id,@sup_name,@sup_contat,@sup_address);
 END
+GO
 ---------------------------------------------
 CREATE PROCEDURE update_supplier
 (@sup_id int ,
@@ -85,17 +88,18 @@ INSERT INTO [dbo].[Staff]
 END
 GO
 		   
-
-           ,@staff_picture)
 -------------------------------------------------------
 -- Select Supplier
-alter procedure SPSelectSupplier(
+create procedure SPSelectSupplier(
 @param1 nvarchar(50)
 )
 as
+BEGIN
 select [supplier_id] as [كود المورد],[supplier_name] as [إسم المورد],[supplier_address] as [العنوان],[supplier_contact_no] as [الهاتف] 
 from [dbo].[Supplier] 
-where [supplier_id]+[supplier_name]+[supplier_contact_no]+[supplier_address] like '%'+  @param1 +'%'
+where [supplier_id]+[supplier_name]+[supplier_contact_no]+[supplier_address] like '%'+  @param1 +'%';
+END
+GO
 --================= IBRAHIM MANSOUR =================
 -- INSERT PATIENT
 
@@ -112,6 +116,7 @@ create PROC SP_ADD_PATIENT
 @patient_contact_no2 VARCHAR(20)
 
 as
+BEGIN
 INSERT INTO [dbo].[Patient]
 ([patient_id],
 [patient_name],
@@ -135,12 +140,14 @@ VALUES(
 @staff_email ,
 @patient_contact_no ,
 @patient_contact_no2 
-)
-
+);
+END
+GO
 --GET ALL PATIENT
 
 CREATE PROC SP_GET_ALL_PATIENT @ID varchar(20)
 AS
+BEGIN
 SELECT 
 [patient_id],
 [patient_name],
@@ -154,8 +161,9 @@ SELECT
 [patient_contact_no2]
 
 FROM [dbo].[Patient]
-WHERE [patient_id]+[patient_name]+[staff_email]+[patient_contact_no] LIKE '%' + @ID + '%'
-
+WHERE [patient_id]+[patient_name]+[staff_email]+[patient_contact_no] LIKE '%' + @ID + '%';
+END
+GO
 --UPDATE PATIENT
 
 CREATE PROC SP_UPDATE_PATIENT
@@ -170,6 +178,7 @@ CREATE PROC SP_UPDATE_PATIENT
 @patient_contact_no VARCHAR(20),
 @patient_contact_no2 VARCHAR(20)
 AS
+BEGIN
 UPDATE [dbo].[Patient]
 SET	[patient_id]= @patient_id ,
 	[patient_name]=	@patient_name ,
@@ -181,18 +190,20 @@ SET	[patient_id]= @patient_id ,
 	[staff_email]= @staff_email ,
 	[patient_contact_no]= @patient_contact_no ,
 	[patient_contact_no2]=	@patient_contact_no2 
- WHERE [patient_id]= @patient_id
-
+ WHERE [patient_id]= @patient_id;
+END
+GO
  -- DELETE PATIENT
 
  CREATE PROC SP_DELETE_PATIENT
 @ID VARCHAR(20)
 AS
-DELETE FROM Patient WHERE patient_id=@ID
-
------------------------------------------------------------
-USE [Clinic]
+BEGIN
+DELETE FROM Patient WHERE patient_id=@ID;
+END
 GO
+-----------------------------------------------------------
+
 create Proc AddStaff
     @StaffID varchar(20), 
     @StaffName varchar(50),
@@ -261,4 +272,5 @@ as
 begin
 DELETE FROM  Staff WHERE staff_id = @StaffID;
 end
-
+GO
+-- =================الاحد الموافق 16/7/2017==============

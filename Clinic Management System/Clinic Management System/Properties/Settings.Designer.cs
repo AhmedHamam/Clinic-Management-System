@@ -12,7 +12,7 @@ namespace Clinic_Management_System.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -80,6 +80,102 @@ namespace Clinic_Management_System.Properties {
             }
             set {
                 this["Password"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("عيادة الزهور ")]
+        public string clinic_name {
+            get {
+                return ((string)(this["clinic_name"]));
+            }
+            set {
+                this["clinic_name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("اسيوط")]
+        public string clinic_address {
+            get {
+                return ((string)(this["clinic_address"]));
+            }
+            set {
+                this["clinic_address"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("088")]
+        public string clinic_phone {
+            get {
+                return ((string)(this["clinic_phone"]));
+            }
+            set {
+                this["clinic_phone"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("011")]
+        public string clinic_mobile {
+            get {
+                return ((string)(this["clinic_mobile"]));
+            }
+            set {
+                this["clinic_mobile"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("253")]
+        public string clinic_fax {
+            get {
+                return ((string)(this["clinic_fax"]));
+            }
+            set {
+                this["clinic_fax"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ww.face.com")]
+        public string clinic_facebook {
+            get {
+                return ((string)(this["clinic_facebook"]));
+            }
+            set {
+                this["clinic_facebook"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("asd@asd")]
+        public string clinic_email {
+            get {
+                return ((string)(this["clinic_email"]));
+            }
+            set {
+                this["clinic_email"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("asd.com")]
+        public string clinic_website {
+            get {
+                return ((string)(this["clinic_website"]));
+            }
+            set {
+                this["clinic_website"] = value;
             }
         }
     }

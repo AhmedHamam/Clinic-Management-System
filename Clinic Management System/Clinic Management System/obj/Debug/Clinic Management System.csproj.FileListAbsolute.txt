@@ -34,3 +34,5 @@ D:\Clinic Management System\Clinic Management System\Clinic Management System\ob
 D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucNewStaff.resources
 D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
 C:\Users\Mohamed\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmServerSetting.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Clinic_information.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmServerSetting.resources

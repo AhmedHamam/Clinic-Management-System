@@ -17,5 +17,29 @@
     <Setting Name="Password" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="clinic_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">عيادة الزهور </Value>
+    </Setting>
+    <Setting Name="clinic_address" Type="System.String" Scope="User">
+      <Value Profile="(Default)">اسيوط</Value>
+    </Setting>
+    <Setting Name="clinic_phone" Type="System.String" Scope="User">
+      <Value Profile="(Default)">088</Value>
+    </Setting>
+    <Setting Name="clinic_mobile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">011</Value>
+    </Setting>
+    <Setting Name="clinic_fax" Type="System.String" Scope="User">
+      <Value Profile="(Default)">253</Value>
+    </Setting>
+    <Setting Name="clinic_facebook" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ww.face.com</Value>
+    </Setting>
+    <Setting Name="clinic_email" Type="System.String" Scope="User">
+      <Value Profile="(Default)">asd@asd</Value>
+    </Setting>
+    <Setting Name="clinic_website" Type="System.String" Scope="User">
+      <Value Profile="(Default)">asd.com</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

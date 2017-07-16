@@ -48,5 +48,11 @@ namespace Clinic_Management_System
             frmServerSetting frmS = new frmServerSetting();
             frmS.ShowDialog();
         }
+
+        private void btn_clinic_info_Click(object sender, EventArgs e)
+        {
+            frm_Clinic_information frm = new frm_Clinic_information();
+            frm.ShowDialog();
+        }
     }
 }
