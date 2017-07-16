@@ -48,5 +48,11 @@ namespace Clinic_Management_System
             frmServerSetting frmS = new frmServerSetting();
             frmS.ShowDialog();
         }
+
+        private void btn_createBackup_Click(object sender, EventArgs e)
+        {
+            frm_Backup bkp = new frm_Backup();
+            bkp.ShowDialog();
+        }
     }
 }
