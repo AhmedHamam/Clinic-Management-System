@@ -77,7 +77,17 @@
     <Compile Include="PL\Supplier\frm_add_supplier.Designer.cs">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="PL\Supplier\frm_Supplier.cs">
+=======
+    <Compile Include="frm_Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Backup.Designer.cs">
+      <DependentUpon>frm_Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Supplier.cs">
+>>>>>>> origin/master
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PL\Supplier\frm_Supplier.Designer.cs">
@@ -137,7 +147,14 @@
     <EmbeddedResource Include="PL\Supplier\frm_add_supplier.resx">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="PL\Supplier\frm_Supplier.resx">
+=======
+    <EmbeddedResource Include="frm_Backup.resx">
+      <DependentUpon>frm_Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Supplier.resx">
+>>>>>>> origin/master
       <DependentUpon>frm_Supplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Staff\frmStaff.resx">

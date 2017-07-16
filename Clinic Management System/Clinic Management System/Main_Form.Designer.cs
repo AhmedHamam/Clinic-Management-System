@@ -33,7 +33,11 @@
             this.btn_supplier = new System.Windows.Forms.Button();
             this.btnPatinet = new System.Windows.Forms.Button();
             this.btnServerSeting = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btn_clinic_info = new System.Windows.Forms.Button();
+=======
+            this.btn_createBackup = new System.Windows.Forms.Button();
+>>>>>>> origin/master
             this.SuspendLayout();
             // 
             // btn_login
@@ -86,6 +90,7 @@
             this.btnServerSeting.UseVisualStyleBackColor = true;
             this.btnServerSeting.Click += new System.EventHandler(this.btnServerSeting_Click);
             // 
+<<<<<<< HEAD
             // btn_clinic_info
             // 
             this.btn_clinic_info.Location = new System.Drawing.Point(759, 146);
@@ -95,13 +100,28 @@
             this.btn_clinic_info.Text = "بيانات العيادة ";
             this.btn_clinic_info.UseVisualStyleBackColor = true;
             this.btn_clinic_info.Click += new System.EventHandler(this.btn_clinic_info_Click);
+=======
+            // btn_createBackup
+            // 
+            this.btn_createBackup.Location = new System.Drawing.Point(358, 64);
+            this.btn_createBackup.Name = "btn_createBackup";
+            this.btn_createBackup.Size = new System.Drawing.Size(284, 46);
+            this.btn_createBackup.TabIndex = 14;
+            this.btn_createBackup.Text = "أنشاء نسخة أحتياطية";
+            this.btn_createBackup.UseVisualStyleBackColor = true;
+            this.btn_createBackup.Click += new System.EventHandler(this.btn_createBackup_Click);
+>>>>>>> origin/master
             // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 460);
+<<<<<<< HEAD
             this.Controls.Add(this.btn_clinic_info);
+=======
+            this.Controls.Add(this.btn_createBackup);
+>>>>>>> origin/master
             this.Controls.Add(this.btnServerSeting);
             this.Controls.Add(this.btn_supplier);
             this.Controls.Add(this.btnPatinet);
@@ -127,7 +147,11 @@
         private System.Windows.Forms.Button btn_supplier;
         private System.Windows.Forms.Button btnPatinet;
         private System.Windows.Forms.Button btnServerSeting;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btn_clinic_info;
+=======
+        private System.Windows.Forms.Button btn_createBackup;
+>>>>>>> origin/master
         //private System.Windows.Forms.Button btnPatinet;
 
     }
