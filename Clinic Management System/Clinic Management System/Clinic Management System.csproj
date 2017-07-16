@@ -59,6 +59,12 @@
     <Compile Include="BL\clsStaff.cs" />
     <Compile Include="BL\CLS_Patient.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
+    <Compile Include="frmServerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServerSetting.Designer.cs">
+      <DependentUpon>frmServerSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_add_supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
       <DependentUpon>ucNewStaff.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmServerSetting.resx">
+      <DependentUpon>frmServerSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_add_supplier.resx">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
     </EmbeddedResource>

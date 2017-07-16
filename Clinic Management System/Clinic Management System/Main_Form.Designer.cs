@@ -32,6 +32,7 @@
             this.btnManageStaff = new System.Windows.Forms.Button();
             this.btn_supplier = new System.Windows.Forms.Button();
             this.btnPatinet = new System.Windows.Forms.Button();
+            this.btnServerSeting = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_login
@@ -66,7 +67,7 @@
             // 
             // btnPatinet
             // 
-            this.btnPatinet.Location = new System.Drawing.Point(793, 79);
+            this.btnPatinet.Location = new System.Drawing.Point(358, 12);
             this.btnPatinet.Name = "btnPatinet";
             this.btnPatinet.Size = new System.Drawing.Size(139, 46);
             this.btnPatinet.TabIndex = 9;
@@ -74,16 +75,22 @@
             this.btnPatinet.UseVisualStyleBackColor = true;
             this.btnPatinet.Click += new System.EventHandler(this.btnPatinet_Click);
             // 
+            // btnServerSeting
+            // 
+            this.btnServerSeting.Location = new System.Drawing.Point(648, 64);
+            this.btnServerSeting.Name = "btnServerSeting";
+            this.btnServerSeting.Size = new System.Drawing.Size(284, 46);
+            this.btnServerSeting.TabIndex = 11;
+            this.btnServerSeting.Text = "إعدادات السيرفر";
+            this.btnServerSeting.UseVisualStyleBackColor = true;
+            this.btnServerSeting.Click += new System.EventHandler(this.btnServerSeting_Click);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 460);
-
-
-            this.Controls.Add(this.btn_supplier);
-
-            this.Controls.Add(this.btnPatinet);
+            this.Controls.Add(this.btnServerSeting);
             this.Controls.Add(this.btn_supplier);
             this.Controls.Add(this.btnPatinet);
             this.Controls.Add(this.btnManageStaff);
@@ -107,6 +114,7 @@
         private System.Windows.Forms.Button btnManageStaff;
         private System.Windows.Forms.Button btn_supplier;
         private System.Windows.Forms.Button btnPatinet;
+        private System.Windows.Forms.Button btnServerSeting;
         //private System.Windows.Forms.Button btnPatinet;
 
     }

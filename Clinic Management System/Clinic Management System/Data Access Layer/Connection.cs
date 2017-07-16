@@ -7,11 +7,15 @@ namespace Clinic_Management_System
 {
     class Connection
     {
-        public string connectionString = @"SERVER=.;DATABASE=Clinic;Integrated Security=true";
-       //public string connectionString = "SERVER=localhost;DATABASE=Clinic;Uid=root;pwd=root";
+        public string connectionString;
         private SqlConnection connection;
         public Connection()
         {
+            var p = Properties.Settings.Default;
+            if(p.IsWinAuth)
+            connectionString = @"SERVER="+p.Server+";DATABASE=Clinic;Integrated Security=true";
+            else
+            connectionString = @"SERVER=" + p.Server + ";DATABASE=Clinic;Integrated Security=false;User Id="+p.UserName+";Password="+p.Password+"";
             connection = new SqlConnection(connectionString);
         }
         //open connection to database

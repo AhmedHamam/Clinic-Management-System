@@ -20,20 +20,20 @@ namespace Clinic_Management_System
         private void btn_login_Click(object sender, EventArgs e)
         {
             Log_in frm = new Log_in();
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void btnManageStaff_Click(object sender, EventArgs e)
         {
             frmStaff frm = new frmStaff();
-            frm.Show();
+            frm.ShowDialog();
         }
 
 
         private void btn_supplier_Click(object sender, EventArgs e)
         {
             frm_Supplier frm = new frm_Supplier();
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void btnPatinet_Click(object sender, EventArgs e)
@@ -41,6 +41,12 @@ namespace Clinic_Management_System
             frm_Patient frmptn = new frm_Patient();
             frmptn.ShowDialog();
 
+        }
+
+        private void btnServerSeting_Click(object sender, EventArgs e)
+        {
+            frmServerSetting frmS = new frmServerSetting();
+            frmS.ShowDialog();
         }
     }
 }
