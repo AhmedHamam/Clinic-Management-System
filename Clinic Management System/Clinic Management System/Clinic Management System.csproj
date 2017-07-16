@@ -59,34 +59,34 @@
     <Compile Include="BL\clsStaff.cs" />
     <Compile Include="BL\CLS_Patient.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
-    <Compile Include="frmServerSetting.cs">
+    <Compile Include="PL\frmServerSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmServerSetting.Designer.cs">
+    <Compile Include="PL\frmServerSetting.Designer.cs">
       <DependentUpon>frmServerSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_add_supplier.cs">
+    <Compile Include="PL\frm_add_supplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_add_supplier.Designer.cs">
+    <Compile Include="PL\frm_add_supplier.Designer.cs">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Backup.cs">
+    <Compile Include="PL\frm_Backup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Backup.Designer.cs">
+    <Compile Include="PL\frm_Backup.Designer.cs">
       <DependentUpon>frm_Backup.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Clinic_information.cs">
+    <Compile Include="PL\frm_Clinic_information.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Clinic_information.designer.cs">
+    <Compile Include="PL\frm_Clinic_information.designer.cs">
       <DependentUpon>frm_Clinic_information.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Supplier.cs">
+    <Compile Include="PL\frm_Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Supplier.Designer.cs">
+    <Compile Include="PL\frm_Supplier.Designer.cs">
       <DependentUpon>frm_Supplier.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frmStaff.cs">
@@ -134,19 +134,19 @@
     <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
       <DependentUpon>ucNewStaff.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmServerSetting.resx">
+    <EmbeddedResource Include="PL\frmServerSetting.resx">
       <DependentUpon>frmServerSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_add_supplier.resx">
+    <EmbeddedResource Include="PL\frm_add_supplier.resx">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Backup.resx">
+    <EmbeddedResource Include="PL\frm_Backup.resx">
       <DependentUpon>frm_Backup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Clinic_information.resx">
+    <EmbeddedResource Include="PL\frm_Clinic_information.resx">
       <DependentUpon>frm_Clinic_information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Supplier.resx">
+    <EmbeddedResource Include="PL\frm_Supplier.resx">
       <DependentUpon>frm_Supplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmStaff.resx">
