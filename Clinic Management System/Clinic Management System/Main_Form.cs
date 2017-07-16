@@ -60,5 +60,11 @@ namespace Clinic_Management_System
             frm_Clinic_information frm = new frm_Clinic_information();
             frm.ShowDialog();
         }
+
+        private void btnRestore_Click(object sender, EventArgs e)
+        {
+            frm_Restore rst = new frm_Restore();
+            rst.ShowDialog();
+        }
     }
 }

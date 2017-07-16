@@ -35,6 +35,7 @@
             this.btnServerSeting = new System.Windows.Forms.Button();
             this.btn_createBackup = new System.Windows.Forms.Button();
             this.btn_clinic_info = new System.Windows.Forms.Button();
+            this.btnRestore = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_login
@@ -107,11 +108,22 @@
             this.btn_clinic_info.UseVisualStyleBackColor = true;
             this.btn_clinic_info.Click += new System.EventHandler(this.btn_clinic_info_Click);
             // 
+            // btnRestore
+            // 
+            this.btnRestore.Location = new System.Drawing.Point(358, 125);
+            this.btnRestore.Name = "btnRestore";
+            this.btnRestore.Size = new System.Drawing.Size(284, 46);
+            this.btnRestore.TabIndex = 18;
+            this.btnRestore.Text = "أستعادة نسخة أحتياطية";
+            this.btnRestore.UseVisualStyleBackColor = true;
+            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 460);
+            this.Controls.Add(this.btnRestore);
             this.Controls.Add(this.btn_clinic_info);
             this.Controls.Add(this.btn_createBackup);
             this.Controls.Add(this.btnServerSeting);
@@ -141,6 +153,7 @@
         private System.Windows.Forms.Button btnServerSeting;
         private System.Windows.Forms.Button btn_createBackup;
         private System.Windows.Forms.Button btn_clinic_info;
+        private System.Windows.Forms.Button btnRestore;
         //private System.Windows.Forms.Button btnPatinet;
 
     }
