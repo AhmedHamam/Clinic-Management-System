@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             this.txtServerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +43,8 @@
             this.rdoWin = new System.Windows.Forms.RadioButton();
             this.rdoSql = new System.Windows.Forms.RadioButton();
             this.btnCancle = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlLogin.SuspendLayout();
@@ -59,6 +61,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(615, 30);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Clinic_Management_System.Properties.Resources.Technology_32x32;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Server Setting";
             // 
             // btnClose
             // 
@@ -77,27 +100,6 @@
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(38, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Server Setting";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Clinic_Management_System.Properties.Resources.Technology_32x32;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // txtServerName
             // 
@@ -191,7 +193,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(170, 332);
+            this.btnSave.Location = new System.Drawing.Point(160, 332);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(134, 31);
             this.btnSave.TabIndex = 3;
@@ -236,13 +238,29 @@
             this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancle.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.btnCancle.ForeColor = System.Drawing.Color.White;
-            this.btnCancle.Location = new System.Drawing.Point(310, 332);
+            this.btnCancle.Location = new System.Drawing.Point(315, 332);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.Size = new System.Drawing.Size(134, 31);
             this.btnCancle.TabIndex = 4;
             this.btnCancle.Text = "Cancle";
             this.btnCancle.UseVisualStyleBackColor = false;
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(320, 337);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(134, 31);
+            this.panel2.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(165, 337);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(134, 31);
+            this.panel3.TabIndex = 8;
             // 
             // frmServerSetting
             // 
@@ -258,6 +276,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtServerName);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmServerSetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -290,5 +310,7 @@
         private System.Windows.Forms.RadioButton rdoWin;
         private System.Windows.Forms.RadioButton rdoSql;
         private System.Windows.Forms.Button btnCancle;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

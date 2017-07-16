@@ -53,3 +53,4 @@ C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management Sys
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.pdb
+C:\Users\Mohamed\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Backup.resources
