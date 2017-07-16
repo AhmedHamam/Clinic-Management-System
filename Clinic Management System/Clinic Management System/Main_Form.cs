@@ -54,5 +54,11 @@ namespace Clinic_Management_System
             frm_Backup bkp = new frm_Backup();
             bkp.ShowDialog();
         }
+
+        private void btn_clinic_info_Click(object sender, EventArgs e)
+        {
+            frm_Clinic_information frm = new frm_Clinic_information();
+            frm.ShowDialog();
+        }
     }
 }
