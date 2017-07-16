@@ -63,16 +63,6 @@ namespace Clinic_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap accessories_text_editor_32 {
-            get {
-                object obj = ResourceManager.GetObject("accessories-text-editor-32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Apply_32x32 {
             get {
                 object obj = ResourceManager.GetObject("Apply_32x32", resourceCulture);
@@ -156,26 +146,6 @@ namespace Clinic_Management_System.Properties {
         internal static System.Drawing.Bitmap design1 {
             get {
                 object obj = ResourceManager.GetObject("design1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap edit {
-            get {
-                object obj = ResourceManager.GetObject("edit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap edit_clear {
-            get {
-                object obj = ResourceManager.GetObject("edit-clear", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,16 +316,6 @@ namespace Clinic_Management_System.Properties {
         internal static System.Drawing.Bitmap medicine1 {
             get {
                 object obj = ResourceManager.GetObject("medicine1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap profile_edit {
-            get {
-                object obj = ResourceManager.GetObject("profile_edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
