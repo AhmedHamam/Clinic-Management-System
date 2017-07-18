@@ -203,6 +203,7 @@
             // 
             this.txt_Patient_Id.Location = new System.Drawing.Point(6, 50);
             this.txt_Patient_Id.Name = "txt_Patient_Id";
+            this.txt_Patient_Id.ReadOnly = true;
             this.txt_Patient_Id.Size = new System.Drawing.Size(295, 30);
             this.txt_Patient_Id.TabIndex = 5;
             // 
@@ -421,6 +422,7 @@
             this.Name = "frm_Add_Patient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "إضافة مريض جديد";
+            this.Load += new System.EventHandler(this.frm_Add_Patient_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -162,5 +162,11 @@ namespace Clinic_Management_System
             this.Close();
         }
 
+        private void frm_Add_Patient_Load(object sender, EventArgs e)
+        {
+            if (state == "add")
+                txt_Patient_Id.Text = BL.CLS_Patient.GetNewCode();
+        }
+
     }
 }
