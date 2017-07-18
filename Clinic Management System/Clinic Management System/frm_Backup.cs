@@ -44,8 +44,9 @@ namespace Clinic_Management_System
             Connection obcon = new Connection();
             SqlConnection cnx = new SqlConnection(obcon.connectionString);
 
-            
-            string filename = txtpath.Text + "\\Clinic" ;
+
+            string filename = txtpath.Text + "\\Clinic" + DateTime.Now.ToShortDateString().Replace('/', '-')
+                + " - " + DateTime.Now.ToLongTimeString().Replace(':', '-') + ".bak"; ;
             string strQuery = "Backup Database Clinic to Disk ='" + filename + ".bak'";
             SqlCommand cmd = new SqlCommand(strQuery, cnx);
             cnx.Open();
