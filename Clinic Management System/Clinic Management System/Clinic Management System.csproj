@@ -59,6 +59,12 @@
     <Compile Include="BL\clsStaff.cs" />
     <Compile Include="BL\CLS_Patient.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
+    <Compile Include="frm_Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Backup.designer.cs">
+      <DependentUpon>frm_Backup.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frm_Restore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,12 +82,6 @@
     </Compile>
     <Compile Include="PL\suppliers\frm_add_supplier.Designer.cs">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PL\frm_Backup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\frm_Backup.Designer.cs">
-      <DependentUpon>frm_Backup.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frm_Clinic_information.cs">
       <SubType>Form</SubType>
@@ -140,6 +140,9 @@
     <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
       <DependentUpon>ucNewStaff.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frm_Backup.resx">
+      <DependentUpon>frm_Backup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_Restore.resx">
       <DependentUpon>frm_Restore.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,9 +151,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\suppliers\frm_add_supplier.resx">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\frm_Backup.resx">
-      <DependentUpon>frm_Backup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_Clinic_information.resx">
       <DependentUpon>frm_Clinic_information.cs</DependentUpon>
