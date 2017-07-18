@@ -15,7 +15,9 @@ CREATE TABLE dbo.Clinic_information(
 	email VARCHAR(50) NULL,
 	website VARCHAR(50) NULL,
 	fb_page VARCHAR(100) NULL);
-	
+	--=====================
+	-- جدول الزيارات 
+
 create table chekup_type
 (
 id int PRIMARY key,
