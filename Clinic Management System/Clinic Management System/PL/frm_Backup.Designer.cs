@@ -38,6 +38,7 @@
             this.txtpath = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -108,7 +109,6 @@
             this.btnBrowse.TabIndex = 15;
             this.btnBrowse.Text = "....";
             this.btnBrowse.UseVisualStyleBackColor = false;
-            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // label2
             // 
@@ -166,7 +166,6 @@
             this.btnCreate.TabIndex = 11;
             this.btnCreate.Text = "أنشاء نسخة أحتياطية";
             this.btnCreate.UseVisualStyleBackColor = false;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // frm_Backup
             // 
@@ -203,5 +202,6 @@
         private System.Windows.Forms.TextBox txtpath;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
