@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Restore));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.txtpath = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 25);
@@ -141,9 +142,9 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(226, 219);
+            this.btnCancel.Location = new System.Drawing.Point(197, 219);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(134, 31);
+            this.btnCancel.Size = new System.Drawing.Size(163, 31);
             this.btnCancel.TabIndex = 18;
             this.btnCancel.Text = "الغاء";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -161,14 +162,11 @@
             this.btnCreate.ForeColor = System.Drawing.Color.White;
             this.btnCreate.Location = new System.Drawing.Point(366, 219);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(134, 31);
+            this.btnCreate.Size = new System.Drawing.Size(163, 31);
             this.btnCreate.TabIndex = 17;
-            this.btnCreate.Text = "أنشاء نسخة أحتياطية";
+            this.btnCreate.Text = "أستعادة نسخة أحتياطية";
             this.btnCreate.UseVisualStyleBackColor = false;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // frm_Restore
             // 
@@ -205,6 +203,5 @@
         private System.Windows.Forms.TextBox txtpath;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

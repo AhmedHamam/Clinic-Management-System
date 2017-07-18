@@ -94,32 +94,34 @@ namespace Clinic_Management_System
         private void btn_Modify_Click(object sender, EventArgs e)
         {
             //-------------------------------------------------------------------------------------------
-            frm.txtgenderHide.Text = this.grid_All_Patient.CurrentRow.Cells[2].Value.ToString();
-            frm.txt_status.Text = this.grid_All_Patient.CurrentRow.Cells[5].Value.ToString();
-            //-------------------------------------------------------------------------------------------
-            Refresh_Rdbgender();
-            Refresh_Rdbstatus();
-            frm.txt_Patient_Id.Text = this.grid_All_Patient.CurrentRow.Cells[0].Value.ToString();
-            frm.txt_Patient_Name.Text = this.grid_All_Patient.CurrentRow.Cells[1].Value.ToString();
-            gender = this.grid_All_Patient.CurrentRow.Cells[2].Value.ToString();
-            frm.dtp_Patient_birthday.Value = Convert.ToDateTime(this.grid_All_Patient.CurrentRow.Cells[3].Value.ToString());
-            frm.dtp_Registration_Date.Value = Convert.ToDateTime(this.grid_All_Patient.CurrentRow.Cells[4].Value.ToString());
-            status = this.grid_All_Patient.CurrentRow.Cells[5].Value.ToString();
-            frm.rtxt_Adresse.Text = this.grid_All_Patient.CurrentRow.Cells[6].Value.ToString();
-            frm.txt_email.Text = this.grid_All_Patient.CurrentRow.Cells[7].Value.ToString();
-            frm.mTxt_contact_no.Text = this.grid_All_Patient.CurrentRow.Cells[8].Value.ToString();
-            frm.mTxt_contact_no2.Text = this.grid_All_Patient.CurrentRow.Cells[9].Value.ToString();
-            frm.Text = "تحديث المريض : " + this.grid_All_Patient.CurrentRow.Cells[1].Value.ToString();
-            frm.state = "update";
-            frm.txt_Patient_Id.ReadOnly = true;
-            frm.btnAdd.Text = "تحديث";
-            frm.ShowDialog();
-            grid_All_Patient.DataSource = ptn.GET_ALL_PATIENT("");
-        }
-
-        private void frm_Patient_Load(object sender, EventArgs e)
-        {
-            
+            try
+            {
+                frm.txtgenderHide.Text = this.grid_All_Patient.CurrentRow.Cells[2].Value.ToString();
+                frm.txt_status.Text = this.grid_All_Patient.CurrentRow.Cells[5].Value.ToString();
+                //-------------------------------------------------------------------------------------------
+                Refresh_Rdbgender();
+                Refresh_Rdbstatus();
+                frm.txt_Patient_Id.Text = this.grid_All_Patient.CurrentRow.Cells[0].Value.ToString();
+                frm.txt_Patient_Name.Text = this.grid_All_Patient.CurrentRow.Cells[1].Value.ToString();
+                gender = this.grid_All_Patient.CurrentRow.Cells[2].Value.ToString();
+                frm.dtp_Patient_birthday.Value = Convert.ToDateTime(this.grid_All_Patient.CurrentRow.Cells[3].Value.ToString());
+                frm.dtp_Registration_Date.Value = Convert.ToDateTime(this.grid_All_Patient.CurrentRow.Cells[4].Value.ToString());
+                status = this.grid_All_Patient.CurrentRow.Cells[5].Value.ToString();
+                frm.rtxt_Adresse.Text = this.grid_All_Patient.CurrentRow.Cells[6].Value.ToString();
+                frm.txt_email.Text = this.grid_All_Patient.CurrentRow.Cells[7].Value.ToString();
+                frm.mTxt_contact_no.Text = this.grid_All_Patient.CurrentRow.Cells[8].Value.ToString();
+                frm.mTxt_contact_no2.Text = this.grid_All_Patient.CurrentRow.Cells[9].Value.ToString();
+                frm.Text = "تحديث المريض : " + this.grid_All_Patient.CurrentRow.Cells[1].Value.ToString();
+                frm.state = "update";
+                frm.txt_Patient_Id.ReadOnly = true;
+                frm.btnAdd.Text = "تحديث";
+                frm.ShowDialog();
+                grid_All_Patient.DataSource = ptn.GET_ALL_PATIENT("");
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
@@ -145,11 +147,23 @@ namespace Clinic_Management_System
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-            if(txt_search.Text!="")
+            try
             {
-                grid_All_Patient.DataSource = ptn.GET_ALL_PATIENT(txt_search.Text);
+                if (txt_search.Text != "")
+                {
+                    grid_All_Patient.DataSource = ptn.GET_ALL_PATIENT(txt_search.Text);
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
             }
             
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -38,8 +38,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_search = new System.Windows.Forms.Button();
             this.txt_search = new System.Windows.Forms.TextBox();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_All_Patient)).BeginInit();
@@ -53,7 +54,7 @@
             this.panel1.Controls.Add(this.btn_Add);
             this.panel1.Controls.Add(this.btn_Modify);
             this.panel1.Controls.Add(this.btn_Delete);
-            this.panel1.Location = new System.Drawing.Point(712, 12);
+            this.panel1.Location = new System.Drawing.Point(776, 39);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(331, 130);
             this.panel1.TabIndex = 0;
@@ -101,7 +102,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(230)))));
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(712, 121);
+            this.panel2.Location = new System.Drawing.Point(776, 148);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(331, 21);
             this.panel2.TabIndex = 1;
@@ -122,18 +123,19 @@
             this.grid_All_Patient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grid_All_Patient.BackgroundColor = System.Drawing.Color.White;
             this.grid_All_Patient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_All_Patient.Location = new System.Drawing.Point(0, 142);
+            this.grid_All_Patient.Location = new System.Drawing.Point(0, 169);
             this.grid_All_Patient.Name = "grid_All_Patient";
-            this.grid_All_Patient.Size = new System.Drawing.Size(1054, 350);
+            this.grid_All_Patient.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grid_All_Patient.Size = new System.Drawing.Size(1110, 350);
             this.grid_All_Patient.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(230)))));
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(12, 121);
+            this.panel3.Location = new System.Drawing.Point(0, 148);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(700, 21);
+            this.panel3.Size = new System.Drawing.Size(780, 21);
             this.panel3.TabIndex = 4;
             // 
             // label2
@@ -141,7 +143,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(309, 3);
+            this.label2.Location = new System.Drawing.Point(349, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 15);
             this.label2.TabIndex = 2;
@@ -152,10 +154,20 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
             this.panel4.Controls.Add(this.txt_search);
             this.panel4.Controls.Add(this.btn_search);
-            this.panel4.Location = new System.Drawing.Point(12, 12);
+            this.panel4.Location = new System.Drawing.Point(0, 39);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(700, 130);
+            this.panel4.Size = new System.Drawing.Size(780, 130);
             this.panel4.TabIndex = 3;
+            // 
+            // txt_search
+            // 
+            this.txt_search.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_search.Location = new System.Drawing.Point(216, 40);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_search.Size = new System.Drawing.Size(455, 30);
+            this.txt_search.TabIndex = 7;
+            this.txt_search.Text = "بحث";
             // 
             // btn_search
             // 
@@ -163,41 +175,47 @@
             this.btn_search.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_search.Image = global::Clinic_Management_System.Properties.Resources.if_system_search_118797__1_;
-            this.btn_search.Location = new System.Drawing.Point(70, 39);
+            this.btn_search.Location = new System.Drawing.Point(110, 39);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(100, 32);
             this.btn_search.TabIndex = 6;
             this.btn_search.UseVisualStyleBackColor = false;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
-            // txt_search
+            // btnClose
             // 
-            this.txt_search.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search.Location = new System.Drawing.Point(176, 40);
-            this.txt_search.Name = "txt_search";
-            this.txt_search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_search.Size = new System.Drawing.Size(455, 30);
-            this.txt_search.TabIndex = 7;
-            this.txt_search.Text = "بحث";
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(1077, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 20);
+            this.btnClose.TabIndex = 5;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frm_Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1054, 492);
+            this.ClientSize = new System.Drawing.Size(1109, 520);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.grid_All_Patient);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Patient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "إدارة المرضى";
-            this.Load += new System.EventHandler(this.frm_Patient_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -224,5 +242,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txt_search;
         private System.Windows.Forms.Button btn_search;
+        private System.Windows.Forms.Button btnClose;
     }
 }
