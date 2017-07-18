@@ -36,6 +36,7 @@
             this.btn_createBackup = new System.Windows.Forms.Button();
             this.btn_clinic_info = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
+            this.btn_report = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_login
@@ -118,11 +119,22 @@
             this.btnRestore.UseVisualStyleBackColor = true;
             this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
+            // btn_report
+            // 
+            this.btn_report.Location = new System.Drawing.Point(12, 39);
+            this.btn_report.Name = "btn_report";
+            this.btn_report.Size = new System.Drawing.Size(139, 46);
+            this.btn_report.TabIndex = 20;
+            this.btn_report.Text = "طباعة تقرير ";
+            this.btn_report.UseVisualStyleBackColor = true;
+            this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 460);
+            this.Controls.Add(this.btn_report);
             this.Controls.Add(this.btnRestore);
             this.Controls.Add(this.btn_clinic_info);
             this.Controls.Add(this.btn_createBackup);
@@ -154,6 +166,7 @@
         private System.Windows.Forms.Button btn_createBackup;
         private System.Windows.Forms.Button btn_clinic_info;
         private System.Windows.Forms.Button btnRestore;
+        private System.Windows.Forms.Button btn_report;
         //private System.Windows.Forms.Button btnPatinet;
 
     }
