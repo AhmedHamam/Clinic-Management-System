@@ -79,3 +79,6 @@ D:\Clinic Management System\Clinic Management System\Clinic Management System\ob
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Restore.resources
 C:\Users\ANONYME\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Clinic_information.resources
 D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Restore.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Form1.resources
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\RdlCompile.cache
+D:\Clinic Management System\Clinic Management System\Clinic Management System\obj\Debug\RdlCompile.compiled

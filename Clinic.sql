@@ -1,6 +1,29 @@
 
 create database Clinic;
 USE	Clinic;
+-- =================================
+-- جدول البيانات الخاصة بالعيادة 
+
+CREATE TABLE dbo.Clinic_information(
+	id int primary key,
+	Name VARCHAR(50) NULL,
+	doctor_name VARCHAR(50) NULL,
+	address VARCHAR(50) NULL,
+	telephone VARCHAR(14) NULL,
+	moblie VARCHAR(14) NULL,
+	fax VARCHAR(50) NULL,
+	email VARCHAR(50) NULL,
+	website VARCHAR(50) NULL,
+	fb_page VARCHAR(100) NULL);
+	
+create table chekup_type
+(
+id int PRIMARY key,
+type_check_up VARCHAR(50) ,
+price float,
+notes VARCHAR(100)
+);
+
 
 -- ===============================================
 -- جدول الموظفين 

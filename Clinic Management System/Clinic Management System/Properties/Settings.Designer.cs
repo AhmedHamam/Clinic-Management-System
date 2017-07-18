@@ -178,5 +178,15 @@ namespace Clinic_Management_System.Properties {
                 this["clinic_fax"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Clinic;Integrated Security=True")]
+        public string ClinicConnectionString {
+            get {
+                return ((string)(this["ClinicConnectionString"]));
+            }
+        }
     }
 }

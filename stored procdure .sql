@@ -1,6 +1,22 @@
 ﻿USE [Clinic]
 GO
 -- ===============================ِAhmed Hamam =================
+create proc add_clinic_info
+	@Name VARCHAR(50) ,
+	@doctor_name VARCHAR(50) ,
+	@address VARCHAR(50) ,
+	@telephone VARCHAR(14) ,
+	@moblie VARCHAR(14) ,
+	@fax VARCHAR(50) ,
+	@email VARCHAR(50) ,
+	@website VARCHAR(50) ,
+	@fb_page VARCHAR(100) 
+	as
+begin
+insert into Clinic_information values(1,@Name,@doctor_name,@address,@telephone,@moblie,@fax,@email,@website,@fb_page);
+end
+go
+-- ---------------------------
 CREATE PROCEDURE [dbo].[add_supplier]
 (@sup_id int ,
 @sup_name varchar(50),
