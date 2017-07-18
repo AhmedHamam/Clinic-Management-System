@@ -81,7 +81,7 @@ namespace Clinic_Management_System
 
         private void txt_supp_search_Enter(object sender, EventArgs e)
         {
-            if (txt_supp_search.Tag == "0")
+            if (txt_supp_search.Tag == (object)"0")
                 txt_supp_search.Clear();
 
         }
@@ -116,7 +116,7 @@ namespace Clinic_Management_System
 
         private void FunMenu()
         {
-            if (btnMenu.Tag == "0")
+            if (btnMenu.Tag == (object)"0")
             {
                 pnlMenu.Width = 180;
                 btnMenu.Left = 150;
