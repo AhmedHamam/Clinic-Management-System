@@ -203,11 +203,15 @@ DELETE FROM Patient WHERE patient_id=@ID;
 END
 GO
 -----------------------------------------------------------
+-- =================الاحد الموافق 16/7/2017==============
+--===========================شادي غيث===================
+USE [Clinic]
 
+GO
 create Proc AddStaff
     @StaffID varchar(20), 
     @StaffName varchar(50),
-	@StaffBirthdate varchar(50),
+	@StaffBirthdate date,
     @StaffAdress varchar(100),
 	@StaffContactNO varchar(20),
     @StaffContactNO2 varchar(20),
@@ -215,7 +219,7 @@ create Proc AddStaff
     @StaffPostion varchar(10),
 	@StaffStatus varchar(10),
     @StaffEmail varchar(20),
-	@StaffDateofEmployee varchar(50),
+	@StaffDateofEmployee date,
     @StaffPicture varchar(MAX)
 as
 begin
@@ -225,7 +229,8 @@ end
 
 GO
 create Proc UpdateStaff
-	@StaffBirthdate varchar(50),
+	@staffId varchar(20),
+	@StaffBirthdate date,
     @StaffAdress varchar(100),
 	@StaffContactNO varchar(20),
     @StaffContactNO2 varchar(20),
@@ -233,36 +238,63 @@ create Proc UpdateStaff
     @StaffPostion varchar(10),
 	@StaffStatus varchar(10),
     @StaffEmail varchar(20),
-	@StaffDateofEmployee varchar(50),
+	@StaffDateofEmployee date,
     @StaffPicture varchar(MAX)
 as
-begin
-INSERT INTO [dbo].[Staff]([staff_birth_date] , [staff_address] , [staff_contact_no] , [staff_contact_no2] , [staff_gender] , [staff_position] , [staff_status] ,[staff_email] , [staff_date_of_employee] , [staff_picture])
-VALUES (@StaffBirthdate , @StaffAdress , @StaffContactNO , @StaffContactNO2 , @StaffGender , @StaffPostion , @StaffStatus , @StaffEmail , @StaffDateofEmployee , @StaffPicture);
-end
+UPDATE [dbo].[Staff]
+SET
+staff_birth_date = @StaffBirthdate,
+staff_address = @StaffAdress,
+staff_contact_no = @StaffContactNO,
+staff_contact_no2 = @StaffContactNO2,
+staff_gender = @StaffGender,
+staff_position = @StaffPostion,
+staff_status = @StaffStatus,
+staff_email = @StaffEmail,
+staff_date_of_employee = @StaffDateofEmployee,
+staff_picture = @StaffPicture
+WHERE staff_id = @staffId;
+
 
 Go
-CREATE PROC SearchStaffByName
-@StaffName varchar(50)
+CREATE PROC SearchStaff
+@StaffName varchar(100)
 as
 begin
-Select * FROM Staff WHERE staff_name = @StaffName;
-end
-
-Go
-CREATE PROC SearchStaffById
-@StaffId varchar(20)
-as
-begin
-
-Select * FROM Staff WHERE staff_id = @StaffId;
+Select 
+staff_name as "اسم الموظف",
+staff_id as "الكود",
+staff_contact_no as "رقم الهاتف 1",
+staff_contact_no2 as "رقم الهاتف 2",
+staff_address as "العنوان",
+staff_email as "البريد الإلكتروني",
+staff_birth_date as "تاريخ الميلاد",
+staff_date_of_employee as "تاريخ التوظيف",
+staff_position as "الوظيفة",
+staff_status as "الحالة الإجتماعية",
+staff_gender as "النوع",
+FROM Staff WHERE staff_id + staff_name + staff_contact_no + staff_contact_no2 + staff_address + staff_email + CONVERT(varchar(50) , staff_birth_date) + CONVERT(varchar(50) , staff_date_of_employee) + staff_gender + staff_position + staff_status like '%'+ staff_name +'%' 
 end
 
 Go
 CREATE PROC GetStaffTable
 as
 begin
-Select staff_id , staff_name , staff_address , staff_contact_no , staff_contact_no2 , staff_email , staff_birth_date , staff_date_of_employee , staff_position , staff_gender , staff_status FROM Staff ORDER BY staff_id;
+Select
+staff_name as "اسم الموظف",
+staff_id as "الكود",
+staff_contact_no as "رقم الهاتف 1",
+staff_contact_no2 as "رقم الهاتف 2",
+staff_address as "العنوان",
+staff_email as "البريد الإلكتروني",
+staff_birth_date as "تاريخ الميلاد",
+staff_date_of_employee as "تاريخ التوظيف",
+staff_position as "الوظيفة",
+staff_status as "الحالة الإجتماعية",
+staff_gender as "النوع",
+staff_picture
+
+FROM Staff ORDER BY staff_id;
 end
 
 Go
@@ -272,5 +304,20 @@ as
 begin
 DELETE FROM  Staff WHERE staff_id = @StaffID;
 end
-GO
--- =================الاحد الموافق 16/7/2017==============
+
+Go
+CREATE PROC GetPicture
+@StaffID varchar(20)
+as
+begin
+SELECT staff_picture FROM  Staff WHERE staff_id = @StaffID;
+end
+
+Go
+CREATE PROC CheckExists
+@StaffID varchar(20),
+@StaffName varchar(50)
+as
+begin
+SELECT * FROM  Staff WHERE staff_id = @StaffID or staff_name = @StaffName;
+end

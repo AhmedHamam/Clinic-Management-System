@@ -25,7 +25,7 @@ namespace Clinic_Management_System
 
         private void btnManageStaff_Click(object sender, EventArgs e)
         {
-            frmStaff frm = new frmStaff();
+            StaffSearchForm frm = new StaffSearchForm();
             frm.ShowDialog();
         }
 
