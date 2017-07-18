@@ -140,14 +140,26 @@ namespace Clinic_Management_System
 
         private void txt_email_Validating(object sender, CancelEventArgs e)
         {
-            if (!Regex.IsMatch(txt_email.ToString(), @"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}", RegexOptions.IgnoreCase))
-                e.Cancel = true;
-            correct = "yes";
+            try
+            {
+                if (!Regex.IsMatch(txt_email.ToString(), @"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}", RegexOptions.IgnoreCase))
+                    e.Cancel = true;
+                correct = "yes";
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             empty_fields();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }

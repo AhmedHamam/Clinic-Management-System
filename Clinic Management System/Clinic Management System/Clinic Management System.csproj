@@ -77,6 +77,18 @@
     <Compile Include="PL\frmServerSetting.Designer.cs">
       <DependentUpon>frmServerSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Patient\frm_Add_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Patient\frm_Add_Patient.designer.cs">
+      <DependentUpon>frm_Add_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Patient\frm_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Patient\frm_Patient.designer.cs">
+      <DependentUpon>frm_Patient.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\suppliers\frm_add_supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,18 +112,6 @@
     </Compile>
     <Compile Include="PL\frmStaff.Designer.cs">
       <DependentUpon>frmStaff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PL\Patient\frm_Add_Patient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\Patient\frm_Add_Patient.designer.cs">
-      <DependentUpon>frm_Add_Patient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PL\Patient\frm_Patient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\Patient\frm_Patient.designer.cs">
-      <DependentUpon>frm_Patient.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Log_in.cs">
       <SubType>Form</SubType>
@@ -149,6 +149,12 @@
     <EmbeddedResource Include="PL\frmServerSetting.resx">
       <DependentUpon>frmServerSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\Patient\frm_Add_Patient.resx">
+      <DependentUpon>frm_Add_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Patient\frm_Patient.resx">
+      <DependentUpon>frm_Patient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\suppliers\frm_add_supplier.resx">
       <DependentUpon>frm_add_supplier.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,12 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmStaff.resx">
       <DependentUpon>frmStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\Patient\frm_Add_Patient.resx">
-      <DependentUpon>frm_Add_Patient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\Patient\frm_Patient.resx">
-      <DependentUpon>frm_Patient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
