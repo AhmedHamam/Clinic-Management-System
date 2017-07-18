@@ -110,3 +110,29 @@ C:\Users\shady\Desktop\Clinic-Management-System\Clinic Management System\Clinic 
 C:\Users\shady\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.StaffAddForm.resources
 C:\Users\shady\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.StaffSearchForm.resources
 >>>>>>> origin/master
+D:\New folder (2)\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe.config
+D:\New folder (2)\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe
+D:\New folder (2)\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.pdb
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csprojResolveAssemblyReference.cache
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Form1.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Restore.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Backup.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmServerSetting.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Add_Patient.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Patient.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_add_supplier.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Clinic_information.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Supplier.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmStaff.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Log_in.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Main_Form.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Properties.Resources.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.StaffAddForm.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.StaffSearchForm.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucManageStaff.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucNewStaff.resources
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\RdlCompile.cache
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\RdlCompile.compiled
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.exe
+D:\New folder (2)\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.pdb

@@ -218,16 +218,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
     <EmbeddedResource Include="Report1.rdlc" />
-=======
+
     <EmbeddedResource Include="PL\StaffAddForm.resx">
       <DependentUpon>StaffAddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\StaffSearchForm.resx">
       <DependentUpon>StaffSearchForm.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> origin/master
+
     <EmbeddedResource Include="UC\UCStaff\ucManageStaff.resx">
       <DependentUpon>ucManageStaff.cs</DependentUpon>
     </EmbeddedResource>
