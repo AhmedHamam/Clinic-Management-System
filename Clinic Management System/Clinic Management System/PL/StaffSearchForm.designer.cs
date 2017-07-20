@@ -28,16 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.StaffListBox = new System.Windows.Forms.GroupBox();
             this.StaffTable = new System.Windows.Forms.DataGridView();
+            this.RowMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.RowMenuEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.RowMenuDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.DeleteStaffbtn = new System.Windows.Forms.Button();
             this.AddStaffBtn = new System.Windows.Forms.Button();
             this.OpreationsGroupBox = new System.Windows.Forms.GroupBox();
             this.EditStaffBtn = new System.Windows.Forms.Button();
             this.SearchStaffLabel = new System.Windows.Forms.Label();
             this.SearchStaffBox = new System.Windows.Forms.TextBox();
+            this.SearchStaffToolsTip = new System.Windows.Forms.ToolTip(this.components);
             this.StaffListBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StaffTable)).BeginInit();
+            this.RowMenuStrip.SuspendLayout();
             this.OpreationsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +67,7 @@
             this.StaffTable.AllowUserToDeleteRows = false;
             this.StaffTable.AllowUserToResizeRows = false;
             this.StaffTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StaffTable.ContextMenuStrip = this.RowMenuStrip;
             this.StaffTable.Location = new System.Drawing.Point(4, 20);
             this.StaffTable.Margin = new System.Windows.Forms.Padding(2);
             this.StaffTable.MultiSelect = false;
@@ -71,27 +78,51 @@
             this.StaffTable.Size = new System.Drawing.Size(1143, 284);
             this.StaffTable.TabIndex = 2;
             // 
+            // RowMenuStrip
+            // 
+            this.RowMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.RowMenuEdit,
+            this.RowMenuDelete});
+            this.RowMenuStrip.Name = "RowMenuStrip";
+            this.RowMenuStrip.Size = new System.Drawing.Size(149, 48);
+            // 
+            // RowMenuEdit
+            // 
+            this.RowMenuEdit.Name = "RowMenuEdit";
+            this.RowMenuEdit.Size = new System.Drawing.Size(148, 22);
+            this.RowMenuEdit.Text = "تعديل الموظف";
+            this.RowMenuEdit.Click += new System.EventHandler(this.RowMenuEdit_Clicked);
+            // 
+            // RowMenuDelete
+            // 
+            this.RowMenuDelete.Name = "RowMenuDelete";
+            this.RowMenuDelete.Size = new System.Drawing.Size(148, 22);
+            this.RowMenuDelete.Text = "حذف الموظف";
+            this.RowMenuDelete.Click += new System.EventHandler(this.RowMenuDelete_Clicked);
+            // 
             // DeleteStaffbtn
             // 
             this.DeleteStaffbtn.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.DeleteStaffbtn.Location = new System.Drawing.Point(283, 27);
+            this.DeleteStaffbtn.Location = new System.Drawing.Point(176, 18);
             this.DeleteStaffbtn.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteStaffbtn.Name = "DeleteStaffbtn";
             this.DeleteStaffbtn.Size = new System.Drawing.Size(52, 28);
             this.DeleteStaffbtn.TabIndex = 4;
             this.DeleteStaffbtn.Text = "حذف";
+            this.SearchStaffToolsTip.SetToolTip(this.DeleteStaffbtn, "خذف موظف من جدول الموظفين");
             this.DeleteStaffbtn.UseVisualStyleBackColor = true;
             this.DeleteStaffbtn.Click += new System.EventHandler(this.DeleteStaffbtn_Click);
             // 
             // AddStaffBtn
             // 
             this.AddStaffBtn.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.AddStaffBtn.Location = new System.Drawing.Point(581, 27);
+            this.AddStaffBtn.Location = new System.Drawing.Point(580, 18);
             this.AddStaffBtn.Margin = new System.Windows.Forms.Padding(2);
             this.AddStaffBtn.Name = "AddStaffBtn";
             this.AddStaffBtn.Size = new System.Drawing.Size(52, 28);
             this.AddStaffBtn.TabIndex = 3;
             this.AddStaffBtn.Text = "إضافة";
+            this.SearchStaffToolsTip.SetToolTip(this.AddStaffBtn, "إضافة موظف لجدول الموظفين");
             this.AddStaffBtn.UseVisualStyleBackColor = true;
             this.AddStaffBtn.Click += new System.EventHandler(this.AddStaffBtn_Click);
             // 
@@ -116,12 +147,13 @@
             // EditStaffBtn
             // 
             this.EditStaffBtn.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.EditStaffBtn.Location = new System.Drawing.Point(443, 27);
+            this.EditStaffBtn.Location = new System.Drawing.Point(378, 18);
             this.EditStaffBtn.Margin = new System.Windows.Forms.Padding(2);
             this.EditStaffBtn.Name = "EditStaffBtn";
             this.EditStaffBtn.Size = new System.Drawing.Size(52, 28);
             this.EditStaffBtn.TabIndex = 7;
             this.EditStaffBtn.Text = "تعديل";
+            this.SearchStaffToolsTip.SetToolTip(this.EditStaffBtn, "تعديل موظف في جدول الموظفين");
             this.EditStaffBtn.UseVisualStyleBackColor = true;
             this.EditStaffBtn.Click += new System.EventHandler(this.EditStaffBtn_Click);
             // 
@@ -140,7 +172,16 @@
             this.SearchStaffBox.Name = "SearchStaffBox";
             this.SearchStaffBox.Size = new System.Drawing.Size(250, 24);
             this.SearchStaffBox.TabIndex = 0;
+            this.SearchStaffToolsTip.SetToolTip(this.SearchStaffBox, "البحث عن موظف في جدول الموظفين");
             this.SearchStaffBox.TextChanged += new System.EventHandler(this.SearchStaffBox_TextChanged);
+            // 
+            // SearchStaffToolsTip
+            // 
+            this.SearchStaffToolsTip.AutomaticDelay = 250;
+            this.SearchStaffToolsTip.AutoPopDelay = 5000;
+            this.SearchStaffToolsTip.InitialDelay = 250;
+            this.SearchStaffToolsTip.IsBalloon = true;
+            this.SearchStaffToolsTip.ReshowDelay = 50;
             // 
             // StaffSearchForm
             // 
@@ -152,9 +193,10 @@
             this.Font = new System.Drawing.Font("Tahoma", 10F);
             this.MaximizeBox = false;
             this.Name = "StaffSearchForm";
-            this.Text = "StaffSearchForm";
+            this.Text = "نموذج الموظفين";
             this.StaffListBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StaffTable)).EndInit();
+            this.RowMenuStrip.ResumeLayout(false);
             this.OpreationsGroupBox.ResumeLayout(false);
             this.OpreationsGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -171,5 +213,9 @@
         private System.Windows.Forms.Label SearchStaffLabel;
         private System.Windows.Forms.TextBox SearchStaffBox;
         public System.Windows.Forms.DataGridView StaffTable;
+        private System.Windows.Forms.ContextMenuStrip RowMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem RowMenuEdit;
+        private System.Windows.Forms.ToolStripMenuItem RowMenuDelete;
+        private System.Windows.Forms.ToolTip SearchStaffToolsTip;
     }
 }

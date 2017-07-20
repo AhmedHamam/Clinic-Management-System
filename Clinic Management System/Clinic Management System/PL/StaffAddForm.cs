@@ -15,7 +15,7 @@ namespace Clinic_Management_System
         public bool Edit;
         public int id;
         public string name;
-        public StaffAddForm(bool edit ,int id , string name , string adress, string contactno1 , string contactno2 , string email , string birthdate , string employeedate , string job , string gender , string socialstate , Image picture)
+        public StaffAddForm(bool edit ,int id , string name , string adress, int contactno1 , int contactno2 , string email , string birthdate , string employeedate , string job , string gender , string socialstate , Image picture)
         {
             InitializeComponent();
             Edit = edit;
@@ -25,12 +25,14 @@ namespace Clinic_Management_System
                 this.name = name;
                 StaffName.ReadOnly = true;
                 StaffId.ReadOnly = true;
+                EditStaffToolsTip.ToolTipIcon = ToolTipIcon.Info;
+                AddStaffToolsTip.Active = false;
                 StaffName.Text = name;
                 StaffId.Text = id.ToString();
                 StaffAdress.TabIndex = 0;
                 StaffAdress.Text = adress;
-                StaffPhoneNumber1.Text = contactno1;
-                StaffPhoneNumber2.Text = contactno2;
+                StaffPhoneNumber1.Text = contactno1.ToString();
+                StaffPhoneNumber2.Text = contactno2.ToString();
                 StaffEmail.Text = email;
                 StaffJob.SelectedItem = job;
                 StaffGender.SelectedItem = gender;
@@ -38,6 +40,7 @@ namespace Clinic_Management_System
                 StaffBirthDate.Text = birthdate;
                 StaffEmployeeDate.Text = employeedate;
                 StaffImage.Image = picture;
+                this.Text = "نموذج تعديل الموظف";
             }
 
         }
@@ -48,6 +51,9 @@ namespace Clinic_Management_System
             StaffGender.SelectedIndex = 0;
             StaffJob.SelectedIndex = 0;
             StaffSocialstate.SelectedIndex = 0;
+            this.Text = "نموذج إضافة الموظف";
+            AddStaffToolsTip.ToolTipIcon = ToolTipIcon.Info;
+            EditStaffToolsTip.Active = false;
         }
         private void Staffbtn_Click(object sender, EventArgs e)
         {
@@ -73,81 +79,101 @@ namespace Clinic_Management_System
                         {
                             if (StaffEmail.Text != "")
                             {
-                                if (picture != null)
+                                if (StaffImage.Image != null)
                                 {
-                                    int staffid;
-                                    if (int.TryParse(StaffId.Text, out staffid) == true)
+                                    int staffphonenumber1;
+                                    if (int.TryParse(StaffPhoneNumber1.Text, out staffphonenumber1) == true)
                                     {
-                                        if (Edit == false)
+                                        if (StaffPhoneNumber2.Text == "")
                                         {
-                                            //===================================================
-                                            if (staffff.CheckExists(staffid , StaffName.Text).Rows.Count <= 0)
+                                            StaffPhoneNumber2.Text = "0";
+                                        }
+                                        int staffphonenumber2;
+                                        if (int.TryParse(StaffPhoneNumber2.Text, out staffphonenumber2) == true)
+                                        {
+                                            int staffid;
+                                            if (int.TryParse(StaffId.Text, out staffid) == true)
                                             {
-                                                try
+                                                if (Edit == false)
                                                 {
-                                                    staffff.SP_Insert_Staff(int.Parse(StaffId.Text), StaffName.Text, StaffPhoneNumber1.Text, StaffPhoneNumber2.Text, StaffAdress.Text, StaffEmail.Text, StaffBirthDate.Value, StaffEmployeeDate.Value, StaffJob.SelectedValue.ToString(), StaffSocialstate.SelectedValue.ToString(), StaffGender.SelectedValue.ToString(), Connection.ConvertImageToBytes(StaffImage.Image));
-                                                    MessageBox.Show("New staff added successfully !", "New staff", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                                    StaffSearchForm.stSearchForm.StaffTable.DataSource = staffff.SP_Get_Staff_Table();
-                                                    
+                                                    //===================================================
+                                                    if (staffff.CheckExists(staffid, StaffName.Text).Rows.Count <= 0)
+                                                    {
+                                                        try
+                                                        {
+                                                            staffff.SP_Insert_Staff(int.Parse(StaffId.Text), StaffName.Text, staffphonenumber1, staffphonenumber2, StaffAdress.Text, StaffEmail.Text, StaffBirthDate.Value, StaffEmployeeDate.Value, StaffJob.SelectedItem.ToString(), StaffSocialstate.SelectedItem.ToString(), StaffGender.SelectedItem.ToString(), Connection.ConvertImageToBytes(StaffImage.Image));
+                                                            MessageBox.Show("! تمت الإضافة بنجاح", "أُضيف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                            StaffSearchForm.stSearchForm.StaffTable.DataSource = staffff.SP_Get_Staff_Table();
+
+                                                        }
+                                                        catch
+                                                        {
+                                                            MessageBox.Show("! لم نستطع إضافة موظف", "فشلت العملية", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        MessageBox.Show("! تم إضافة اسم أو كود الموظف مسبقاً", "اسم أو كود خاطئ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    }
+                                                    //===================================================
                                                 }
-                                                catch
+                                                else
                                                 {
-                                                    MessageBox.Show("couldn't add staff", "Invalid opreation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    try
+                                                    {
+                                                        staffff.SP_Edit_Staff(int.Parse(StaffId.Text), staffphonenumber1, staffphonenumber2, StaffAdress.Text, StaffEmail.Text, StaffBirthDate.Value, StaffEmployeeDate.Value, StaffJob.SelectedItem.ToString(), StaffSocialstate.SelectedItem.ToString(), StaffGender.SelectedItem.ToString(), Connection.ConvertImageToBytes(StaffImage.Image));
+                                                        StaffSearchForm.stSearchForm.StaffTable.DataSource = staffff.SP_Get_Staff_Table();
+                                                        MessageBox.Show("! تم تعديل بيانات الموظف بنجاح", "عُدل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                    }
+                                                    catch
+                                                    {
+                                                        MessageBox.Show("لم نتمكن من تعديل بيانات الموظف", "فشلت العملية", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    }
                                                 }
                                             }
                                             else
                                             {
-                                                MessageBox.Show("the staff id or name was already taken", "Invalid id or name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                MessageBox.Show("! من فضلك أدخل كود الموظف صحيح", "كود موظف خاطئ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                             }
-                                            //===================================================
                                         }
                                         else
                                         {
-                                            try
-                                            {
-                                                staffff.SP_Edit_Staff(int.Parse(StaffId.Text), StaffPhoneNumber1.Text, StaffPhoneNumber2.Text, StaffAdress.Text, StaffEmail.Text, StaffBirthDate.Value, StaffEmployeeDate.Value, StaffJob.SelectedValue.ToString(), StaffSocialstate.SelectedValue.ToString(), StaffGender.SelectedValue.ToString(), Connection.ConvertImageToBytes(StaffImage.Image));
-                                                StaffSearchForm.stSearchForm.StaffTable.DataSource = staffff.SP_Get_Staff_Table();
-                                                MessageBox.Show("Staff Edited successfully !", "Staff Edited", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                            }
-                                            catch
-                                            {
-                                                MessageBox.Show("couldn't Edit staff", "Invalid opreation", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                            }
+                                            MessageBox.Show("! من فضلك أدخل رقم الهاتف الثاني للموظف صحيحاً", "رقم الهاتف الثاني للموظف خاطئ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                         }
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Please Insert a valid staff id", "Invalid staff id", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        MessageBox.Show("! من فضلك أدخل رقم الهاتف الأول للموظف صحيحاً", "كود رقم الهاتف الأول للموظف خاطئ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Please Insert valid a staff picture;", "Invalid staff picture", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MessageBox.Show("! من فضلك أدخل صورة الموظف", "لم يتم إدخال صورة الموظف", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("Please Insert valid a staff emai;", "Invalid staff emai", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("! من فضلك أدخل البريد الموظف الإلكتروني", "لم يتم إدخال لبريد الموظف الإلكتروني", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Please Insert valid a staff contact number", "Invalid staff contact number", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("! من فضلك أدخل رقم هاتف الموظف", "لم يتم إدخال رقم هاتف الموظف", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Please Insert valid a staff adress", "Invalid staff adress", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("! من فضلك أدخل عنوان الموظف", "لم يتم إدخال عنوان الموظف", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Please Insert valid a staff name", "Invalid staff name", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("! من فضلك أدخل اسم الموظف", "لم يتم إدخال اسم الموظف", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Please Insert valid a staff id", "Invalid staff id", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("! من فضلك أدخل كود الموظف", "لم يتم إدخال كود الموظف", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -1,48 +1,22 @@
 
 create database Clinic;
-USE	Clinic;
--- =================================
--- جدول البيانات الخاصة بالعيادة 
-
-CREATE TABLE dbo.Clinic_information(
-	id int primary key,
-	Name VARCHAR(50) NULL,
-	doctor_name VARCHAR(50) NULL,
-	address VARCHAR(50) NULL,
-	telephone VARCHAR(14) NULL,
-	moblie VARCHAR(14) NULL,
-	fax VARCHAR(50) NULL,
-	email VARCHAR(50) NULL,
-	website VARCHAR(50) NULL,
-	fb_page VARCHAR(100) NULL);
-	--=====================
-	-- جدول الزيارات 
-
-create table chekup_type
-(
-id int PRIMARY key,
-type_check_up VARCHAR(50) ,
-price float,
-notes VARCHAR(100)
-);
-
-
+use [Clinic]
 -- ===============================================
 -- جدول الموظفين 
 create table Staff
 (
-staff_id VARCHAR(20) primary key,-- كود الموظف 
+staff_id int primary key,-- كود الموظف 
 staff_name VARCHAR(50) null,-- اسم الموظف
 staff_birth_date date,-- تاريخ الميلاد
 staff_address VARCHAR(100) Null,-- العنوان
-staff_contact_no VARCHAR(20) Null,-- رقم الهاتف 
-staff_contact_no2 VARCHAR(20) Null,-- رقم الهاتف2
+staff_contact_no int Null,-- رقم الهاتف 
+staff_contact_no2 int Null,-- رقم الهاتف2
 staff_gender VARCHAR (10) Null,-- النوع ذكراو انثى
 staff_position VARCHAR (10) Null,-- الوظيفة 
 staff_status VARCHAR (10) Null,-- الحالة الاجتماعيه 
 staff_email VARCHAR (20) Null,-- الايميل 
 staff_date_of_employee date Null,-- تاريخ التعين 
-staff_picture VARCHAR (max) Null,-- صورة الموظف 
+staff_picture image Null,-- صورة الموظف 
 );
 
 -- =======================================
@@ -50,7 +24,7 @@ create table Login
 (
 username VARCHAR (10) Primary Key Not Null,-- اسم المستخدم
 password VARCHAR (10) Null,-- كلمة المرور 
-staff_id VARCHAR (20) Null,-- كود الموظف وهذا ياتى من جدول الموظفين 
+staff_id int Null,-- كود الموظف وهذا ياتى من جدول الموظفين 
 foreign key (staff_id)references Staff(staff_id)  on update cascade on delete cascade
 );
 

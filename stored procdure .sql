@@ -1,22 +1,6 @@
 ﻿USE [Clinic]
 GO
 -- ===============================ِAhmed Hamam =================
-create proc add_clinic_info
-	@Name VARCHAR(50) ,
-	@doctor_name VARCHAR(50) ,
-	@address VARCHAR(50) ,
-	@telephone VARCHAR(14) ,
-	@moblie VARCHAR(14) ,
-	@fax VARCHAR(50) ,
-	@email VARCHAR(50) ,
-	@website VARCHAR(50) ,
-	@fb_page VARCHAR(100) 
-	as
-begin
-insert into Clinic_information values(1,@Name,@doctor_name,@address,@telephone,@moblie,@fax,@email,@website,@fb_page);
-end
-go
--- ---------------------------
 CREATE PROCEDURE [dbo].[add_supplier]
 (@sup_id int ,
 @sup_name varchar(50),
@@ -60,18 +44,18 @@ GO
 --================= moafa =================
 -- Insert Supplier
 create procedure SP_Insert_Staff
-@staff_id varchar(20),
+@staff_id int,
 @staff_name varchar(50),
 @staff_birth_date date,
 @staff_address varchar(100),
-@staff_contact_no varchar(20),
-@staff_contact_no2 varchar(20),
+@staff_contact_no int,
+@staff_contact_no2 int,
 @staff_gender varchar(10),
 @staff_position varchar(10),
 @staff_status varchar(10),
 @staff_email varchar(20),
 @staff_date_of_employee date,
-@staff_picture varchar(max)
+@staff_picture image
 as
 BEGIN
 INSERT INTO [dbo].[Staff]
@@ -225,18 +209,18 @@ USE [Clinic]
 
 GO
 create Proc AddStaff
-    @StaffID varchar(20), 
+    @StaffID int, 
     @StaffName varchar(50),
 	@StaffBirthdate date,
     @StaffAdress varchar(100),
-	@StaffContactNO varchar(20),
-    @StaffContactNO2 varchar(20),
+	@StaffContactNO int,
+    @StaffContactNO2 int,
 	@StaffGender varchar(10),
     @StaffPostion varchar(10),
 	@StaffStatus varchar(10),
     @StaffEmail varchar(20),
 	@StaffDateofEmployee date,
-    @StaffPicture varchar(MAX)
+    @StaffPicture image
 as
 begin
 INSERT INTO [dbo].[Staff]([staff_id] , [staff_name] , [staff_birth_date] , [staff_address] , [staff_contact_no] , [staff_contact_no2] , [staff_gender] , [staff_position] , [staff_status] ,[staff_email] , [staff_date_of_employee] , [staff_picture])
@@ -245,17 +229,17 @@ end
 
 GO
 create Proc UpdateStaff
-	@staffId varchar(20),
+	@staffId int,
 	@StaffBirthdate date,
     @StaffAdress varchar(100),
-	@StaffContactNO varchar(20),
-    @StaffContactNO2 varchar(20),
+	@StaffContactNO int,
+    @StaffContactNO2 int,
 	@StaffGender varchar(10),
     @StaffPostion varchar(10),
 	@StaffStatus varchar(10),
     @StaffEmail varchar(20),
 	@StaffDateofEmployee date,
-    @StaffPicture varchar(MAX)
+    @StaffPicture image
 as
 UPDATE [dbo].[Staff]
 SET
@@ -288,8 +272,8 @@ staff_birth_date as "تاريخ الميلاد",
 staff_date_of_employee as "تاريخ التوظيف",
 staff_position as "الوظيفة",
 staff_status as "الحالة الإجتماعية",
-staff_gender as "النوع",
-FROM Staff WHERE staff_id + staff_name + staff_contact_no + staff_contact_no2 + staff_address + staff_email + CONVERT(varchar(50) , staff_birth_date) + CONVERT(varchar(50) , staff_date_of_employee) + staff_gender + staff_position + staff_status like '%'+ staff_name +'%' 
+staff_gender as "النوع"
+FROM Staff WHERE CONVERT(varchar(20) , staff_id) + staff_name +CONVERT(varchar(50) , staff_contact_no ) + CONVERT(varchar(50) , staff_contact_no2 ) + staff_address + staff_email + CONVERT(varchar(50) , staff_birth_date) + CONVERT(varchar(50) , staff_date_of_employee) + staff_gender + staff_position + staff_status like '%'+ @StaffName +'%';
 end
 
 Go
@@ -307,9 +291,7 @@ staff_birth_date as "تاريخ الميلاد",
 staff_date_of_employee as "تاريخ التوظيف",
 staff_position as "الوظيفة",
 staff_status as "الحالة الإجتماعية",
-staff_gender as "النوع",
-staff_picture
-
+staff_gender as "النوع"
 FROM Staff ORDER BY staff_id;
 end
 

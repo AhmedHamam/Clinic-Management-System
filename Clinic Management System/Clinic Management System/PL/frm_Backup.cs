@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,48 +24,6 @@ namespace Clinic_Management_System
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnBrowse_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                using (FolderBrowserDialog fbd = new FolderBrowserDialog() { Description = "Select Your Path..." })
-                {
-                    if (fbd.ShowDialog() == DialogResult.OK)
-                    {
-                        txtpath.Text = fbd.SelectedPath;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                ex.ToString();
-            }
-        }
-
-        private void btnCreate_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                Connection obcon = new Connection();
-                SqlConnection cnx = new SqlConnection(obcon.connectionString);
-
-
-                string filename = txtpath.Text + "\\Clinic" + DateTime.Now.ToShortDateString().Replace('/', '-')
-                    + " - " + DateTime.Now.ToLongTimeString().Replace(':', '-') + ".bak"; ;
-                string strQuery = "Backup Database Clinic to Disk ='" + filename + ".bak'";
-                SqlCommand cmd = new SqlCommand(strQuery, cnx);
-                cnx.Open();
-                cmd.ExecuteNonQuery();
-                cnx.Close();
-                MessageBox.Show("تم أنشاء النسخة الاحتياطية بنجاح", "أنشاء النسخة الاحتياطية", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                ex.Message.ToString();
-            }
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Clinic_Management_System
             InitializeComponent();
             stSearchForm = this;
             StaffTable.DataSource = Staffs.SP_Get_Staff_Table();
+            SearchStaffToolsTip.ToolTipIcon = ToolTipIcon.Info;
         }
 
         private void AddStaffBtn_Click(object sender, EventArgs e)
@@ -28,41 +29,53 @@ namespace Clinic_Management_System
 
         private void EditStaffBtn_Click(object sender, EventArgs e)
         {
-            if (StaffTable.SelectedRows.Count > 0)
-            {
-                DataGridViewRow DGVR = StaffTable.CurrentRow;
-                StaffAddForm SAF = new StaffAddForm(true, int.Parse(DGVR.Cells[0].Value.ToString()) , DGVR.Cells[1].Value.ToString() , DGVR.Cells[2].Value.ToString() , DGVR.Cells[3].Value.ToString() , DGVR.Cells[4].Value.ToString() , DGVR.Cells[5].Value.ToString() , DGVR.Cells[6].Value.ToString() , DGVR.Cells[7].Value.ToString() , DGVR.Cells[8].Value.ToString() , DGVR.Cells[9].Value.ToString() , DGVR.Cells[10].Value.ToString() , Staffs.SP_Get_Image_Staff(int.Parse(DGVR.Cells[0].Value.ToString())));
-                SAF.ShowDialog();
-            }
+            EditStaff();
         }
 
         private void DeleteStaffbtn_Click(object sender, EventArgs e)
         {
-            if (StaffTable.SelectedRows.Count > 0)
-            {
-                if (MessageBox.Show("Are you sure you want to delete '" + StaffTable.SelectedRows[0].Cells[1].Value + "' from staff table ?", "Delete confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    try
-                    {
-                        Staffs.SP_Delete_Staff(int.Parse(StaffTable.SelectedCells[0].Value.ToString()));
-                        MessageBox.Show("Deleted succsesfully !", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Couldn't delete '" + StaffTable.SelectedRows[0].Cells[1].Value + "'.", "Invalid opearation", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-
-                }
-            }
+            DelteStaff();
         }
 
         private void SearchStaffBox_TextChanged(object sender, EventArgs e)
         {
             StaffTable.DataSource = Staffs.SP_Search_Staff(SearchStaffBox.Text);
         }
-        public void StaffAddForm_FormClosed(object sender , FormClosedEventArgs e)
+        private void RowMenuEdit_Clicked(object sender, EventArgs e)
         {
-
+            EditStaff();
+        }
+        private void RowMenuDelete_Clicked(object sender, EventArgs e)
+        {
+            DelteStaff();
+        }
+        private void EditStaff()
+        {
+            if (StaffTable.SelectedRows.Count > 0)
+            {
+                DataGridViewRow DGVR = StaffTable.CurrentRow;
+                StaffAddForm SAF = new StaffAddForm(true, int.Parse(DGVR.Cells["الكود"].Value.ToString()), DGVR.Cells["اسم الموظف"].Value.ToString(), DGVR.Cells["العنوان"].Value.ToString(), int.Parse(DGVR.Cells["رقم الهاتف 1"].Value.ToString()), int.Parse(DGVR.Cells["رقم الهاتف 2"].Value.ToString()), DGVR.Cells["البريد الإلكتروني"].Value.ToString(), DGVR.Cells["تاريخ الميلاد"].Value.ToString(), DGVR.Cells["تاريخ التوظيف"].Value.ToString(), DGVR.Cells["الوظيفة"].Value.ToString(), DGVR.Cells["النوع"].Value.ToString(), DGVR.Cells["الحالة الإجتماعية"].Value.ToString(), Staffs.SP_Get_Image_Staff(int.Parse(DGVR.Cells["الكود"].Value.ToString())));
+                SAF.ShowDialog();
+            }
+        }
+        private void DelteStaff()
+        {
+            if (StaffTable.SelectedRows.Count > 0)
+            {
+                if (MessageBox.Show("من جدول الموظفين ؟ '" + StaffTable.CurrentRow.Cells["اسم الموظف"].Value + "' هل أنت متأكد أنك تريد حذف", "Delete confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        Staffs.SP_Delete_Staff(int.Parse(StaffTable.CurrentRow.Cells["الكود"].Value.ToString()));
+                        MessageBox.Show("تمت عملية الحذف بنجاح", "حُذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("! '" + StaffTable.SelectedRows[0].Cells[1].Value + "'لم نستطع مسح", "فشلت العملية", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    StaffTable.DataSource = Staffs.SP_Get_Staff_Table();
+                }
+            }
         }
     }
 }

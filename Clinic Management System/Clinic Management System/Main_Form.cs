@@ -66,11 +66,5 @@ namespace Clinic_Management_System
             frm_Restore rst = new frm_Restore();
             rst.ShowDialog();
         }
-
-        private void btn_report_Click(object sender, EventArgs e)
-        {
-            Form1 frm = new Form1();
-            frm.ShowDialog();
-        }
     }
 }

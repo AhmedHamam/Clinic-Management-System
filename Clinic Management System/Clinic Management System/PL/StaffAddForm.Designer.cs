@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.StaffLabelGender = new System.Windows.Forms.Label();
@@ -54,6 +55,8 @@
             this.StaffLabelId = new System.Windows.Forms.Label();
             this.StaffImage = new System.Windows.Forms.PictureBox();
             this.Staffbtn = new System.Windows.Forms.Button();
+            this.AddStaffToolsTip = new System.Windows.Forms.ToolTip(this.components);
+            this.EditStaffToolsTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StaffImage)).BeginInit();
             this.SuspendLayout();
@@ -100,6 +103,8 @@
             this.button1.Size = new System.Drawing.Size(75, 30);
             this.button1.TabIndex = 11;
             this.button1.Text = "حفظ";
+            this.AddStaffToolsTip.SetToolTip(this.button1, "حفظ بياننات الموظف");
+            this.EditStaffToolsTip.SetToolTip(this.button1, "حفظ بياننات الموظف");
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -145,6 +150,8 @@
             this.StaffSocialstate.Name = "StaffSocialstate";
             this.StaffSocialstate.Size = new System.Drawing.Size(250, 31);
             this.StaffSocialstate.TabIndex = 8;
+            this.EditStaffToolsTip.SetToolTip(this.StaffSocialstate, "أدخل حالة الموظف الإجتماعية");
+            this.AddStaffToolsTip.SetToolTip(this.StaffSocialstate, "أدخل حالة الموظف الإجتماعية");
             // 
             // StaffJob
             // 
@@ -157,6 +164,8 @@
             this.StaffJob.Name = "StaffJob";
             this.StaffJob.Size = new System.Drawing.Size(250, 31);
             this.StaffJob.TabIndex = 7;
+            this.EditStaffToolsTip.SetToolTip(this.StaffJob, "أدخل تاريخ توظيف للموظف");
+            this.AddStaffToolsTip.SetToolTip(this.StaffJob, "أدخل وظيفة الموظف");
             // 
             // StaffGender
             // 
@@ -169,6 +178,8 @@
             this.StaffGender.Name = "StaffGender";
             this.StaffGender.Size = new System.Drawing.Size(250, 31);
             this.StaffGender.TabIndex = 9;
+            this.EditStaffToolsTip.SetToolTip(this.StaffGender, "أدخل نوع الموظف(ذكر , أنثى)");
+            this.AddStaffToolsTip.SetToolTip(this.StaffGender, "أدخل نوع الموظف(ذكر , أنثى)");
             // 
             // StaffEmployeeDate
             // 
@@ -177,6 +188,8 @@
             this.StaffEmployeeDate.Name = "StaffEmployeeDate";
             this.StaffEmployeeDate.Size = new System.Drawing.Size(250, 30);
             this.StaffEmployeeDate.TabIndex = 6;
+            this.AddStaffToolsTip.SetToolTip(this.StaffEmployeeDate, "أدخل تاريخ توظيف للموظف");
+            this.EditStaffToolsTip.SetToolTip(this.StaffEmployeeDate, "أدخل تاريخ توظيف للموظف");
             // 
             // StaffBirthDate
             // 
@@ -187,6 +200,8 @@
             this.StaffBirthDate.Name = "StaffBirthDate";
             this.StaffBirthDate.Size = new System.Drawing.Size(250, 30);
             this.StaffBirthDate.TabIndex = 5;
+            this.AddStaffToolsTip.SetToolTip(this.StaffBirthDate, "أدخل تاريخ ميلاد للموظف");
+            this.EditStaffToolsTip.SetToolTip(this.StaffBirthDate, "أدخل تاريخ ميلاد للموظف");
             // 
             // StaffLabelBirthdate
             // 
@@ -215,6 +230,8 @@
             this.StaffEmail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StaffEmail.Size = new System.Drawing.Size(250, 30);
             this.StaffEmail.TabIndex = 4;
+            this.EditStaffToolsTip.SetToolTip(this.StaffEmail, "أدخل بريد الموظف الإلكتروني");
+            this.AddStaffToolsTip.SetToolTip(this.StaffEmail, "أدخل بريد الموظف الإلكتروني");
             // 
             // StaffLabelEmail
             // 
@@ -233,6 +250,8 @@
             this.StaffPhoneNumber2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StaffPhoneNumber2.Size = new System.Drawing.Size(250, 30);
             this.StaffPhoneNumber2.TabIndex = 11;
+            this.EditStaffToolsTip.SetToolTip(this.StaffPhoneNumber2, "أدخل رقم الهاتف الثاني للموظف");
+            this.AddStaffToolsTip.SetToolTip(this.StaffPhoneNumber2, "أدخل رقم الهاتف الثاني للموظف");
             // 
             // StaffLabelPhonenumber2
             // 
@@ -251,6 +270,8 @@
             this.StaffPhoneNumber1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StaffPhoneNumber1.Size = new System.Drawing.Size(250, 30);
             this.StaffPhoneNumber1.TabIndex = 3;
+            this.EditStaffToolsTip.SetToolTip(this.StaffPhoneNumber1, "أدخل رقم الهاتف الأول للموظف");
+            this.AddStaffToolsTip.SetToolTip(this.StaffPhoneNumber1, "أدخل رقم الهاتف الأول للموظف");
             // 
             // StaffLabelPhonenumber1
             // 
@@ -269,6 +290,8 @@
             this.StaffAdress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StaffAdress.Size = new System.Drawing.Size(250, 30);
             this.StaffAdress.TabIndex = 2;
+            this.EditStaffToolsTip.SetToolTip(this.StaffAdress, "أدخل عنوان الموظف");
+            this.AddStaffToolsTip.SetToolTip(this.StaffAdress, "أدخل عنوان الموظف");
             // 
             // StaffLabeladress
             // 
@@ -287,6 +310,8 @@
             this.StaffName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StaffName.Size = new System.Drawing.Size(250, 30);
             this.StaffName.TabIndex = 1;
+            this.EditStaffToolsTip.SetToolTip(this.StaffName, "اسم الموظف");
+            this.AddStaffToolsTip.SetToolTip(this.StaffName, "أدخل اسم بالموظف");
             // 
             // StaffLabelName
             // 
@@ -305,6 +330,8 @@
             this.StaffId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StaffId.Size = new System.Drawing.Size(250, 30);
             this.StaffId.TabIndex = 0;
+            this.EditStaffToolsTip.SetToolTip(this.StaffId, "كود الموظف");
+            this.AddStaffToolsTip.SetToolTip(this.StaffId, "أدخل كود الموظف");
             // 
             // StaffLabelId
             // 
@@ -333,8 +360,26 @@
             this.Staffbtn.Size = new System.Drawing.Size(164, 22);
             this.Staffbtn.TabIndex = 10;
             this.Staffbtn.Text = "تعيين صوره";
+            this.AddStaffToolsTip.SetToolTip(this.Staffbtn, "قم بتعيين صورة للموظف ");
+            this.EditStaffToolsTip.SetToolTip(this.Staffbtn, "قم بتعيين صورة للموظف ");
             this.Staffbtn.UseVisualStyleBackColor = true;
             this.Staffbtn.Click += new System.EventHandler(this.Staffbtn_Click);
+            // 
+            // AddStaffToolsTip
+            // 
+            this.AddStaffToolsTip.AutomaticDelay = 250;
+            this.AddStaffToolsTip.AutoPopDelay = 5000;
+            this.AddStaffToolsTip.InitialDelay = 250;
+            this.AddStaffToolsTip.IsBalloon = true;
+            this.AddStaffToolsTip.ReshowDelay = 50;
+            // 
+            // EditStaffToolsTip
+            // 
+            this.EditStaffToolsTip.AutomaticDelay = 250;
+            this.EditStaffToolsTip.AutoPopDelay = 5000;
+            this.EditStaffToolsTip.InitialDelay = 250;
+            this.EditStaffToolsTip.IsBalloon = true;
+            this.EditStaffToolsTip.ReshowDelay = 50;
             // 
             // StaffAddForm
             // 
@@ -350,9 +395,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StaffImage)).EndInit();
             this.ResumeLayout(false);
-            //
-            //StaffAddForm
-            //
 
         }
 
@@ -384,5 +426,7 @@
         private System.Windows.Forms.Label StaffLabelBirthdate;
         private System.Windows.Forms.Label StaffLabelEmployeedate;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip AddStaffToolsTip;
+        private System.Windows.Forms.ToolTip EditStaffToolsTip;
     }
 }

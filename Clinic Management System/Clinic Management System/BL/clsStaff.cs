@@ -5,92 +5,93 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 namespace Clinic_Management_System
 {
     public class clsStaff
     {
         Connection db = new Connection();
-        public void SP_Insert_Staff(int id , string name , string contactno1 , string contactno2 , string sdress , string email , DateTime birthdate , DateTime employeedate , string positon , string status , string gender , byte[] image)
+        public void SP_Insert_Staff(int id , string name , int contactno1 , int contactno2 , string adress , string email , DateTime birthdate , DateTime employeedate , string positon , string status , string gender , byte[] image)
         {
             SqlParameter[] param = new SqlParameter[12];
 
-            param[0] = new SqlParameter("@StaffID", SqlDbType.VarChar, 20);
+            param[0] = new SqlParameter("@StaffID", "int");
             param[0].Value = id;
 
             param[1] = new SqlParameter("@StaffName", SqlDbType.VarChar, 50);
-            param[1].Value = id;
+            param[1].Value = name;
 
             param[2] = new SqlParameter("@StaffBirthdate", SqlDbType.Date);
-            param[2].Value = id;
+            param[2].Value = birthdate;
 
             param[3] = new SqlParameter("@StaffAdress", SqlDbType.VarChar, 100);
-            param[3].Value = id;
+            param[3].Value = adress;
 
-            param[4] = new SqlParameter("@StaffContactNO", SqlDbType.VarChar, 20);
-            param[4].Value = id;
+            param[4] = new SqlParameter("@StaffContactNO", "int");
+            param[4].Value = contactno1;
 
-            param[5] = new SqlParameter("@StaffContactNO2", SqlDbType.VarChar, 20);
-            param[5].Value = id;
+            param[5] = new SqlParameter("@StaffContactNO2", "int");
+            param[5].Value = contactno2;
 
             param[6] = new SqlParameter("@StaffGender", SqlDbType.VarChar, 10);
-            param[6].Value = id;
+            param[6].Value = gender;
 
             param[7] = new SqlParameter("@StaffPostion", SqlDbType.VarChar, 10);
-            param[7].Value = id;
+            param[7].Value = positon;
 
             param[8] = new SqlParameter("@StaffStatus", SqlDbType.VarChar, 10);
-            param[8].Value = id;
+            param[8].Value = status;
 
             param[9] = new SqlParameter("@StaffEmail", SqlDbType.VarChar, 20);
-            param[9].Value = id;
+            param[9].Value = email;
 
             param[10] = new SqlParameter("@StaffDateofEmployee", SqlDbType.Date);
-            param[10].Value = id;
+            param[10].Value = employeedate;
 
-            param[11] = new SqlParameter("@StaffPicture", "varchar(MAX)");
-            param[11].Value = id;
+            param[11] = new SqlParameter("@StaffPicture", "image");
+            param[11].Value = image;
 
             db.OpenConnection();
             db.Exacute_procdure("AddStaff", param);
             db.CloseConnection();
         }
 
-        public void SP_Edit_Staff(int id, string contactno1, string contactno2, string sdress, string email, DateTime birthdate, DateTime employeedate, string positon, string status, string gender, byte[] image)
+        public void SP_Edit_Staff(int id, int contactno1, int contactno2, string adress, string email, DateTime birthdate, DateTime employeedate, string positon, string status, string gender, byte[] image)
         {
             SqlParameter[] param = new SqlParameter[11];
 
-            param[0] = new SqlParameter("@StaffID", SqlDbType.VarChar, 20);
+            param[0] = new SqlParameter("@StaffID", "int");
             param[0].Value = id;
 
             param[1] = new SqlParameter("@StaffBirthdate", SqlDbType.Date);
-            param[1].Value = id;
+            param[1].Value = birthdate;
 
             param[2] = new SqlParameter("@StaffAdress", SqlDbType.VarChar, 100);
-            param[2].Value = id;
+            param[2].Value = adress;
 
-            param[3] = new SqlParameter("@StaffContactNO", SqlDbType.VarChar, 20);
-            param[3].Value = id;
+            param[3] = new SqlParameter("@StaffContactNO", "int");
+            param[3].Value = contactno1;
 
-            param[4] = new SqlParameter("@StaffContactNO2", SqlDbType.VarChar, 20);
-            param[4].Value = id;
+            param[4] = new SqlParameter("@StaffContactNO2", "int");
+            param[4].Value = contactno2;
 
             param[5] = new SqlParameter("@StaffGender", SqlDbType.VarChar, 10);
-            param[5].Value = id;
+            param[5].Value = gender;
 
             param[6] = new SqlParameter("@StaffPostion", SqlDbType.VarChar, 10);
-            param[6].Value = id;
+            param[6].Value = positon;
 
             param[7] = new SqlParameter("@StaffStatus", SqlDbType.VarChar, 10);
-            param[7].Value = id;
+            param[7].Value = status;
 
             param[8] = new SqlParameter("@StaffEmail", SqlDbType.VarChar, 20);
-            param[8].Value = id;
+            param[8].Value = email;
 
             param[9] = new SqlParameter("@StaffDateofEmployee", SqlDbType.Date);
-            param[9].Value = id;
+            param[9].Value = employeedate;
 
-            param[10] = new SqlParameter("@StaffPicture", "varchar(MAX)");
-            param[10].Value = id;
+            param[10] = new SqlParameter("@StaffPicture", "image");
+            param[10].Value = image;
 
             db.OpenConnection();
             db.Exacute_procdure("UpdateStaff", param);
@@ -105,7 +106,7 @@ namespace Clinic_Management_System
             param[0].Value = id;
 
             db.OpenConnection();
-            db.Exacute_procdure("DeletStaff", null);
+            db.Exacute_procdure("DeletStaff", param);
             db.CloseConnection();
         }
 
@@ -113,7 +114,7 @@ namespace Clinic_Management_System
         {
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@StaffName", SqlDbType.VarChar, 50);
+            param[0] = new SqlParameter("@StaffName", SqlDbType.VarChar, 100);
             param[0].Value = StaffName;
 
             DataTable Result;
@@ -143,6 +144,7 @@ namespace Clinic_Management_System
             db.OpenConnection();
             Result = db.ReadData("GetPicture", param);
             db.CloseConnection();
+
             return Connection.ConvertBytesToImage((byte[])Result.Rows[0][0]);
         }
 

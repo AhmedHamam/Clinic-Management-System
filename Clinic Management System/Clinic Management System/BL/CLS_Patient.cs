@@ -121,12 +121,5 @@ namespace Clinic_Management_System.BL
             cnx.CloseConnection();
 
         }
-
-        public static string GetNewCode()
-        {
-            Connection cnx = new Connection();
-            int id = int.Parse(cnx.getid("Patient")) + 1;
-            return id.ToString();
-        }
     }
 }
