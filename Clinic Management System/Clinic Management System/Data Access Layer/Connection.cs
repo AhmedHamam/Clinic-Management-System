@@ -83,11 +83,10 @@ namespace Clinic_Management_System
             return dt;
         }
         //method to insert or update or delete data from database 
-        public void Exacute_procdure(string stored_procdure, SqlParameter[] parameter)
+        public bool Exacute_procdure(string stored_procdure, SqlParameter[] parameter)
         {
             SqlCommand cmd = new SqlCommand();
-            try
-            {
+            
                 OpenConnection();
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = stored_procdure;
@@ -96,13 +95,14 @@ namespace Clinic_Management_System
                 {
                     cmd.Parameters.AddRange(parameter);
                 }
-                cmd.ExecuteNonQuery();
+               int r = cmd.ExecuteNonQuery();
                 CloseConnection();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                if (r > 0)
+                    return true;
+                else
+                    return false;
+            
+            
         }
         public string getid(string tabel)
         {
@@ -147,6 +147,30 @@ namespace Clinic_Management_System
 
         }
 
+        public string getidWithRemoveChar(string tabel,string column,string chars)
+        {
+            string id = "";
+
+            
+                this.OpenConnection();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "select max("+column+") from " + tabel + " ;";
+                cmd.Connection = connection;
+                try
+                {
+                    id = (string)cmd.ExecuteScalar();
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                }
+                //close connection
+                finally
+                {
+                    this.CloseConnection();
+                }
+                return id.Remove(id.IndexOf(chars), chars.Length);
+        }
     }
 }
 

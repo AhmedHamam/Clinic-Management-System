@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="BL\clsStaff.cs" />
     <Compile Include="BL\CLS_Patient.cs" />
+    <Compile Include="BL\clsCheckType.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
     <Compile Include="PL\frmChekup_Type.cs">
       <SubType>Form</SubType>
@@ -160,6 +161,9 @@
     </Compile>
     <EmbeddedResource Include="frm_Restore.resx">
       <DependentUpon>frm_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmChekup_Type.resx">
+      <DependentUpon>frmChekup_Type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmServerSetting.resx">
       <DependentUpon>frmServerSetting.cs</DependentUpon>
@@ -339,6 +343,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_Watch_701487.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_plus_1646001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Edit Row-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Edit Row-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Edit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Plus-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

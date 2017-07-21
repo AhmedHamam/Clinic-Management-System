@@ -128,6 +128,12 @@ namespace Clinic_Management_System
             frm.ShowDialog();
         }
 
+        private void msCheckupManage_Click(object sender, EventArgs e)
+        {
+            frmChekup_Type frm = new frmChekup_Type();
+            frm.ShowDialog();
+        }
+
         
     }
 }

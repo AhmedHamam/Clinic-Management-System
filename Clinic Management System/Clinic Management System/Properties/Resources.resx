@@ -124,8 +124,8 @@
   <data name="Checked_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Checked_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_user_285655" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_user_285655.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-Edit Row-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Edit Row-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-Select All-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Select All-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +142,14 @@
   <data name="Close_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-Add-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-Add-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_Watch_701487" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Watch_701487.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medicine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medicine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_user_285655" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_user_285655.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_Add_character_include_more_person_user_1886171" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_Add_character_include_more_person_user_1886171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +172,9 @@
   <data name="Show_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Show_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-Edit-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Edit-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="design" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,6 +190,9 @@
   <data name="edit-clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-Add-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Add-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="medicine1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medicine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -198,6 +207,9 @@
   </data>
   <data name="icons8-Edit-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Edit-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_plus_1646001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_plus_1646001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Checked_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Checked_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +229,15 @@
   <data name="Lock_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lock_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-Edit Row-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Edit Row-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_Christmas_Date_1651916" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Christmas_Date_1651916.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-Delete-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Delete-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Apply_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Apply_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,10 +247,7 @@
   <data name="icons8-Shutdown-16 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Shutdown-16 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_Christmas_Date_1651916" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_Christmas_Date_1651916.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_Watch_701487" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_Watch_701487.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-Plus-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Plus-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

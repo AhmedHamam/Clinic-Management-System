@@ -213,6 +213,16 @@ namespace Clinic_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Delete_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Delete-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Edit_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Edit-16", resourceCulture);
@@ -223,9 +233,49 @@ namespace Clinic_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Edit_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Edit-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Edit_Row_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Edit Row-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Edit_Row_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Edit Row-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Menu_26 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Menu-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Plus_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Plus-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +336,16 @@ namespace Clinic_Management_System.Properties {
         internal static System.Drawing.Bitmap if_Christmas_Date_1651916 {
             get {
                 object obj = ResourceManager.GetObject("if_Christmas_Date_1651916", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_plus_1646001 {
+            get {
+                object obj = ResourceManager.GetObject("if_plus_1646001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

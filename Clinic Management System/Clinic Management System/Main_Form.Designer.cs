@@ -42,6 +42,11 @@
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.msClinicInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+            this.الأشخاصToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msPatinet = new System.Windows.Forms.ToolStripMenuItem();
+            this.msManageStaff = new System.Windows.Forms.ToolStripMenuItem();
+            this.msSuppliers = new System.Windows.Forms.ToolStripMenuItem();
+            this.إدارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -52,11 +57,8 @@
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.الأشخاصToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.msPatinet = new System.Windows.Forms.ToolStripMenuItem();
-            this.msManageStaff = new System.Windows.Forms.ToolStripMenuItem();
-            this.msSuppliers = new System.Windows.Forms.ToolStripMenuItem();
-            this.إدارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
+            this.msCheckupManage = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -149,7 +151,9 @@
             this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msClinicInfo,
             this.toolStripMenuItem4,
-            this.الأشخاصToolStripMenuItem});
+            this.الأشخاصToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.msCheckupManage});
             this.toolStripDropDownButton2.Image = global::Clinic_Management_System.Properties.Resources.accessories_text_editor_32;
             this.toolStripDropDownButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -170,6 +174,44 @@
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 6);
+            // 
+            // الأشخاصToolStripMenuItem
+            // 
+            this.الأشخاصToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msPatinet,
+            this.msManageStaff,
+            this.msSuppliers,
+            this.إدارةالمستخدمينToolStripMenuItem});
+            this.الأشخاصToolStripMenuItem.Name = "الأشخاصToolStripMenuItem";
+            this.الأشخاصToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.الأشخاصToolStripMenuItem.Text = "الأشخاص";
+            // 
+            // msPatinet
+            // 
+            this.msPatinet.Name = "msPatinet";
+            this.msPatinet.Size = new System.Drawing.Size(169, 24);
+            this.msPatinet.Text = "إدارة المرضى";
+            this.msPatinet.Click += new System.EventHandler(this.msPatinet_Click);
+            // 
+            // msManageStaff
+            // 
+            this.msManageStaff.Name = "msManageStaff";
+            this.msManageStaff.Size = new System.Drawing.Size(169, 24);
+            this.msManageStaff.Text = "إدارة الموظفين";
+            this.msManageStaff.Click += new System.EventHandler(this.msManageStaff_Click);
+            // 
+            // msSuppliers
+            // 
+            this.msSuppliers.Name = "msSuppliers";
+            this.msSuppliers.Size = new System.Drawing.Size(169, 24);
+            this.msSuppliers.Text = "إدارة الموردين";
+            this.msSuppliers.Click += new System.EventHandler(this.msSuppliers_Click);
+            // 
+            // إدارةالمستخدمينToolStripMenuItem
+            // 
+            this.إدارةالمستخدمينToolStripMenuItem.Name = "إدارةالمستخدمينToolStripMenuItem";
+            this.إدارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
+            this.إدارةالمستخدمينToolStripMenuItem.Text = "إدارة المستخدمين";
             // 
             // statusStrip1
             // 
@@ -250,43 +292,17 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // الأشخاصToolStripMenuItem
+            // toolStripMenuItem5
             // 
-            this.الأشخاصToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msPatinet,
-            this.msManageStaff,
-            this.msSuppliers,
-            this.إدارةالمستخدمينToolStripMenuItem});
-            this.الأشخاصToolStripMenuItem.Name = "الأشخاصToolStripMenuItem";
-            this.الأشخاصToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.الأشخاصToolStripMenuItem.Text = "الأشخاص";
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(149, 6);
             // 
-            // msPatinet
+            // msCheckupManage
             // 
-            this.msPatinet.Name = "msPatinet";
-            this.msPatinet.Size = new System.Drawing.Size(169, 24);
-            this.msPatinet.Text = "إدارة المرضى";
-            this.msPatinet.Click += new System.EventHandler(this.msPatinet_Click);
-            // 
-            // msManageStaff
-            // 
-            this.msManageStaff.Name = "msManageStaff";
-            this.msManageStaff.Size = new System.Drawing.Size(169, 24);
-            this.msManageStaff.Text = "إدارة الموظفين";
-            this.msManageStaff.Click += new System.EventHandler(this.msManageStaff_Click);
-            // 
-            // msSuppliers
-            // 
-            this.msSuppliers.Name = "msSuppliers";
-            this.msSuppliers.Size = new System.Drawing.Size(169, 24);
-            this.msSuppliers.Text = "إدارة الموردين";
-            this.msSuppliers.Click += new System.EventHandler(this.msSuppliers_Click);
-            // 
-            // إدارةالمستخدمينToolStripMenuItem
-            // 
-            this.إدارةالمستخدمينToolStripMenuItem.Name = "إدارةالمستخدمينToolStripMenuItem";
-            this.إدارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
-            this.إدارةالمستخدمينToolStripMenuItem.Text = "إدارة المستخدمين";
+            this.msCheckupManage.Name = "msCheckupManage";
+            this.msCheckupManage.Size = new System.Drawing.Size(152, 24);
+            this.msCheckupManage.Text = "إدارة الزيارات";
+            this.msCheckupManage.Click += new System.EventHandler(this.msCheckupManage_Click);
             // 
             // Main_Form
             // 
@@ -346,6 +362,8 @@
         private System.Windows.Forms.ToolStripMenuItem msManageStaff;
         private System.Windows.Forms.ToolStripMenuItem msSuppliers;
         private System.Windows.Forms.ToolStripMenuItem إدارةالمستخدمينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem msCheckupManage;
         //private System.Windows.Forms.Button btnPatinet;
 
     }

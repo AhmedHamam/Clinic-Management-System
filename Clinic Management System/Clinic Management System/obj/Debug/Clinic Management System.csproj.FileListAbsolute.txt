@@ -127,3 +127,4 @@ C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management Sys
 C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucManageStaff.resources
 C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucNewStaff.resources
 C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
+C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmChekup_Type.resources
