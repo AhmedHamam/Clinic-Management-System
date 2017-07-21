@@ -16,10 +16,7 @@ namespace Clinic_Management_System
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         private void tmrRandomColor_Tick(object sender, EventArgs e)
         {

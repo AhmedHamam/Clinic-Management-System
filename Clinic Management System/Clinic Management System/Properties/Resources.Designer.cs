@@ -243,6 +243,26 @@ namespace Clinic_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Shutdown_16__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Shutdown-16 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Shutdown_16__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Shutdown-16 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_1_04_511562 {
             get {
                 object obj = ResourceManager.GetObject("if_1-04_511562", resourceCulture);
@@ -256,6 +276,16 @@ namespace Clinic_Management_System.Properties {
         internal static System.Drawing.Bitmap if_Add_character_include_more_person_user_1886171 {
             get {
                 object obj = ResourceManager.GetObject("if_Add_character_include_more_person_user_1886171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Christmas_Date_1651916 {
+            get {
+                object obj = ResourceManager.GetObject("if_Christmas_Date_1651916", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +316,26 @@ namespace Clinic_Management_System.Properties {
         internal static System.Drawing.Bitmap if_system_search_118797__1_ {
             get {
                 object obj = ResourceManager.GetObject("if_system-search_118797 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_user_285655 {
+            get {
+                object obj = ResourceManager.GetObject("if_user_285655", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Watch_701487 {
+            get {
+                object obj = ResourceManager.GetObject("if_Watch_701487", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
