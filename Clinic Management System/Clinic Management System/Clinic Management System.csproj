@@ -60,6 +60,12 @@
     <Compile Include="BL\CLS_Patient.cs" />
     <Compile Include="BL\clsCheckType.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
+    <Compile Include="PL\MoafaMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\MoafaMessageBox.Designer.cs">
+      <DependentUpon>MoafaMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmChekup_Type.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </Compile>
     <EmbeddedResource Include="frm_Restore.resx">
       <DependentUpon>frm_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\MoafaMessageBox.resx">
+      <DependentUpon>MoafaMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmChekup_Type.resx">
       <DependentUpon>frmChekup_Type.cs</DependentUpon>

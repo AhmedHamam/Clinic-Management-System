@@ -12,6 +12,7 @@ namespace Clinic_Management_System
     public partial class frmChekup_Type : Form
     {
         clsCheckType ct = new clsCheckType();
+        MoafaMessageBox msg = new MoafaMessageBox();
         public frmChekup_Type()
         {
             InitializeComponent();
@@ -75,12 +76,12 @@ namespace Clinic_Management_System
 
                 ct.Insert_CheckType(txtCode.Text, txtName.Text, nudPrice.Value.ToString(), txtNote.Text);
                 FillDGV();
-                // show message if good
+                msg.MoafaShow("تم عملية الإضافة بنجاح", MoafaIcon.Success);
                 
             }
             catch
-            { 
-            // show message also
+            {
+                msg.MoafaShow("فشل عملية الإضافة ", MoafaIcon.Error);
             }
         }
 
@@ -101,7 +102,7 @@ namespace Clinic_Management_System
 
             string result;
            ct.Update_CheckType(txtCode.Text, txtName.Text, nudPrice.Value.ToString(), txtNote.Text, out result);
-           MessageBox.Show(result);
+           msg.MoafaShow("تم عملية التعديل بنجاح", MoafaIcon.Success);
            FillDGV();
 
         }
@@ -111,10 +112,12 @@ namespace Clinic_Management_System
             if (ct.Delete_CheckType(txtCode.Text))
             {
                 FillDGV();
-                MessageBox.Show("تم عملية الحذف بنجاح");
+                msg.MoafaShow("تم عملية الحذف بنجاح", MoafaIcon.Success);
+                
             }
             else
-                MessageBox.Show("فشلت العملية");
+                msg.MoafaShow("فشلت العملية", MoafaIcon.Error);
+               
 
             
         }
