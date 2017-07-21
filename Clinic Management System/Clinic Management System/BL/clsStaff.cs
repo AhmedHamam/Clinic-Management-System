@@ -100,10 +100,7 @@ namespace Clinic_Management_System
 
         public void SP_Delete_Staff(int id)
         {
-            SqlParameter[] param = new SqlParameter[1];
-
-            param[0] = new SqlParameter("@StaffID", SqlDbType.VarChar, 20);
-            param[0].Value = id;
+            SqlParameter[] param = { new SqlParameter("@StaffID" , id.ToString()) };
 
             db.OpenConnection();
             db.Exacute_procdure("DeletStaff", param);
@@ -127,9 +124,7 @@ namespace Clinic_Management_System
         public DataTable SP_Get_Staff_Table()
         {
             DataTable Result;
-            db.OpenConnection();
             Result = db.ReadData("GetStaffTable", null);
-            db.CloseConnection();
             return Result;
         }
 

@@ -194,6 +194,7 @@
             this.MaximizeBox = false;
             this.Name = "StaffSearchForm";
             this.Text = "نموذج الموظفين";
+            this.Load += new System.EventHandler(this.StaffSearchForm_Load);
             this.StaffListBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StaffTable)).EndInit();
             this.RowMenuStrip.ResumeLayout(false);

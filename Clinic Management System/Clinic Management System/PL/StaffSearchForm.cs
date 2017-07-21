@@ -13,12 +13,11 @@ namespace Clinic_Management_System
     {
         public static StaffSearchForm stSearchForm;
         public clsStaff Staffs = new clsStaff();
+        MoafaMessageBox msg = new MoafaMessageBox();
         public StaffSearchForm()
         {
             InitializeComponent();
-            stSearchForm = this;
-            StaffTable.DataSource = Staffs.SP_Get_Staff_Table();
-            SearchStaffToolsTip.ToolTipIcon = ToolTipIcon.Info;
+            
         }
 
         private void AddStaffBtn_Click(object sender, EventArgs e)
@@ -67,7 +66,8 @@ namespace Clinic_Management_System
                     try
                     {
                         Staffs.SP_Delete_Staff(int.Parse(StaffTable.CurrentRow.Cells["الكود"].Value.ToString()));
-                        MessageBox.Show("تمت عملية الحذف بنجاح", "حُذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        msg.MoafaShow("تمت عملية الحذف بنجاح", MoafaIcon.Success);
+                        //MessageBox.Show("تمت عملية الحذف بنجاح", "حُذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch
                     {
@@ -76,6 +76,13 @@ namespace Clinic_Management_System
                     StaffTable.DataSource = Staffs.SP_Get_Staff_Table();
                 }
             }
+        }
+
+        private void StaffSearchForm_Load(object sender, EventArgs e)
+        {
+            stSearchForm = this;
+            StaffTable.DataSource = Staffs.SP_Get_Staff_Table();
+            SearchStaffToolsTip.ToolTipIcon = ToolTipIcon.Info;
         }
     }
 }
