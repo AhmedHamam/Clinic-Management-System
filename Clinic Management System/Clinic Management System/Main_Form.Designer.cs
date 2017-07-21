@@ -38,14 +38,6 @@
             this.btn_clinic_info = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblDate = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblTime = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.msLogin = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -53,10 +45,25 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.msStyles = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.tmrTime = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.msClinicInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblDate = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblTime = new System.Windows.Forms.ToolStripStatusLabel();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.tmrTime = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+            this.الموظفينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.الموردينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.المرضىToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.المستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -154,6 +161,87 @@
             this.toolStrip1.TabIndex = 20;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msLogin,
+            this.toolStripMenuItem1,
+            this.msServerSetting,
+            this.toolStripMenuItem2,
+            this.msStyles,
+            this.toolStripMenuItem3,
+            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem,
+            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem});
+            this.toolStripDropDownButton1.Image = global::Clinic_Management_System.Properties.Resources.Technology_32x32;
+            this.toolStripDropDownButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(97, 55);
+            this.toolStripDropDownButton1.Text = "إعدادات النظام";
+            this.toolStripDropDownButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // msLogin
+            // 
+            this.msLogin.Image = global::Clinic_Management_System.Properties.Resources.icons8_Shutdown_16__1_;
+            this.msLogin.Name = "msLogin";
+            this.msLogin.Size = new System.Drawing.Size(230, 24);
+            this.msLogin.Text = "تسجيل الدخول";
+            this.msLogin.Click += new System.EventHandler(this.msLogin_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(227, 6);
+            // 
+            // msServerSetting
+            // 
+            this.msServerSetting.Name = "msServerSetting";
+            this.msServerSetting.Size = new System.Drawing.Size(230, 24);
+            this.msServerSetting.Text = "إعدادات السيرفر";
+            this.msServerSetting.Click += new System.EventHandler(this.msServerSetting_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(227, 6);
+            // 
+            // msStyles
+            // 
+            this.msStyles.Name = "msStyles";
+            this.msStyles.Size = new System.Drawing.Size(230, 24);
+            this.msStyles.Text = "الإستايلات";
+            this.msStyles.Click += new System.EventHandler(this.msStyles_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(227, 6);
+            // 
+            // toolStripDropDownButton2
+            // 
+            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msClinicInfo,
+            this.toolStripMenuItem4,
+            this.الموظفينToolStripMenuItem,
+            this.الموردينToolStripMenuItem,
+            this.المرضىToolStripMenuItem,
+            this.المستخدمينToolStripMenuItem});
+            this.toolStripDropDownButton2.Image = global::Clinic_Management_System.Properties.Resources.accessories_text_editor_32;
+            this.toolStripDropDownButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(111, 55);
+            this.toolStripDropDownButton2.Text = "البيانات الأساسية";
+            this.toolStripDropDownButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripDropDownButton2.ToolTipText = "البيانات الأساسية";
+            // 
+            // msClinicInfo
+            // 
+            this.msClinicInfo.Name = "msClinicInfo";
+            this.msClinicInfo.Size = new System.Drawing.Size(152, 24);
+            this.msClinicInfo.Text = "بيانات العيادة";
+            this.msClinicInfo.Click += new System.EventHandler(this.msClinicInfo_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
@@ -170,16 +258,25 @@
             this.statusStrip1.TabIndex = 21;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // skinEngine1
+            // toolStripStatusLabel1
             // 
-            this.skinEngine1.SerialNumber = "";
-            this.skinEngine1.SkinFile = null;
+            this.toolStripStatusLabel1.Image = global::Clinic_Management_System.Properties.Resources.if_user_285655;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(110, 19);
+            this.toolStripStatusLabel1.Text = "إسم المستخدم : ";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(45, 19);
             this.toolStripStatusLabel2.Text = "لا يوجد";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Image = global::Clinic_Management_System.Properties.Resources.if_Christmas_Date_1651916;
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(95, 19);
+            this.toolStripStatusLabel3.Text = "تاريخ اليوم : ";
             // 
             // lblDate
             // 
@@ -202,73 +299,10 @@
             this.lblTime.Size = new System.Drawing.Size(96, 19);
             this.lblTime.Text = "00:00:00 PM";
             // 
-            // toolStripStatusLabel1
+            // skinEngine1
             // 
-            this.toolStripStatusLabel1.Image = global::Clinic_Management_System.Properties.Resources.if_user_285655;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(110, 19);
-            this.toolStripStatusLabel1.Text = "إسم المستخدم : ";
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Image = global::Clinic_Management_System.Properties.Resources.if_Christmas_Date_1651916;
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(95, 19);
-            this.toolStripStatusLabel3.Text = "تاريخ اليوم : ";
-            // 
-            // toolStripDropDownButton1
-            // 
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msLogin,
-            this.toolStripMenuItem1,
-            this.msServerSetting,
-            this.toolStripMenuItem2,
-            this.msStyles,
-            this.toolStripMenuItem3});
-            this.toolStripDropDownButton1.Image = global::Clinic_Management_System.Properties.Resources.Technology_32x32;
-            this.toolStripDropDownButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(97, 55);
-            this.toolStripDropDownButton1.Text = "إعدادات النظام";
-            this.toolStripDropDownButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // msLogin
-            // 
-            this.msLogin.Image = global::Clinic_Management_System.Properties.Resources.icons8_Shutdown_16__1_;
-            this.msLogin.Name = "msLogin";
-            this.msLogin.Size = new System.Drawing.Size(164, 24);
-            this.msLogin.Text = "تسجيل الدخول";
-            this.msLogin.Click += new System.EventHandler(this.msLogin_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(161, 6);
-            // 
-            // msServerSetting
-            // 
-            this.msServerSetting.Name = "msServerSetting";
-            this.msServerSetting.Size = new System.Drawing.Size(164, 24);
-            this.msServerSetting.Text = "إعدادات السيرفر";
-            this.msServerSetting.Click += new System.EventHandler(this.msServerSetting_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(161, 6);
-            // 
-            // msStyles
-            // 
-            this.msStyles.Name = "msStyles";
-            this.msStyles.Size = new System.Drawing.Size(164, 24);
-            this.msStyles.Text = "الإستايلات";
-            this.msStyles.Click += new System.EventHandler(this.msStyles_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(161, 6);
+            this.skinEngine1.SerialNumber = "";
+            this.skinEngine1.SkinFile = null;
             // 
             // tmrTime
             // 
@@ -287,25 +321,46 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // toolStripDropDownButton2
+            // إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem
             // 
-            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msClinicInfo});
-            this.toolStripDropDownButton2.Image = global::Clinic_Management_System.Properties.Resources.Technology_32x32;
-            this.toolStripDropDownButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(111, 55);
-            this.toolStripDropDownButton2.Text = "البيانات الأساسية";
-            this.toolStripDropDownButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripDropDownButton2.ToolTipText = "البيانات الأساسية";
+            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem.Name = "إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem";
+            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem.Text = "إنشاء نسخة إحتياطية للبيانات";
             // 
-            // msClinicInfo
+            // إستعادةالنسخةالإحتياطيةToolStripMenuItem
             // 
-            this.msClinicInfo.Name = "msClinicInfo";
-            this.msClinicInfo.Size = new System.Drawing.Size(152, 24);
-            this.msClinicInfo.Text = "بيانات العيادة";
-            this.msClinicInfo.Click += new System.EventHandler(this.msClinicInfo_Click);
+            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem.Name = "إستعادةالنسخةالإحتياطيةToolStripMenuItem";
+            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem.Text = "إستعادة النسخة الإحتياطية";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 6);
+            // 
+            // الموظفينToolStripMenuItem
+            // 
+            this.الموظفينToolStripMenuItem.Name = "الموظفينToolStripMenuItem";
+            this.الموظفينToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.الموظفينToolStripMenuItem.Text = "الموظفين";
+            // 
+            // الموردينToolStripMenuItem
+            // 
+            this.الموردينToolStripMenuItem.Name = "الموردينToolStripMenuItem";
+            this.الموردينToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.الموردينToolStripMenuItem.Text = "الموردين";
+            // 
+            // المرضىToolStripMenuItem
+            // 
+            this.المرضىToolStripMenuItem.Name = "المرضىToolStripMenuItem";
+            this.المرضىToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.المرضىToolStripMenuItem.Text = "المرضى";
+            // 
+            // المستخدمينToolStripMenuItem
+            // 
+            this.المستخدمينToolStripMenuItem.Name = "المستخدمينToolStripMenuItem";
+            this.المستخدمينToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.المستخدمينToolStripMenuItem.Text = "المستخدمين";
             // 
             // Main_Form
             // 
@@ -373,6 +428,13 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
         private System.Windows.Forms.ToolStripMenuItem msClinicInfo;
+        private System.Windows.Forms.ToolStripMenuItem إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem إستعادةالنسخةالإحتياطيةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem الموظفينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem الموردينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem المرضىToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem المستخدمينToolStripMenuItem;
         //private System.Windows.Forms.Button btnPatinet;
 
     }
