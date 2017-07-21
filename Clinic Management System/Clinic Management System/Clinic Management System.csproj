@@ -59,6 +59,12 @@
     <Compile Include="BL\clsStaff.cs" />
     <Compile Include="BL\CLS_Patient.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
+    <Compile Include="PL\frmChekup_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmChekup_Type.Designer.cs">
+      <DependentUpon>frmChekup_Type.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Restore.cs">
       <SubType>Form</SubType>
     </Compile>

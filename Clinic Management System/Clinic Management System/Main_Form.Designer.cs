@@ -29,14 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_login = new System.Windows.Forms.Button();
-            this.btnManageStaff = new System.Windows.Forms.Button();
-            this.btn_supplier = new System.Windows.Forms.Button();
-            this.btnPatinet = new System.Windows.Forms.Button();
-            this.btnServerSeting = new System.Windows.Forms.Button();
-            this.btn_createBackup = new System.Windows.Forms.Button();
-            this.btn_clinic_info = new System.Windows.Forms.Button();
-            this.btnRestore = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.msLogin = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,8 +37,11 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.msStyles = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.ms_createBackup = new System.Windows.Forms.ToolStripMenuItem();
+            this.msRestore = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.msClinicInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -57,97 +52,15 @@
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
-            this.الموظفينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.الموردينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.المرضىToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.المستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.الأشخاصToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msPatinet = new System.Windows.Forms.ToolStripMenuItem();
+            this.msManageStaff = new System.Windows.Forms.ToolStripMenuItem();
+            this.msSuppliers = new System.Windows.Forms.ToolStripMenuItem();
+            this.إدارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_login
-            // 
-            this.btn_login.Location = new System.Drawing.Point(698, 206);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(139, 46);
-            this.btn_login.TabIndex = 5;
-            this.btn_login.Text = "تسجيل الدخول ";
-            this.btn_login.UseVisualStyleBackColor = true;
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
-            // 
-            // btnManageStaff
-            // 
-            this.btnManageStaff.Location = new System.Drawing.Point(553, 206);
-            this.btnManageStaff.Name = "btnManageStaff";
-            this.btnManageStaff.Size = new System.Drawing.Size(139, 46);
-            this.btnManageStaff.TabIndex = 7;
-            this.btnManageStaff.Text = "إدارة الموظفين";
-            this.btnManageStaff.UseVisualStyleBackColor = true;
-            this.btnManageStaff.Click += new System.EventHandler(this.btnManageStaff_Click);
-            // 
-            // btn_supplier
-            // 
-            this.btn_supplier.Location = new System.Drawing.Point(408, 206);
-            this.btn_supplier.Name = "btn_supplier";
-            this.btn_supplier.Size = new System.Drawing.Size(139, 46);
-            this.btn_supplier.TabIndex = 9;
-            this.btn_supplier.Text = "إدارة الموردين";
-            this.btn_supplier.UseVisualStyleBackColor = true;
-            this.btn_supplier.Click += new System.EventHandler(this.btn_supplier_Click);
-            // 
-            // btnPatinet
-            // 
-            this.btnPatinet.Location = new System.Drawing.Point(263, 206);
-            this.btnPatinet.Name = "btnPatinet";
-            this.btnPatinet.Size = new System.Drawing.Size(139, 46);
-            this.btnPatinet.TabIndex = 9;
-            this.btnPatinet.Text = "إدارة المرضى";
-            this.btnPatinet.UseVisualStyleBackColor = true;
-            this.btnPatinet.Click += new System.EventHandler(this.btnPatinet_Click);
-            // 
-            // btnServerSeting
-            // 
-            this.btnServerSeting.Location = new System.Drawing.Point(553, 258);
-            this.btnServerSeting.Name = "btnServerSeting";
-            this.btnServerSeting.Size = new System.Drawing.Size(284, 46);
-            this.btnServerSeting.TabIndex = 11;
-            this.btnServerSeting.Text = "إعدادات السيرفر";
-            this.btnServerSeting.UseVisualStyleBackColor = true;
-            this.btnServerSeting.Click += new System.EventHandler(this.btnServerSeting_Click);
-            // 
-            // btn_createBackup
-            // 
-            this.btn_createBackup.Location = new System.Drawing.Point(263, 258);
-            this.btn_createBackup.Name = "btn_createBackup";
-            this.btn_createBackup.Size = new System.Drawing.Size(284, 46);
-            this.btn_createBackup.TabIndex = 14;
-            this.btn_createBackup.Text = "أنشاء نسخة أحتياطية";
-            this.btn_createBackup.UseVisualStyleBackColor = true;
-            this.btn_createBackup.Click += new System.EventHandler(this.btn_createBackup_Click);
-            // 
-            // btn_clinic_info
-            // 
-            this.btn_clinic_info.Location = new System.Drawing.Point(553, 319);
-            this.btn_clinic_info.Name = "btn_clinic_info";
-            this.btn_clinic_info.Size = new System.Drawing.Size(284, 46);
-            this.btn_clinic_info.TabIndex = 16;
-            this.btn_clinic_info.Text = "بيانات العيادة";
-            this.btn_clinic_info.UseVisualStyleBackColor = true;
-            this.btn_clinic_info.Click += new System.EventHandler(this.btn_clinic_info_Click);
-            // 
-            // btnRestore
-            // 
-            this.btnRestore.Location = new System.Drawing.Point(263, 319);
-            this.btnRestore.Name = "btnRestore";
-            this.btnRestore.Size = new System.Drawing.Size(284, 46);
-            this.btnRestore.TabIndex = 18;
-            this.btnRestore.Text = "أستعادة نسخة أحتياطية";
-            this.btnRestore.UseVisualStyleBackColor = true;
-            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
             // toolStrip1
             // 
@@ -170,8 +83,8 @@
             this.toolStripMenuItem2,
             this.msStyles,
             this.toolStripMenuItem3,
-            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem,
-            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem});
+            this.ms_createBackup,
+            this.msRestore});
             this.toolStripDropDownButton1.Image = global::Clinic_Management_System.Properties.Resources.Technology_32x32;
             this.toolStripDropDownButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -217,15 +130,26 @@
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(227, 6);
             // 
+            // ms_createBackup
+            // 
+            this.ms_createBackup.Name = "ms_createBackup";
+            this.ms_createBackup.Size = new System.Drawing.Size(230, 24);
+            this.ms_createBackup.Text = "إنشاء نسخة إحتياطية للبيانات";
+            this.ms_createBackup.Click += new System.EventHandler(this.ms_createBackup_Click);
+            // 
+            // msRestore
+            // 
+            this.msRestore.Name = "msRestore";
+            this.msRestore.Size = new System.Drawing.Size(230, 24);
+            this.msRestore.Text = "إستعادة النسخة الإحتياطية";
+            this.msRestore.Click += new System.EventHandler(this.msRestore_Click);
+            // 
             // toolStripDropDownButton2
             // 
             this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msClinicInfo,
             this.toolStripMenuItem4,
-            this.الموظفينToolStripMenuItem,
-            this.الموردينToolStripMenuItem,
-            this.المرضىToolStripMenuItem,
-            this.المستخدمينToolStripMenuItem});
+            this.الأشخاصToolStripMenuItem});
             this.toolStripDropDownButton2.Image = global::Clinic_Management_System.Properties.Resources.accessories_text_editor_32;
             this.toolStripDropDownButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -241,6 +165,11 @@
             this.msClinicInfo.Size = new System.Drawing.Size(152, 24);
             this.msClinicInfo.Text = "بيانات العيادة";
             this.msClinicInfo.Click += new System.EventHandler(this.msClinicInfo_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 6);
             // 
             // statusStrip1
             // 
@@ -321,60 +250,49 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem
+            // الأشخاصToolStripMenuItem
             // 
-            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem.Name = "إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem";
-            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
-            this.إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem.Text = "إنشاء نسخة إحتياطية للبيانات";
+            this.الأشخاصToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msPatinet,
+            this.msManageStaff,
+            this.msSuppliers,
+            this.إدارةالمستخدمينToolStripMenuItem});
+            this.الأشخاصToolStripMenuItem.Name = "الأشخاصToolStripMenuItem";
+            this.الأشخاصToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.الأشخاصToolStripMenuItem.Text = "الأشخاص";
             // 
-            // إستعادةالنسخةالإحتياطيةToolStripMenuItem
+            // msPatinet
             // 
-            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem.Name = "إستعادةالنسخةالإحتياطيةToolStripMenuItem";
-            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
-            this.إستعادةالنسخةالإحتياطيةToolStripMenuItem.Text = "إستعادة النسخة الإحتياطية";
+            this.msPatinet.Name = "msPatinet";
+            this.msPatinet.Size = new System.Drawing.Size(169, 24);
+            this.msPatinet.Text = "إدارة المرضى";
+            this.msPatinet.Click += new System.EventHandler(this.msPatinet_Click);
             // 
-            // toolStripMenuItem4
+            // msManageStaff
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 6);
+            this.msManageStaff.Name = "msManageStaff";
+            this.msManageStaff.Size = new System.Drawing.Size(169, 24);
+            this.msManageStaff.Text = "إدارة الموظفين";
+            this.msManageStaff.Click += new System.EventHandler(this.msManageStaff_Click);
             // 
-            // الموظفينToolStripMenuItem
+            // msSuppliers
             // 
-            this.الموظفينToolStripMenuItem.Name = "الموظفينToolStripMenuItem";
-            this.الموظفينToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.الموظفينToolStripMenuItem.Text = "الموظفين";
+            this.msSuppliers.Name = "msSuppliers";
+            this.msSuppliers.Size = new System.Drawing.Size(169, 24);
+            this.msSuppliers.Text = "إدارة الموردين";
+            this.msSuppliers.Click += new System.EventHandler(this.msSuppliers_Click);
             // 
-            // الموردينToolStripMenuItem
+            // إدارةالمستخدمينToolStripMenuItem
             // 
-            this.الموردينToolStripMenuItem.Name = "الموردينToolStripMenuItem";
-            this.الموردينToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.الموردينToolStripMenuItem.Text = "الموردين";
-            // 
-            // المرضىToolStripMenuItem
-            // 
-            this.المرضىToolStripMenuItem.Name = "المرضىToolStripMenuItem";
-            this.المرضىToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.المرضىToolStripMenuItem.Text = "المرضى";
-            // 
-            // المستخدمينToolStripMenuItem
-            // 
-            this.المستخدمينToolStripMenuItem.Name = "المستخدمينToolStripMenuItem";
-            this.المستخدمينToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.المستخدمينToolStripMenuItem.Text = "المستخدمين";
+            this.إدارةالمستخدمينToolStripMenuItem.Name = "إدارةالمستخدمينToolStripMenuItem";
+            this.إدارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
+            this.إدارةالمستخدمينToolStripMenuItem.Text = "إدارة المستخدمين";
             // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 453);
-            this.Controls.Add(this.btnRestore);
-            this.Controls.Add(this.btn_clinic_info);
-            this.Controls.Add(this.btn_createBackup);
-            this.Controls.Add(this.btnServerSeting);
-            this.Controls.Add(this.btn_supplier);
-            this.Controls.Add(this.btnPatinet);
-            this.Controls.Add(this.btnManageStaff);
-            this.Controls.Add(this.btn_login);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
@@ -400,14 +318,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Button btnManageStaff;
-        private System.Windows.Forms.Button btn_supplier;
-        private System.Windows.Forms.Button btnPatinet;
-        private System.Windows.Forms.Button btnServerSeting;
-        private System.Windows.Forms.Button btn_createBackup;
-        private System.Windows.Forms.Button btn_clinic_info;
-        private System.Windows.Forms.Button btnRestore;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem msLogin;
@@ -428,13 +338,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
         private System.Windows.Forms.ToolStripMenuItem msClinicInfo;
-        private System.Windows.Forms.ToolStripMenuItem إنشاءنسخةإحتياطيةللبياناتToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem إستعادةالنسخةالإحتياطيةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ms_createBackup;
+        private System.Windows.Forms.ToolStripMenuItem msRestore;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem الموظفينToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem الموردينToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem المرضىToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem المستخدمينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem الأشخاصToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msPatinet;
+        private System.Windows.Forms.ToolStripMenuItem msManageStaff;
+        private System.Windows.Forms.ToolStripMenuItem msSuppliers;
+        private System.Windows.Forms.ToolStripMenuItem إدارةالمستخدمينToolStripMenuItem;
         //private System.Windows.Forms.Button btnPatinet;
 
     }
