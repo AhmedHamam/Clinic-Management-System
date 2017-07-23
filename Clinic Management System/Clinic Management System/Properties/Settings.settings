@@ -6,7 +6,7 @@
       <Value Profile="(Default)">Emerald.ssk</Value>
     </Setting>
     <Setting Name="Server" Type="System.String" Scope="User">
-      <Value Profile="(Default)">.</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="IsWinAuth" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

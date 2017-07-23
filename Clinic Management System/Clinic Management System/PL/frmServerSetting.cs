@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace Clinic_Management_System
 {
     public partial class frmServerSetting : Form
@@ -14,13 +14,6 @@ namespace Clinic_Management_System
         public frmServerSetting()
         {
             InitializeComponent();
-        }
-
-       
-
-        private void tmrRandomColor_Tick(object sender, EventArgs e)
-        {
-            
         }
 
         private void rdoSql_CheckedChanged(object sender, EventArgs e)
@@ -40,7 +33,14 @@ namespace Clinic_Management_System
         private void frmServerSetting_Load(object sender, EventArgs e)
         {
             var p = Properties.Settings.Default;
-            txtServerName.Text = p.Server;
+            if (p.Server == "")
+            {
+                txtServerName.Text = ".";
+            }
+            else
+            {
+                txtServerName.Text = p.Server;
+            }
             if (!p.IsWinAuth)
             {
                 rdoSql.Checked = true;
@@ -51,19 +51,25 @@ namespace Clinic_Management_System
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var p = Properties.Settings.Default;
-            p.Server = txtServerName.Text;
-            if (rdoWin.Checked)
-                p.IsWinAuth = true;
+                Connection conn = new Connection(txtServerName.Text, txtUser.Text, txtPass.Text, rdoWin.Checked);
+            if (conn.OpenConnection() == true)
+            {
+                conn.CloseConnection();
+                if (RemeberSettings.Checked == true)
+                {
+                    var p = Properties.Settings.Default;
+                    p.Server = txtServerName.Text;
+                    p.IsWinAuth = rdoWin.Checked;
+                    p.UserName = txtUser.Text;
+                    p.Password = txtPass.Text;
+                    p.Save();
+                }
+                this.Close();
+            }
             else
             {
-                p.IsWinAuth = false;
-                p.UserName = txtUser.Text;
-                p.Password = txtPass.Text;
+                MessageBox.Show("Couldn't connect to server \n possiple reasons : \n 1.wrong input , check your input! \n 2. no internet connection , check your internet connection!", "Couldn't connect to server", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            p.Save();
-            this.Close();
         }
 
         private void btnCancle_Click(object sender, EventArgs e)

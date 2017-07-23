@@ -129,3 +129,5 @@ C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management Sys
 C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
 C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmChekup_Type.resources
 C:\Users\Mohamed\Documents\GitHub\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.MoafaMessageBox.resources
+C:\Users\shady\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.MoafaMessageBox.resources
+C:\Users\shady\Desktop\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmChekup_Type.resources

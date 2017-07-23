@@ -12,14 +12,22 @@ namespace Clinic_Management_System
         public Connection()
         {
             var p = Properties.Settings.Default;
-            if(p.IsWinAuth)
-            connectionString = @"SERVER="+p.Server+";DATABASE=Clinic;Integrated Security=true";
+            if (p.IsWinAuth)
+                connectionString = @"SERVER=" + p.Server + ";DATABASE=Clinic;Integrated Security=true";
             else
-            connectionString = @"SERVER=" + p.Server + ";DATABASE=Clinic;Integrated Security=false;User Id="+p.UserName+";Password="+p.Password+"";
+                connectionString = @"SERVER=" + p.Server + ";DATABASE=Clinic;Integrated Security=false;User Id=" + p.UserName + ";Password=" + p.Password + "";
+            connection = new SqlConnection(connectionString);
+        }
+        public Connection(string ServerName , string UserName , string Password , bool WinAuth)
+        {
+            if (WinAuth)
+                connectionString = @"SERVER=" + ServerName + ";DATABASE=Clinic;Integrated Security=true";
+            else
+                connectionString = @"SERVER=" + ServerName + ";DATABASE=Clinic;Integrated Security=false;User Id=" + UserName + ";Password=" + Password + "";
             connection = new SqlConnection(connectionString);
         }
         //open connection to database
-        public void OpenConnection()
+        public bool OpenConnection()
         {
 
             //check connection is close or not 
@@ -28,12 +36,15 @@ namespace Clinic_Management_System
                 try
                 {
                     connection.Open();
+                    return true;
                 }
                 catch (SqlException ex)
                 {
                     MessageBox.Show(ex.ToString());
+                    return false;
                 }
             }
+            return true;
         }
         //Close connection
         public void CloseConnection()

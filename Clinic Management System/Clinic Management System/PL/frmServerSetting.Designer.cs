@@ -39,6 +39,7 @@
             this.rdoWin = new System.Windows.Forms.RadioButton();
             this.rdoSql = new System.Windows.Forms.RadioButton();
             this.btnCancle = new System.Windows.Forms.Button();
+            this.RemeberSettings = new System.Windows.Forms.CheckBox();
             this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,7 +109,6 @@
             this.txtUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtUser.Size = new System.Drawing.Size(526, 27);
             this.txtUser.TabIndex = 0;
-            this.txtUser.Text = "sa";
             this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label4
@@ -145,7 +145,7 @@
             this.rdoWin.AutoSize = true;
             this.rdoWin.Checked = true;
             this.rdoWin.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.rdoWin.Location = new System.Drawing.Point(65, 68);
+            this.rdoWin.Location = new System.Drawing.Point(183, 68);
             this.rdoWin.Name = "rdoWin";
             this.rdoWin.Size = new System.Drawing.Size(198, 23);
             this.rdoWin.TabIndex = 1;
@@ -157,7 +157,7 @@
             // 
             this.rdoSql.AutoSize = true;
             this.rdoSql.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.rdoSql.Location = new System.Drawing.Point(344, 68);
+            this.rdoSql.Location = new System.Drawing.Point(393, 68);
             this.rdoSql.Name = "rdoSql";
             this.rdoSql.Size = new System.Drawing.Size(163, 23);
             this.rdoSql.TabIndex = 2;
@@ -184,11 +184,22 @@
             this.btnCancle.UseVisualStyleBackColor = false;
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
+            // RemeberSettings
+            // 
+            this.RemeberSettings.AutoSize = true;
+            this.RemeberSettings.Location = new System.Drawing.Point(30, 74);
+            this.RemeberSettings.Name = "RemeberSettings";
+            this.RemeberSettings.Size = new System.Drawing.Size(91, 17);
+            this.RemeberSettings.TabIndex = 7;
+            this.RemeberSettings.Text = "تذكر الإعدادات";
+            this.RemeberSettings.UseVisualStyleBackColor = true;
+            // 
             // frmServerSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 321);
+            this.Controls.Add(this.RemeberSettings);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.rdoSql);
             this.Controls.Add(this.rdoWin);
@@ -224,5 +235,6 @@
         private System.Windows.Forms.RadioButton rdoWin;
         private System.Windows.Forms.RadioButton rdoSql;
         private System.Windows.Forms.Button btnCancle;
+        private System.Windows.Forms.CheckBox RemeberSettings;
     }
 }
