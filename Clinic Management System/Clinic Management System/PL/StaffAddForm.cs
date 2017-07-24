@@ -58,12 +58,19 @@ namespace Clinic_Management_System
         private void Staffbtn_Click(object sender, EventArgs e)
         {
             OpenFileDialog filedialog = new OpenFileDialog();
+            filedialog.InitialDirectory = "C:/Users/"+ Environment.UserName + "/Documents";
+            filedialog.Title = "تعيين صورة موظف";
+            filedialog.Filter = " PNG | *.png;| JPG | *.jpg; *.jpeg; | BMB | *.bmp; | GIF | *.gif;";
             if (filedialog.ShowDialog() == DialogResult.OK)
             {
                 picture = Image.FromFile(filedialog.FileName);
             }
             filedialog.Dispose();
-            StaffImage.Image = picture;
+            if (picture != null)
+            {
+                StaffImage.Image = picture;
+                picture.Dispose();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,6 +111,7 @@ namespace Clinic_Management_System
                                                             staffff.SP_Insert_Staff(int.Parse(StaffId.Text), StaffName.Text, staffphonenumber1, staffphonenumber2, StaffAdress.Text, StaffEmail.Text, StaffBirthDate.Value, StaffEmployeeDate.Value, StaffJob.SelectedItem.ToString(), StaffSocialstate.SelectedItem.ToString(), StaffGender.SelectedItem.ToString(), Connection.ConvertImageToBytes(StaffImage.Image));
                                                             MessageBox.Show("! تمت الإضافة بنجاح", "أُضيف", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                                             StaffSearchForm.stSearchForm.StaffTable.DataSource = staffff.SP_Get_Staff_Table();
+                                                            this.Close();
 
                                                         }
                                                         catch
@@ -124,6 +132,7 @@ namespace Clinic_Management_System
                                                         staffff.SP_Edit_Staff(int.Parse(StaffId.Text), staffphonenumber1, staffphonenumber2, StaffAdress.Text, StaffEmail.Text, StaffBirthDate.Value, StaffEmployeeDate.Value, StaffJob.SelectedItem.ToString(), StaffSocialstate.SelectedItem.ToString(), StaffGender.SelectedItem.ToString(), Connection.ConvertImageToBytes(StaffImage.Image));
                                                         StaffSearchForm.stSearchForm.StaffTable.DataSource = staffff.SP_Get_Staff_Table();
                                                         MessageBox.Show("! تم تعديل بيانات الموظف بنجاح", "عُدل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                        this.Close();
                                                     }
                                                     catch
                                                     {

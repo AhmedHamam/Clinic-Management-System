@@ -345,6 +345,7 @@
             // 
             // StaffImage
             // 
+            this.StaffImage.Image = global::Clinic_Management_System.Properties.Resources.person_male;
             this.StaffImage.Location = new System.Drawing.Point(6, 29);
             this.StaffImage.Name = "StaffImage";
             this.StaffImage.Size = new System.Drawing.Size(164, 164);
