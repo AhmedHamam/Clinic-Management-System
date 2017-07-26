@@ -19,17 +19,6 @@ namespace Clinic_Management_System
             //------------------ Mohamed Moafa Code For Execute Style ----------------
             skinEngine1.SkinFile = "Skins\\" + Properties.Settings.Default.Style;
             //------------------------------------------------------------------------
-
-            //------------------ Mohamed Moafa Code For Fill Combobox with names of styles  ----------------
-            try
-            {
-                if (Directory.Exists("Skins"))
-                    foreach (string file in Directory.GetFiles("Skins"))
-                       cmbStyle.Items.Add(Path.GetFileName(file));
-                cmbStyle.Text = Properties.Settings.Default.Style;
-            }
-            catch { }
-            //-----------------------------------------------------------------------------------------------
         }
 
         private void cb_showpassword_CheckedChanged(object sender, EventArgs e)
@@ -37,44 +26,37 @@ namespace Clinic_Management_System
             if (cb_showpassword.Checked)
             {
                 txt_password.UseSystemPasswordChar = false;
-                cb_showpassword.Image = global::Clinic_Management_System.Properties.Resources.Hide_32x32;
+                cb_showpassword.Image = Properties.Resources.Hide_32x32;
             }
             else
             {
                 txt_password.UseSystemPasswordChar = true;
-                cb_showpassword.Image = global::Clinic_Management_System.Properties.Resources.Show_32x32;
+                cb_showpassword.Image = Properties.Resources.Show_32x32;
             }
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("هل تريد الخروج من البرنامج ", "تنبيه ", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-            if (dr==DialogResult.OK)
+            if (MessageBox.Show("هل تريد الخروج من البرنامج ", "تنبيه ", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
 	        {
                 Application.Exit();	 
 	        }
-            else
-            {
-            }
-        }
-
-        private void cmbStyle_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //------------------ Mohamed Moafa Code For Change styles  ----------------
-            try
-            {
-                Properties.Settings.Default.Style = cmbStyle.Text;
-                Properties.Settings.Default.Save();
-                skinEngine1.SkinFile = "Skins\\" + cmbStyle.Text;
-            }
-            catch { }
-            //-----------------------------------------------------------------------------------------------
-        
         }
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-
+            CLS_Login Connection = new CLS_Login();
+            DataTable DT = Connection.StaffLogin(txt_username.Text, txt_password.Text);
+            if (DT.Rows.Count > 0)
+            {
+                Program.LogInRaw = DT.Rows[0];
+                this.DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                Program.LogInRaw = null;
+                MessageBox.Show("wrong username or password");
+            }
         }
     }
 }

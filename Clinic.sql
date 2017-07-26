@@ -22,7 +22,7 @@ staff_picture image Null,-- صورة الموظف
 -- =======================================
 create table Login
 (
-username VARCHAR (10) Primary Key Not Null,-- اسم المستخدم
+username VARCHAR (50) Primary Key Not Null,-- اسم المستخدم
 password VARCHAR (10) Null,-- كلمة المرور 
 staff_id int Null,-- كود الموظف وهذا ياتى من جدول الموظفين 
 foreign key (staff_id)references Staff(staff_id)  on update cascade on delete cascade

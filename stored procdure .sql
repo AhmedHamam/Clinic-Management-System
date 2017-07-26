@@ -319,3 +319,12 @@ as
 begin
 SELECT * FROM  Staff WHERE staff_id = @StaffID or staff_name = @StaffName;
 end
+
+GO
+CREATE PROC StaffLogin
+@StaffName varchar(50),
+@StaffPassword varchar(10)
+as
+begin
+SELECT * FROM  Login WHERE username = @StaffName AND [password] = @StaffPassword;
+end

@@ -51,10 +51,9 @@ namespace Clinic_Management_System
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-                Connection conn = new Connection(txtServerName.Text, txtUser.Text, txtPass.Text, rdoWin.Checked);
-            if (conn.OpenConnection() == true)
+            CLS_ServerSettings Serverconn = new CLS_ServerSettings();
+            if (Serverconn.TestConnection(txtServerName.Text, txtUser.Text, txtPass.Text, rdoWin.Checked) == true)
             {
-                conn.CloseConnection();
                 if (RemeberSettings.Checked == true)
                 {
                     var p = Properties.Settings.Default;
@@ -64,7 +63,7 @@ namespace Clinic_Management_System
                     p.Password = txtPass.Text;
                     p.Save();
                 }
-                this.Close();
+                this.DialogResult = DialogResult.OK;
             }
             else
             {
@@ -74,7 +73,7 @@ namespace Clinic_Management_System
 
         private void btnCancle_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.DialogResult = DialogResult.Cancel;
         }
     }
 }

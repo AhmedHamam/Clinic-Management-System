@@ -57,8 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\clsStaff.cs" />
+    <Compile Include="BL\CLS_Login.cs" />
+    <Compile Include="BL\CLS_MainForm.cs" />
     <Compile Include="BL\CLS_Patient.cs" />
     <Compile Include="BL\clsCheckType.cs" />
+    <Compile Include="BL\CLS_ServerSettings.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
     <Compile Include="PL\MoafaMessageBox.cs">
       <SubType>Form</SubType>
@@ -72,10 +75,10 @@
     <Compile Include="PL\frmChekup_Type.Designer.cs">
       <DependentUpon>frmChekup_Type.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Restore.cs">
+    <Compile Include="PL\frm_Restore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Restore.designer.cs">
+    <Compile Include="PL\frm_Restore.designer.cs">
       <DependentUpon>frm_Restore.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frmServerSetting.cs">
@@ -132,10 +135,10 @@
     <Compile Include="PL\Log_in.Designer.cs">
       <DependentUpon>Log_in.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main_Form.cs">
+    <Compile Include="PL\Main_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main_Form.Designer.cs">
+    <Compile Include="PL\Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -152,7 +155,7 @@
     <Compile Include="PL\StaffSearchForm.designer.cs">
       <DependentUpon>StaffSearchForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Supplier.cs" />
+    <Compile Include="BL\Supplier.cs" />
     <Compile Include="UC\UCStaff\ucManageStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -165,7 +168,7 @@
     <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
       <DependentUpon>ucNewStaff.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frm_Restore.resx">
+    <EmbeddedResource Include="PL\frm_Restore.resx">
       <DependentUpon>frm_Restore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\MoafaMessageBox.resx">
@@ -201,7 +204,7 @@
     <EmbeddedResource Include="PL\Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main_Form.resx">
+    <EmbeddedResource Include="PL\Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

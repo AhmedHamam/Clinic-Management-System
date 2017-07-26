@@ -114,18 +114,12 @@ namespace Clinic_Management_System
             param[0] = new SqlParameter("@StaffName", SqlDbType.VarChar, 100);
             param[0].Value = StaffName;
 
-            DataTable Result;
-            db.OpenConnection();
-            Result = db.ReadData("SearchStaff", param);
-            db.CloseConnection();
-            return Result;
+            return db.ReadData("SearchStaff", param);
         }
 
         public DataTable SP_Get_Staff_Table()
         {
-            DataTable Result;
-            Result = db.ReadData("GetStaffTable", null);
-            return Result;
+            return db.ReadData("GetStaffTable", null);
         }
 
         public Image SP_Get_Image_Staff(int id)
@@ -135,12 +129,7 @@ namespace Clinic_Management_System
 
             param[0] = new SqlParameter("@StaffID", SqlDbType.VarChar, 20);
             param[0].Value = id;
-
-            db.OpenConnection();
-            Result = db.ReadData("GetPicture", param);
-            db.CloseConnection();
-
-            return Connection.ConvertBytesToImage((byte[])Result.Rows[0][0]);
+            return Connection.ConvertBytesToImage((byte[])db.ReadData("GetPicture", param).Rows[0][0]);
         }
 
         public DataTable CheckExists(int id , string name)
@@ -153,11 +142,7 @@ namespace Clinic_Management_System
             param[1] = new SqlParameter("@StaffName", SqlDbType.VarChar, 50);
             param[1].Value = name;
 
-            DataTable Result;
-            db.OpenConnection();
-            Result = db.ReadData("CheckExists", param);
-            db.CloseConnection();
-            return Result;
+            return db.ReadData("CheckExists", param);
         }
     }
 }

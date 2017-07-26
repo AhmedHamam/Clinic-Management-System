@@ -111,7 +111,7 @@
             // StaffLabelGender
             // 
             this.StaffLabelGender.AutoSize = true;
-            this.StaffLabelGender.Location = new System.Drawing.Point(295, 337);
+            this.StaffLabelGender.Location = new System.Drawing.Point(295, 287);
             this.StaffLabelGender.Name = "StaffLabelGender";
             this.StaffLabelGender.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StaffLabelGender.Size = new System.Drawing.Size(60, 23);
@@ -121,7 +121,7 @@
             // StaffLabelSocialState
             // 
             this.StaffLabelSocialState.AutoSize = true;
-            this.StaffLabelSocialState.Location = new System.Drawing.Point(197, 237);
+            this.StaffLabelSocialState.Location = new System.Drawing.Point(197, 187);
             this.StaffLabelSocialState.Name = "StaffLabelSocialState";
             this.StaffLabelSocialState.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StaffLabelSocialState.Size = new System.Drawing.Size(158, 23);
@@ -146,7 +146,7 @@
             "عازب",
             "متزوج",
             "أرمل"});
-            this.StaffSocialstate.Location = new System.Drawing.Point(105, 284);
+            this.StaffSocialstate.Location = new System.Drawing.Point(101, 230);
             this.StaffSocialstate.Name = "StaffSocialstate";
             this.StaffSocialstate.Size = new System.Drawing.Size(250, 31);
             this.StaffSocialstate.TabIndex = 8;
@@ -158,6 +158,7 @@
             this.StaffJob.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.StaffJob.FormattingEnabled = true;
             this.StaffJob.Items.AddRange(new object[] {
+            "مدير",
             "طبيب",
             "ممرض"});
             this.StaffJob.Location = new System.Drawing.Point(361, 430);
@@ -174,7 +175,7 @@
             this.StaffGender.Items.AddRange(new object[] {
             "ذكر",
             "أنثى"});
-            this.StaffGender.Location = new System.Drawing.Point(105, 387);
+            this.StaffGender.Location = new System.Drawing.Point(101, 329);
             this.StaffGender.Name = "StaffGender";
             this.StaffGender.Size = new System.Drawing.Size(250, 31);
             this.StaffGender.TabIndex = 9;

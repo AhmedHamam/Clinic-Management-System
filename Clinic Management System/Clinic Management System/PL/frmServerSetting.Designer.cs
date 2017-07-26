@@ -187,9 +187,10 @@
             // RemeberSettings
             // 
             this.RemeberSettings.AutoSize = true;
-            this.RemeberSettings.Location = new System.Drawing.Point(30, 74);
+            this.RemeberSettings.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.RemeberSettings.Location = new System.Drawing.Point(30, 65);
             this.RemeberSettings.Name = "RemeberSettings";
-            this.RemeberSettings.Size = new System.Drawing.Size(91, 17);
+            this.RemeberSettings.Size = new System.Drawing.Size(134, 26);
             this.RemeberSettings.TabIndex = 7;
             this.RemeberSettings.Text = "تذكر الإعدادات";
             this.RemeberSettings.UseVisualStyleBackColor = true;
@@ -219,7 +220,6 @@
             this.pnlLogin.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
