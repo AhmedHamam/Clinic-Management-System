@@ -328,3 +328,29 @@ as
 begin
 SELECT * FROM  Login WHERE username = @StaffName AND [password] = @StaffPassword;
 end
+
+
+
+create proc add_user
+@username varchar(10),
+@password varchar(10),
+@sttaff_id varchar(20)
+as
+begin
+insert into Login (username,password,staff_id) values (@username,@password,@sttaff_id);
+end
+
+go
+ create proc selct_staff_without_users
+ as
+ begin
+ select * from Staff where staff_id<>(select staff_id from Login);
+ end
+ go 
+
+create proc select_users
+ as
+ begin
+ select username,password,staff_name from login,Staff ;
+  end
+  go 
