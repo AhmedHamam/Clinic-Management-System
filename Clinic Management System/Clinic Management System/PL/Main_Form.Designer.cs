@@ -51,6 +51,7 @@
             this.msCheckupManage = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDate = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -58,7 +59,10 @@
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.تسجيلالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.إضافةمستخدمToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تعديلبياناتمستخدمToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.عرضالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,7 +90,8 @@
             this.msStyles,
             this.toolStripMenuItem3,
             this.ms_createBackup,
-            this.msRestore});
+            this.msRestore,
+            this.تسجيلالمستخدمينToolStripMenuItem});
             this.toolStripDropDownButton1.Image = global::Clinic_Management_System.Properties.Resources.Technology_32x32;
             this.toolStripDropDownButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -248,6 +253,12 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(110, 19);
             this.toolStripStatusLabel1.Text = "إسم المستخدم : ";
             // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(45, 19);
+            this.toolStripStatusLabel2.Text = "لا يوجد";
+            // 
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Image = global::Clinic_Management_System.Properties.Resources.if_Christmas_Date_1651916;
@@ -298,11 +309,34 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // toolStripStatusLabel2
+            // تسجيلالمستخدمينToolStripMenuItem
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(45, 19);
-            this.toolStripStatusLabel2.Text = "لا يوجد";
+            this.تسجيلالمستخدمينToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.إضافةمستخدمToolStripMenuItem,
+            this.تعديلبياناتمستخدمToolStripMenuItem,
+            this.عرضالمستخدمينToolStripMenuItem});
+            this.تسجيلالمستخدمينToolStripMenuItem.Name = "تسجيلالمستخدمينToolStripMenuItem";
+            this.تسجيلالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.تسجيلالمستخدمينToolStripMenuItem.Text = "تسجيل المستخدمين ";
+            // 
+            // إضافةمستخدمToolStripMenuItem
+            // 
+            this.إضافةمستخدمToolStripMenuItem.Name = "إضافةمستخدمToolStripMenuItem";
+            this.إضافةمستخدمToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.إضافةمستخدمToolStripMenuItem.Text = "إضافة مستخدم ";
+            // 
+            // تعديلبياناتمستخدمToolStripMenuItem
+            // 
+            this.تعديلبياناتمستخدمToolStripMenuItem.Name = "تعديلبياناتمستخدمToolStripMenuItem";
+            this.تعديلبياناتمستخدمToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.تعديلبياناتمستخدمToolStripMenuItem.Text = "تعديل بيانات مستخدم ";
+            // 
+            // عرضالمستخدمينToolStripMenuItem
+            // 
+            this.عرضالمستخدمينToolStripMenuItem.Name = "عرضالمستخدمينToolStripMenuItem";
+            this.عرضالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.عرضالمستخدمينToolStripMenuItem.Text = "عرض المستخدمين ";
+            this.عرضالمستخدمينToolStripMenuItem.Click += new System.EventHandler(this.عرضالمستخدمينToolStripMenuItem_Click);
             // 
             // Main_Form
             // 
@@ -364,6 +398,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem msCheckupManage;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripMenuItem تسجيلالمستخدمينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem إضافةمستخدمToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem تعديلبياناتمستخدمToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem عرضالمستخدمينToolStripMenuItem;
         //private System.Windows.Forms.Button btnPatinet;
 
     }

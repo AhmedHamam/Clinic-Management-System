@@ -18,10 +18,14 @@ namespace Clinic_Management_System
         public Main_Form(DataRow LoginStaffRaw)
         {
             InitializeComponent();
-            CurrentUser = Conn.CurrentUser(int.Parse(LoginStaffRaw["staff_id"].ToString()));
-            toolStripStatusLabel2.Text = CurrentUser.Rows[0]["staff_name"].ToString();
+            //CurrentUser = Conn.CurrentUser(int.Parse(LoginStaffRaw["staff_id"].ToString()));
+            //toolStripStatusLabel2.Text = CurrentUser.Rows[0]["staff_name"].ToString();
         }
-
+        public Main_Form(string LoginStaff)
+        {
+            InitializeComponent();
+            toolStripStatusLabel2.Text = LoginStaff;
+        }
        
 
         // فتح شاشة تسجيل الدخول
@@ -136,6 +140,11 @@ namespace Clinic_Management_System
         {
             frmChekup_Type frm = new frmChekup_Type();
             frm.ShowDialog();
+        }
+
+        private void عرضالمستخدمينToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         

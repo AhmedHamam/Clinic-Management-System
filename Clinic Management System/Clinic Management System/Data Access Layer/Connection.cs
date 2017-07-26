@@ -93,6 +93,28 @@ namespace Clinic_Management_System
             }
             return dt;
         }
+        public DataTable ReadData(string stored_procdure)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                OpenConnection();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = connection;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = stored_procdure;
+               
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dt);
+                CloseConnection();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return dt;
+        }
         //method to insert or update or delete data from database 
         public bool Exacute_procdure(string stored_procdure, SqlParameter[] parameter)
         {

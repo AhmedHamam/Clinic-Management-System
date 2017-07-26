@@ -63,6 +63,18 @@
     <Compile Include="BL\clsCheckType.cs" />
     <Compile Include="BL\CLS_ServerSettings.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
+    <Compile Include="Frm_add_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_add_user.Designer.cs">
+      <DependentUpon>Frm_add_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_users.Designer.cs">
+      <DependentUpon>Frm_users.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\MoafaMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +180,12 @@
     <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
       <DependentUpon>ucNewStaff.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Frm_add_user.resx">
+      <DependentUpon>Frm_add_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_users.resx">
+      <DependentUpon>Frm_users.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_Restore.resx">
       <DependentUpon>frm_Restore.cs</DependentUpon>
     </EmbeddedResource>
