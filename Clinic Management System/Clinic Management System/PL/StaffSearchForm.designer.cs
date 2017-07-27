@@ -41,6 +41,10 @@
             this.SearchStaffLabel = new System.Windows.Forms.Label();
             this.SearchStaffBox = new System.Windows.Forms.TextBox();
             this.SearchStaffToolsTip = new System.Windows.Forms.ToolTip(this.components);
+            this.SearchStaffBtn = new System.Windows.Forms.Button();
+            this.PrintStaffBtn = new System.Windows.Forms.Button();
+            this.PrintAllStaffBtn = new System.Windows.Forms.Button();
+            this.RowMenuPrint = new System.Windows.Forms.ToolStripMenuItem();
             this.StaffListBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StaffTable)).BeginInit();
             this.RowMenuStrip.SuspendLayout();
@@ -82,31 +86,32 @@
             // 
             this.RowMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.RowMenuEdit,
-            this.RowMenuDelete});
+            this.RowMenuDelete,
+            this.RowMenuPrint});
             this.RowMenuStrip.Name = "RowMenuStrip";
-            this.RowMenuStrip.Size = new System.Drawing.Size(149, 48);
+            this.RowMenuStrip.Size = new System.Drawing.Size(105, 70);
             // 
             // RowMenuEdit
             // 
             this.RowMenuEdit.Name = "RowMenuEdit";
-            this.RowMenuEdit.Size = new System.Drawing.Size(148, 22);
-            this.RowMenuEdit.Text = "تعديل الموظف";
+            this.RowMenuEdit.Size = new System.Drawing.Size(152, 22);
+            this.RowMenuEdit.Text = "تعديل";
             this.RowMenuEdit.Click += new System.EventHandler(this.RowMenuEdit_Clicked);
             // 
             // RowMenuDelete
             // 
             this.RowMenuDelete.Name = "RowMenuDelete";
-            this.RowMenuDelete.Size = new System.Drawing.Size(148, 22);
-            this.RowMenuDelete.Text = "حذف الموظف";
+            this.RowMenuDelete.Size = new System.Drawing.Size(152, 22);
+            this.RowMenuDelete.Text = "حذف";
             this.RowMenuDelete.Click += new System.EventHandler(this.RowMenuDelete_Clicked);
             // 
             // DeleteStaffbtn
             // 
             this.DeleteStaffbtn.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.DeleteStaffbtn.Location = new System.Drawing.Point(176, 18);
+            this.DeleteStaffbtn.Location = new System.Drawing.Point(369, 16);
             this.DeleteStaffbtn.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteStaffbtn.Name = "DeleteStaffbtn";
-            this.DeleteStaffbtn.Size = new System.Drawing.Size(52, 28);
+            this.DeleteStaffbtn.Size = new System.Drawing.Size(50, 30);
             this.DeleteStaffbtn.TabIndex = 4;
             this.DeleteStaffbtn.Text = "حذف";
             this.SearchStaffToolsTip.SetToolTip(this.DeleteStaffbtn, "خذف موظف من جدول الموظفين");
@@ -116,10 +121,10 @@
             // AddStaffBtn
             // 
             this.AddStaffBtn.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.AddStaffBtn.Location = new System.Drawing.Point(580, 18);
+            this.AddStaffBtn.Location = new System.Drawing.Point(620, 16);
             this.AddStaffBtn.Margin = new System.Windows.Forms.Padding(2);
             this.AddStaffBtn.Name = "AddStaffBtn";
-            this.AddStaffBtn.Size = new System.Drawing.Size(52, 28);
+            this.AddStaffBtn.Size = new System.Drawing.Size(50, 30);
             this.AddStaffBtn.TabIndex = 3;
             this.AddStaffBtn.Text = "إضافة";
             this.SearchStaffToolsTip.SetToolTip(this.AddStaffBtn, "إضافة موظف لجدول الموظفين");
@@ -128,6 +133,9 @@
             // 
             // OpreationsGroupBox
             // 
+            this.OpreationsGroupBox.Controls.Add(this.PrintAllStaffBtn);
+            this.OpreationsGroupBox.Controls.Add(this.PrintStaffBtn);
+            this.OpreationsGroupBox.Controls.Add(this.SearchStaffBtn);
             this.OpreationsGroupBox.Controls.Add(this.EditStaffBtn);
             this.OpreationsGroupBox.Controls.Add(this.DeleteStaffbtn);
             this.OpreationsGroupBox.Controls.Add(this.AddStaffBtn);
@@ -147,10 +155,10 @@
             // EditStaffBtn
             // 
             this.EditStaffBtn.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.EditStaffBtn.Location = new System.Drawing.Point(378, 18);
+            this.EditStaffBtn.Location = new System.Drawing.Point(484, 16);
             this.EditStaffBtn.Margin = new System.Windows.Forms.Padding(2);
             this.EditStaffBtn.Name = "EditStaffBtn";
-            this.EditStaffBtn.Size = new System.Drawing.Size(52, 28);
+            this.EditStaffBtn.Size = new System.Drawing.Size(50, 30);
             this.EditStaffBtn.TabIndex = 7;
             this.EditStaffBtn.Text = "تعديل";
             this.SearchStaffToolsTip.SetToolTip(this.EditStaffBtn, "تعديل موظف في جدول الموظفين");
@@ -182,6 +190,52 @@
             this.SearchStaffToolsTip.InitialDelay = 250;
             this.SearchStaffToolsTip.IsBalloon = true;
             this.SearchStaffToolsTip.ReshowDelay = 50;
+            // 
+            // SearchStaffBtn
+            // 
+            this.SearchStaffBtn.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.SearchStaffBtn.Location = new System.Drawing.Point(753, 21);
+            this.SearchStaffBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchStaffBtn.Name = "SearchStaffBtn";
+            this.SearchStaffBtn.Size = new System.Drawing.Size(50, 25);
+            this.SearchStaffBtn.TabIndex = 8;
+            this.SearchStaffBtn.Text = "بحث";
+            this.SearchStaffToolsTip.SetToolTip(this.SearchStaffBtn, "إضافة موظف لجدول الموظفين");
+            this.SearchStaffBtn.UseVisualStyleBackColor = true;
+            this.SearchStaffBtn.Click += new System.EventHandler(this.SearchStaffBtn_Click);
+            // 
+            // PrintStaffBtn
+            // 
+            this.PrintStaffBtn.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.PrintStaffBtn.Location = new System.Drawing.Point(270, 16);
+            this.PrintStaffBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.PrintStaffBtn.Name = "PrintStaffBtn";
+            this.PrintStaffBtn.Size = new System.Drawing.Size(50, 30);
+            this.PrintStaffBtn.TabIndex = 9;
+            this.PrintStaffBtn.Text = "طباعة";
+            this.SearchStaffToolsTip.SetToolTip(this.PrintStaffBtn, "إضافة موظف لجدول الموظفين");
+            this.PrintStaffBtn.UseVisualStyleBackColor = true;
+            this.PrintStaffBtn.Click += new System.EventHandler(this.PrintStaffBtn_Click);
+            // 
+            // PrintAllStaffBtn
+            // 
+            this.PrintAllStaffBtn.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.PrintAllStaffBtn.Location = new System.Drawing.Point(39, 16);
+            this.PrintAllStaffBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.PrintAllStaffBtn.Name = "PrintAllStaffBtn";
+            this.PrintAllStaffBtn.Size = new System.Drawing.Size(150, 30);
+            this.PrintAllStaffBtn.TabIndex = 10;
+            this.PrintAllStaffBtn.Text = "طباعة جميع الموظفين";
+            this.SearchStaffToolsTip.SetToolTip(this.PrintAllStaffBtn, "إضافة موظف لجدول الموظفين");
+            this.PrintAllStaffBtn.UseVisualStyleBackColor = true;
+            this.PrintAllStaffBtn.Click += new System.EventHandler(this.PrintAllStaffBtn_Click);
+            // 
+            // RowMenuPrint
+            // 
+            this.RowMenuPrint.Name = "RowMenuPrint";
+            this.RowMenuPrint.Size = new System.Drawing.Size(152, 22);
+            this.RowMenuPrint.Text = "طباعة";
+            this.RowMenuPrint.Click += new System.EventHandler(this.RowMenuPrint_Click);
             // 
             // StaffSearchForm
             // 
@@ -218,5 +272,9 @@
         private System.Windows.Forms.ToolStripMenuItem RowMenuEdit;
         private System.Windows.Forms.ToolStripMenuItem RowMenuDelete;
         private System.Windows.Forms.ToolTip SearchStaffToolsTip;
+        private System.Windows.Forms.Button PrintAllStaffBtn;
+        private System.Windows.Forms.Button PrintStaffBtn;
+        private System.Windows.Forms.Button SearchStaffBtn;
+        private System.Windows.Forms.ToolStripMenuItem RowMenuPrint;
     }
 }

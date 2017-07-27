@@ -336,7 +336,6 @@
             this.عرضالمستخدمينToolStripMenuItem.Name = "عرضالمستخدمينToolStripMenuItem";
             this.عرضالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
             this.عرضالمستخدمينToolStripMenuItem.Text = "عرض المستخدمين ";
-            this.عرضالمستخدمينToolStripMenuItem.Click += new System.EventHandler(this.عرضالمستخدمينToolStripMenuItem_Click);
             // 
             // Main_Form
             // 

@@ -9,8 +9,7 @@ namespace Clinic_Management_System
 {
     static class Program
     {
-        public static DataRow LogInRaw;
-        public static string user;
+        public static int LogInRaw = -1;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -20,15 +19,14 @@ namespace Clinic_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmServerSetting());
+            //Application.Run(new frmServerSetting());
             if (Properties.Settings.Default.Server == "")
             {
                 if (new frmServerSetting().ShowDialog() == DialogResult.OK)
                 {
                     if (new Log_in().ShowDialog() == DialogResult.OK)
                     {
-                        // Application.Run(new Main_Form(LogInRaw));
-                        Application.Run(new Main_Form(user));
+                        Application.Run(new Main_Form());
                     }
                 }
             }
@@ -36,12 +34,11 @@ namespace Clinic_Management_System
             {
                 if (new Log_in().ShowDialog() == DialogResult.OK)
                 {
-                    Application.Run(new Main_Form(LogInRaw));
+                    Application.Run(new Main_Form());
                 }
             }
 
-            //Application.Run(new Frm_add_user());
-           // Application.Run(new Frm_users());
+            //Application.Run(new frmServerSetting());
             //Application.Run(new frmLoginMoafa());
             //Application.Run(new frmLogin_Mansour());
 

@@ -38,7 +38,7 @@ namespace Clinic_Management_System
 
         private void SearchStaffBox_TextChanged(object sender, EventArgs e)
         {
-            StaffTable.DataSource = Staffs.SP_Search_Staff(SearchStaffBox.Text);
+            SearchStaff();
         }
         private void RowMenuEdit_Clicked(object sender, EventArgs e)
         {
@@ -77,12 +77,43 @@ namespace Clinic_Management_System
                 }
             }
         }
+        private void SearchStaff()
+        {
+            StaffTable.DataSource = Staffs.SP_Search_Staff(SearchStaffBox.Text);
+        }
+        private void PrintStaff()
+        {
 
+        }
+        private void PrintAllStaff()
+        {
+
+        }
         private void StaffSearchForm_Load(object sender, EventArgs e)
         {
             stSearchForm = this;
             StaffTable.DataSource = Staffs.SP_Get_Staff_Table();
             SearchStaffToolsTip.ToolTipIcon = ToolTipIcon.Info;
+        }
+
+        private void SearchStaffBtn_Click(object sender, EventArgs e)
+        {
+            SearchStaff();
+        }
+
+        private void PrintStaffBtn_Click(object sender, EventArgs e)
+        {
+            PrintStaff();
+        }
+
+        private void PrintAllStaffBtn_Click(object sender, EventArgs e)
+        {
+            PrintAllStaff();
+        }
+
+        private void RowMenuPrint_Click(object sender, EventArgs e)
+        {
+            PrintStaff();
         }
     }
 }

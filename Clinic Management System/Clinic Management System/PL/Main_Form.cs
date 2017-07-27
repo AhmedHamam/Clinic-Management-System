@@ -14,25 +14,40 @@ namespace Clinic_Management_System
     public partial class Main_Form : Form
     {
         CLS_MainForm Conn = new CLS_MainForm();
-        DataTable CurrentUser;
-        public Main_Form(DataRow LoginStaffRaw)
+        DataRow CurrentUser;
+        public Main_Form()
         {
             InitializeComponent();
-            //CurrentUser = Conn.CurrentUser(int.Parse(LoginStaffRaw["staff_id"].ToString()));
-            //toolStripStatusLabel2.Text = CurrentUser.Rows[0]["staff_name"].ToString();
+            if (Program.LogInRaw != -1)
+            {
+                CurrentUser = Conn.CurrentUser(Program.LogInRaw).Rows[0];
+                toolStripStatusLabel2.Text = CurrentUser.Field<string>("staff_name");
+                switch (CurrentUser.Field<string>("staff_position"))
+                {
+                    case "سكرتير":
+                        // forms to disable
+                        break;
+                    case "طبيب":
+                        // forms to disable
+                        break;
+                    case "ممرض":
+                        // forms to disable
+                        break;
+                }
+            }
+            else
+            {
+                toolStripStatusLabel2.Text = "Factory Resset";
+            }
         }
-        public Main_Form(string LoginStaff)
-        {
-            InitializeComponent();
-            toolStripStatusLabel2.Text = LoginStaff;
-        }
+
        
 
         // فتح شاشة تسجيل الدخول
         private void msLogin_Click(object sender, EventArgs e)
         {
-//            Log_in frm = new Log_in();
-//            frm.ShowDialog();
+     //       Log_in frm = new Log_in();
+     //       frm.ShowDialog();
         }
         // تحميل استايل النظام
         ToolStripMenuItem temp;
@@ -140,11 +155,6 @@ namespace Clinic_Management_System
         {
             frmChekup_Type frm = new frmChekup_Type();
             frm.ShowDialog();
-        }
-
-        private void عرضالمستخدمينToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         

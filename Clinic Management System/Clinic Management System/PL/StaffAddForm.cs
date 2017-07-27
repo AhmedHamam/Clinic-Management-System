@@ -63,14 +63,9 @@ namespace Clinic_Management_System
             filedialog.Filter = " PNG | *.png;| JPG | *.jpg; *.jpeg; | BMB | *.bmp; | GIF | *.gif;";
             if (filedialog.ShowDialog() == DialogResult.OK)
             {
-                picture = Image.FromFile(filedialog.FileName);
+                StaffImage.Image = Image.FromFile(filedialog.FileName);
             }
             filedialog.Dispose();
-            if (picture != null)
-            {
-                StaffImage.Image = picture;
-                picture.Dispose();
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)

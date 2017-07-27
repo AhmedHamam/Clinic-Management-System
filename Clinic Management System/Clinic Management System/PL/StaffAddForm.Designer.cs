@@ -159,6 +159,7 @@
             this.StaffJob.FormattingEnabled = true;
             this.StaffJob.Items.AddRange(new object[] {
             "مدير",
+            "سكرتير",
             "طبيب",
             "ممرض"});
             this.StaffJob.Location = new System.Drawing.Point(361, 430);

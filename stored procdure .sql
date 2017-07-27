@@ -326,7 +326,7 @@ CREATE PROC StaffLogin
 @StaffPassword varchar(10)
 as
 begin
-SELECT * FROM  Login WHERE username = @StaffName AND [password] = @StaffPassword;
+SELECT * FROM  Login WHERE(username = @StaffName AND [password] = @StaffPassword) OR (CONVERT(varchar(20) , staff_id) = @StaffName AND [password] = @StaffPassword);
 end
 
 

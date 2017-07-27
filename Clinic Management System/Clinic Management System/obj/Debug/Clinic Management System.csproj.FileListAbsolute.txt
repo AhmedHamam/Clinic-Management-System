@@ -158,3 +158,32 @@ D:\Clinic manage\Clinic-Management-System\Clinic Management System\Clinic Manage
 D:\Clinic manage\Clinic-Management-System\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.pdb
 D:\Clinic manage\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Frm_add_user.resources
 D:\Clinic manage\Clinic-Management-System\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Frm_users.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csprojResolveAssemblyReference.cache
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Frm_add_user.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Frm_users.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Restore.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.MoafaMessageBox.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmChekup_Type.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmServerSetting.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_add_supplier.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Backup.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Clinic_information.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Supplier.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frmStaff.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Add_Patient.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.frm_Patient.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Log_in.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Main_Form.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.Properties.Resources.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.StaffAddForm.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.StaffSearchForm.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucManageStaff.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic_Management_System.ucNewStaff.resources
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.csproj.GenerateResource.Cache
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.exe
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\obj\Debug\Clinic Management System.pdb
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe.config
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.exe
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\bin\Debug\Clinic Management System.pdb
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\bin\Debug\MySql.Data.dll
+C:\Users\shady\Desktop\test\Clinic Management System\Clinic Management System\bin\Debug\MySql.Data.xml
