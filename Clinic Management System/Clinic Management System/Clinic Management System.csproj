@@ -63,6 +63,18 @@
     <Compile Include="BL\clsCheckType.cs" />
     <Compile Include="BL\CLS_ServerSettings.cs" />
     <Compile Include="Data Access Layer\Connection.cs" />
+    <Compile Include="PL\Form_ADD_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Form_ADD_USER.Designer.cs">
+      <DependentUpon>Form_ADD_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Form_manage_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Form_manage_user.Designer.cs">
+      <DependentUpon>Form_manage_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_add_user.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +192,12 @@
     <Compile Include="UC\UCStaff\ucNewStaff.Designer.cs">
       <DependentUpon>ucNewStaff.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PL\Form_ADD_USER.resx">
+      <DependentUpon>Form_ADD_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Form_manage_user.resx">
+      <DependentUpon>Form_manage_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_add_user.resx">
       <DependentUpon>Frm_add_user.cs</DependentUpon>
     </EmbeddedResource>
