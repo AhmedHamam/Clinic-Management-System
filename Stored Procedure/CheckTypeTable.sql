@@ -7,7 +7,7 @@ as
 select * from Chekup_Type
 
 
-
+go
 
 -- اضافة البيانات
 create proc [dbo].[SP_Insert_CheckType]
@@ -20,7 +20,7 @@ insert into Chekup_Type([Code],[TypeName],[Price],[Note]) values(@Code,@TypeName
 
 
 
-
+go
 -- تعديل البيانات
 create proc [dbo].[SP_Update_CheckType]
 @Code nvarchar(8),
@@ -30,7 +30,7 @@ create proc [dbo].[SP_Update_CheckType]
 as
 update [dbo].[Chekup_Type] set [TypeName] = @TypeName , [Price] = @Price , [Note] = @Note where Code = @Code
 
-
+go
 
 -- حذف البيانات
 create proc [dbo].[SP_Delete_CheckType]
@@ -38,10 +38,12 @@ create proc [dbo].[SP_Delete_CheckType]
 as
 delete from Chekup_Type where Code = @Code
 
-
+go
 
 
 -- الحصول على اكبر رقم
 create proc [dbo].[SP_GetMax_ChekupType]
 as
 select ISNULL(max(ID),0) from [dbo].[Chekup_Type]
+
+go

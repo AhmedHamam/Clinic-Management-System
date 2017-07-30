@@ -330,7 +330,7 @@ SELECT * FROM  Login WHERE(username = @StaffName AND [password] = @StaffPassword
 end
 
 
-
+go
 create proc add_user
 @username varchar(10),
 @password varchar(10),
